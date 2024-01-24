@@ -2,16 +2,23 @@ import Image from 'next/image'
 
 
 export default function Home() {
+
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-brown">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-      
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-
-        
-
-        </div>
+    <main className="flex min-h-screen items-center justify-center gap-2 p-24 bg-brown">
+ 
+        <Image
+          src="/logo.svg"
+          alt="Logo"
+          width={100}
+          height={100}
+          priority
+        />
+             <div>
+        <h1 className="text-4xl font-display text-white ">Kennedy Adams</h1>
+        <h2 className="text-2xl font-display text-white ">Full Stack Developer focusing on Wellness</h2>
       </div>
+
     </main>
   )
 }
