@@ -16,6 +16,22 @@
   }
 }
 
+.sectionFlip[data-position="1"]{
+  justify-content: center;
+  /* width: 100%; */
+}
+
+.sectionFlip[data-position="2"]{
+  justify-content: flex-start;
+  /* width: 30%; */
+}
+
+.sectionFlip[data-position="0"]{
+  justify-content: flex-end;
+  /* width: 30%; */
+
+}
+
 body {
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(

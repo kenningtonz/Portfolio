@@ -28,23 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={'${fredoka.className} antialiased'}>
-          <header className={`flex items-center justify-between bg-brown fixed min-h-16 w-full p-4  `} >
-          <div className="flex items-center gap-4">
-            <Link href="/projects">  <Image
-              src="/logo.svg"
-              alt="Logo"
-              width={50}
-              height={50}
-              priority
-            /></Link>
-            <h1 className="text-4xl font-display text-white ">Kennedy Adams</h1>
-          </div>
-          <div className='flex items-center gap-4'>
-            <Link href="/about"><FontAwesomeIcon className="text-white hover:scale-150" icon={faUser} /></Link>
-            <Link href="/contact"><FontAwesomeIcon className="text-white hover:scale-150" icon={faEnvelope} /></Link>
-            <FontAwesomeIcon className="text-white hover:scale-150" icon={faCircleHalfStroke} />
-          </div>
-        </header>
+       
         {children}</body>
     </html>
   )

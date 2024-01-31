@@ -63,20 +63,8 @@ export default function Page() {
            animate={{originX: 0,  originY: 0.5,  rotate: section.rotate , x: 65, y: 48.45}}
            d="m 0 20.01 l 34.63 20.02 l 0.02 -0.03 c 1.36 -2.36 2.49 -4.87 3.35 -7.49 h 9 c 1.66 0 3 -1.34 3 -3 v -19 c 0 -1.66 -1.34 -3 -3 -3 h -9 c -0.86 -2.63 -1.99 -5.13 -3.35 -7.48 v -0.03 s -34.65 20.01 -34.65 20.01 z"
        />
-          // <LogoPart color={section.color} rotate={section.rotate} onclick={handleClick} id={section.id} />
         ))}
-
       </motion.svg>
-
-      <motion.div
-        initial={{ x: 0 }}
-        // animate={{x: -50}}
-        // transition={{ duration: 2, repeat: 3 }}
-        className="relative">
-
-
-
-      </motion.div>
     </motion.div>
   )
 
