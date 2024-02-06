@@ -1,25 +1,20 @@
 import type { Metadata } from 'next'
-import { fredoka } from '@/app/ui/fonts'
+
 import './globals.css'
-import Image from 'next/image'
-import Link from 'next/link'
-
 import { config } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faEnvelope, faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
-// import { useState } from 'react'
+
+
+import Body from '@/components/body'
+
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import './globals.css'
 config.autoAddCss = false
-
-
 
 export const metadata: Metadata = {
   title: 'Kennedy Adams',
   description: 'Portfolio of Kennedy Adams',
 }
 
-// const [isScrolled, setIsScrolled] = useState(false);
-// ${isScrolled ? `appearance-none`:``}
 export default function RootLayout({
   children,
 }: {
@@ -27,9 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={'${fredoka.className} antialiased'}>
-       
-        {children}</body>
+      <Body children={children} />
     </html>
   )
 }

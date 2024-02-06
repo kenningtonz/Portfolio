@@ -1,31 +1,15 @@
 "use client";
-import { motion, useCycle } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react';
-import { IconDefinition, config } from '@fortawesome/fontawesome-svg-core'
+import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faEnvelope, faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
-import { Content } from '@/app/_components/content'
-import { wellnessCategories } from './_data/data';
+import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { Content } from '@/components/content'
+import { getWellnessCategories } from '@/_classes/wellness';
+import Header from '@/components/header';
+import Timeline from '../components/timeline';
+import Card from '@/components/card';
 
-// const sections = [
-//   { id: 0, color: "#C6E1AB", rotate: 0, colorDark: "#243D09", name: "green" },
-//   { id: 1, color: "#B8E4F0", rotate: 60, colorDark: "#08303C", name: "blue" },
-//   { id: 2, color: "#CDBADB", rotate: 120, colorDark: "#26093B", name: "purple" },
-//   { id: 3, color: "#F8AB99", rotate: 180, colorDark: "#40140A", name: "red" },
-//   { id: 4, color: "#FCCA7E", rotate: 240, colorDark: "#492F09", name: "orange" },
-//   { id: 5, color: "#FFE070", rotate: 300, colorDark: "#3A2F0A", name: "yellow" },
-// ]
-
-wellnessCategories.sort((a, b) => {
-  return a.color.id - b.color.id
-})
-
-
-// function template({ rotate, x, y}: { rotate: number, x: number, y: number}) {
-//     return `translateX(${60}) translateY(${48.5})  rotate(${rotate}) translateX(${x}) translateY(${y}) `
-//   }
 
 const useDeviceSize = () => {
 
@@ -51,6 +35,7 @@ const useDeviceSize = () => {
 
 
 export default function Home() {
+  const wellnessCategories = getWellnessCategories();
 
   const [active, setActive] = useState({ section: wellnessCategories[0], position: 1, rotation: 0 });
   const [pos, setPos] = useState([0, 1, 2, 3, 4, 5]);
@@ -60,9 +45,7 @@ export default function Home() {
   const [width, height] = useDeviceSize();
 
   const svgVariants = {
-    left: { rotate: active.rotation, x: width / 18 * -1 },
-    middle: { rotate: active.rotation },
-    right: { rotate: active.rotation, x: width / 18 },
+
   }
   useDeviceSize
   const sectionVariants = {
@@ -117,8 +100,6 @@ export default function Home() {
       rotationDirection = 1
       numOfMovements = 6 - numOfMovements;
     }
-    // console.log(`indexbefore: ${index}color: ${tempActive.section.id} numOfMovements: ${numOfMovements} indexOldPos: ${indexOld} rotationDirection: ${rotationDirection}`);
-
     if (tempActive.position == 1) {
       if (tempActive.section.id > 2) {
         tempActive.position = 0;
@@ -142,32 +123,15 @@ export default function Home() {
 
   }
 
+  const { scrollYProgress } = useScroll();
+  const isMobile = width < 768;
+
   return (
     <>
-      <motion.header
-        animate={isScrolled ? "visible" : "hidden"}
-        variants={{ hidden: { y: -100 }, visible: { y: 0 } }}
-        className={`z-30 flex items-center justify-between bg-brown fixed min-h-16 w-full p-4 `} >
-        <div className="flex items-center gap-4">
-          <Link href="/">  <Image
-            src="/logo.svg"
-            alt="Logo"
-            width={50}
-            height={50}
-            priority
-          /></Link>
-          <h1 className="text-4xl font-display text-white ">Kennedy Adams</h1>
-        </div>
-        <div className='flex items-center gap-4'>
-          {[[faUser, '/#about'], [faEnvelope, '/contact']].map((link) => (
-            <Link href={link[1] as string} key={link[1] as string}><FontAwesomeIcon className="text-2xl transition duration-200 text-white hover:scale-150 hover:ease-in east-out" icon={link[0] as IconDefinition} /></Link>
-          ))}
-          <FontAwesomeIcon className="text-2xl transition duration-200 text-white hover:scale-150 hover:ease-in east-out" icon={faCircleHalfStroke} />
-        </div>
-      </motion.header>
+      <Header isScrolled={isScrolled} isAnimated={true} />
 
       <main className="flex-col flex min-h-screen ">
-        <section className=" flex items-center w-full justify-center gap-2 p-24 bg-brown h-dvh">
+        <section className=" flex flex-wrap items-center justify-center gap-2 p-24 dark:bg-brown  h-dvh">
           <Image
             src="/logo.svg"
             alt="Logo"
@@ -175,18 +139,19 @@ export default function Home() {
             height={100}
             priority
           />
-          <div>
-            <h1 className="text-4xl font-display text-white ">Kennedy Adams</h1>
-            <h2 className="text-2xl font-display text-white ">Full Stack Developer focusing on Wellness</h2>
+          <div className=''>
+            <h1 className="text-4xl font-display dark:text-white text-brown ">Kennedy Adams</h1>
+            <h2 className="text-2xl font-display  dark:text-white text-brown ">Full Stack Developer focusing on Wellness</h2>
           </div>
+
         </section>
-        <section id="projects" className="flex justify-end	h-dvh relative" data-position={active.position}>
+        <section id="projects" className="flex  justify-end	h-dvh relative" data-position={active.position}>
           <motion.div
             className="z-20 w-2/4 h-full flex  justify-end items-center "
             variants={{ hidden: { display: "none" }, visible: { display: "flex" } }}
             animate={active.position == 1 ? "hidden" : "visible"}
           >
-            <Content wellnessCategory={active.section} />
+            <Content wellnessE={active.section.enum} />
           </motion.div>
           <motion.div className='z-10 w-full h-full absolute'
           >
@@ -202,11 +167,28 @@ export default function Home() {
             // variants={sectionVariants}
             // animate={active.position == 1 ? "middle" : active.position == 1 ? "left" : "right"}
             >
-              <filter id="drop-shadow-green">
-
-              </filter>
               <motion.g
-                variants={svgVariants}
+                variants={{
+                  left: {
+                    rotate: isMobile ? active.rotation + 60 : active.rotation,
+                    x: width / -18,
+                    y: isMobile ? -100 : 0,
+                    // scale: isMobile ? 0.5 : 1
+                  },
+                  middle: {
+                    rotate: active.rotation,
+                    x: 0,
+                    y: 0,
+                    // scale: 1
+                  },
+                  right: {
+                    rotate: isMobile ? active.rotation + 60 : active.rotation,
+                    x: width / 18,
+                    y: isMobile ? -100 : 0,
+                    // scale: isMobile ? 0.5 : 1
+                  },
+                }}
+                className={``}
                 // transformTemplate={template}
                 style={{ originX: "0", originY: "0" }}
                 animate={active.position == 1 ? "middle" : active.position == 2 ? "left" : "right"}
@@ -228,7 +210,6 @@ export default function Home() {
                     whileHover={{ scale: 0.7, cursor: "pointer" }}
                     // className={`drop-shadow-${sec.name}`}
                     fill={`${cat.color.colorHex}`}
-                    filter={`url(#drop-shadow-${cat.color.name})`}
                     id={cat.color.id.toString()}
                     key={cat.color.id}
                     onClick={handleClick}
@@ -244,11 +225,27 @@ export default function Home() {
           </motion.div>
 
         </section>
-        <section id="about" className=" flex items-center w-full justify-center gap-2 p-24 bg-brown h-dvh">
+        <section id="about" className="  dark:text-white text-brown flex flex-col items-center w-full justify-center gap-2 p-24 dark:bg-brown bg-white">
           {/* <h2>About</h2> */}
-          <FontAwesomeIcon className="text-white place-self-start justify-self-start text-2xl" icon={faUser} />
+          <FontAwesomeIcon className=" dark:text-white text-brown place-self-start justify-self-start text-2xl" icon={faUser} />
+          <h2 className="text-2xl"> Who is Kennedy Adams?</h2>
+          <article className='flex gap-4'>
+            <Image src={"/kennedy.jpg"} alt="kennedy" width={200} height={200} className='rounded' />
+            <p className=''>
+              I’m just a human, with probably the most interesting past you’ll hear. Years ago, my therapist told me "your life is fucked but its about to get better". I didn't know or believe it at the time, but he was right. After being in therapy and working on myself, I'm finally ready to help those through their journey.
+              My passion is using technology to make mental health resources more accessible.
+            </p>
+          </article>
 
+          <div className=''>
+            <Timeline />
+          </div>
 
+        </section>
+        <section id="contact" className=" flex items-center w-full justify-center gap-2 p-24 bg-brown h-dvh">
+          {/* <h2>About</h2> */}
+          <FontAwesomeIcon className=" dark:text-white text-brown place-self-start justify-self-start text-2xl" icon={faEnvelope} />
+          <Card title='test' />
         </section>
       </main>
     </>

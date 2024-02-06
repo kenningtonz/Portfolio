@@ -32,15 +32,6 @@
 
 }
 
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-}
 
 .drop-shadow-green {
   filter: drop-shadow(-1px 0 5px 2px #5C7F39);
