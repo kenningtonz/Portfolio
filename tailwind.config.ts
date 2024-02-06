@@ -10,6 +10,37 @@ module.exports = {
 
   ],
   safelist: [
+
+    'border-green-300',
+    'border-green-400',
+    'border-green-500',
+    'border-green-600',
+    'border-blue-300',
+    'border-blue-400',
+    'border-blue-500',
+    'border-blue-600',
+    'border-purple-300',
+    'border-purple-400',
+    'border-purple-500',
+    'border-purple-600',
+    'border-red-300',
+    'border-red-400',
+    'border-red-500',
+    'border-red-600',
+    'border-orange-300',
+    'border-orange-400',
+    'border-orange-500',
+    'border-orange-600',
+    'border-yellow-300',
+    'border-yellow-400',
+    'border-yellow-500',
+    'border-yellow-600',
+    'border-brown',
+
+
+
+    'text-brown',
+    'dark:text-brown',
     'bg-green-100',
     'bg-green-200',
     'bg-green-300',

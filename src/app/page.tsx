@@ -229,9 +229,9 @@ export default function Home() {
           {/* <h2>About</h2> */}
           <FontAwesomeIcon className=" dark:text-white text-brown place-self-start justify-self-start text-2xl" icon={faUser} />
           <h2 className="text-2xl"> Who is Kennedy Adams?</h2>
-          <article className='flex gap-4'>
-            <Image src={"/kennedy.jpg"} alt="kennedy" width={200} height={200} className='rounded' />
-            <p className=''>
+          <article className='flex flex-wrap gap-4 mb-4 justify-center '>
+            <Image src={"/kennedy.jpg"} alt="kennedy" width={200} height={200} className='rounded sm:basis-4/12' />
+            <p className='flex-auto'>
               I’m just a human, with probably the most interesting past you’ll hear. Years ago, my therapist told me "your life is fucked but its about to get better". I didn't know or believe it at the time, but he was right. After being in therapy and working on myself, I'm finally ready to help those through their journey.
               My passion is using technology to make mental health resources more accessible.
             </p>

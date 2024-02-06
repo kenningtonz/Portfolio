@@ -7,7 +7,7 @@ export const timelineEventsHighlight = [
         title: "Ontario College Diploma",
         date: "April 2024",
         description: "Web Development",
-        icon: faSchool,
+        icon: "../icons/brain.svg",
         location: "Durham College, Oshawa ON",
         color: 'purple'
     },
@@ -16,7 +16,7 @@ export const timelineEventsHighlight = [
         title: "Bachelor of Information Technology, Game Development and Entrepreneurship",
         date: "April 2022",
         description: "Game Development and Entrepreneurship",
-        icon: faSchool,
+        icon: "../icons/brain.svg",
         location: "Ontario Tech University ,Oshawa ON",
         color: "purple"
     },
@@ -25,7 +25,7 @@ export const timelineEventsHighlight = [
         title: "Game Developer, Department of National Defense, Government of Canada",
         date: "May 2022 - September 2022",
         description: "Department of National Defense, Government of Canada",
-        icon: faBriefcase,
+        icon: "../icons/brain.svg",
         location: "Remote from Halifax, NS",
         color: "red"
     },
@@ -34,7 +34,7 @@ export const timelineEventsHighlight = [
         title: "Mental Health First Aid Certificate, Mental Health Commission of Canada",
         date: "June 2019",
         description: "Mental Health Commission of Canada",
-        icon: faCertificate,
+        icon: "../icons/brain.svg",
         location: "Oshawa, ON",
         color: "purple"
     },
@@ -43,7 +43,7 @@ export const timelineEventsHighlight = [
         title: "Dialectical Behavioral Therapy",
         date: "May 2022",
         description: "",
-        icon: faBrain,
+        icon: "../icons/brain.svg",
         location: "Ontario Shores, Whitby, ON",
         color: "yellow"
     },
