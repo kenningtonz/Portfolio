@@ -36,7 +36,7 @@ const Header: React.FC<{ isScrolled?: boolean, isAnimated: boolean }> = ({ isScr
                 variants={{ hidden: { y: -100 }, visible: { y: 0 } }}
             >
                 <Link href="/">  <Image
-                    src="/logo.svg"
+                    src="/logo.png"
                     alt="Logo"
                     width={50}
                     height={50}

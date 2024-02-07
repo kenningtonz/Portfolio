@@ -4,7 +4,16 @@ import { ProjectE, Tools } from '@/_classes/enums';
 import { ProjectInfo } from '@/_classes/project';
 
 export default function FoundersPage() {
-    let foundersDriveInfo = new ProjectInfo("", [Tools.Wordpress], "", "", "", "https://foundersdrive.ca", "../images/foundersdrive.png", "foundersdrive", ProjectE.FounderDrive);
+    let foundersDriveInfo = new ProjectInfo(
+        "Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        [Tools.Wordpress],
+        "Objective: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        " Purpose: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        " Approach: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "https://foundersdrive.ca",
+        "../images/foundersdrive.png",
+        "foundersdrive",
+        ProjectE.FounderDrive);
     return (
         <Page projectInfo={foundersDriveInfo} />
     );

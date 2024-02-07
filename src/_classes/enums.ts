@@ -30,7 +30,7 @@ export enum ProjectE {
 export enum WellnessE {
     Social = "Social",
     Environmental = "Environmental",
-    Workout = "Workout",
+    Physical = "Physical",
     Spiritual = "Spiritual",
     Occupational = "Occupational",
     Mental = "Mental",

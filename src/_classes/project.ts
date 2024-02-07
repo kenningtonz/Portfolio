@@ -44,13 +44,13 @@ export class ProjectInfo {
     }
 }
 
-let foundersDrive = new Project("Founder's Drive", "", "foundersdrive", WellnessE.Occupational, ProjectE.FounderDrive);
-let workout = new Project("Workout", "", "workout", WellnessE.Workout, ProjectE.Workout);
-let greenLife = new Project("GreenLife Grocer", "../logos/greenlife.png", "greenlife", WellnessE.Workout, ProjectE.GreenLife);
-let mindfulInk = new Project("Mindful Ink", "../logos/mindfulInk.png", "mindfulink", WellnessE.Spiritual, ProjectE.MindfulInk);
-let radiantRealms = new Project("Radiant Realms", "", "radiantrealms", WellnessE.Mental, ProjectE.RadiantRealms);
-let socialProject = new Project("Social Project", "", "social", WellnessE.Social, ProjectE.Social);
-let environmentalProject = new Project("Environmental Project", "", "environmental", WellnessE.Environmental, ProjectE.Environmental);
+let foundersDrive = new Project("Founder's Drive", "/logos/foundersdrive.png", "foundersdrive", WellnessE.Occupational, ProjectE.FounderDrive);
+let workout = new Project("Workout", "/logo.png", "workout", WellnessE.Physical, ProjectE.Workout);
+let greenLife = new Project("GreenLife Grocer", "/logos/greenlife.png", "greenlife", WellnessE.Physical, ProjectE.GreenLife);
+let mindfulInk = new Project("Mindful Ink", "/logos/mindfulInk.png", "mindfulink", WellnessE.Spiritual, ProjectE.MindfulInk);
+let radiantRealms = new Project("Radiant Realms", "/logo.png", "radiantrealms", WellnessE.Mental, ProjectE.RadiantRealms);
+let socialProject = new Project("Social Project", "/logo.png", "social", WellnessE.Social, ProjectE.Social);
+let environmentalProject = new Project("Environmental Project", "/logo.png", "environmental", WellnessE.Environmental, ProjectE.Environmental);
 
 let projects = [foundersDrive, workout, greenLife, mindfulInk, radiantRealms, socialProject, environmentalProject]
 

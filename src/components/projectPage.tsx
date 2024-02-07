@@ -18,34 +18,31 @@ export default function Page({ projectInfo }: { projectInfo: ProjectInfo }) {
 
 
     return (
-        <main className={`flex flex-wrap content-start p-4 gap-5  h-screen ${colorBGInv} `}>
-            <header className={`flex basis-full justify-between items-center ${colorBGInv}`}>
+        <main className={`grid grid-flow-row auto-rows-max grid-cols-3 p-4 gap-5  h-full ${colorBGInv} `}>
+            <header className={`col-span-3 flex justify-between items-center ${colorBGInv}`}>
                 <span className="flex items-center p-1">
-                    {/* <Image
+                    <Image
                         src={project!.logo}
                         alt="Logo"
                         width={50}
                         height={50}
-                    /> */}
+                    />
                     <h1 className="text-4xl dark:text-brown text-white">{project!.name}</h1>
                 </span>
 
-                <span className="flex justify-center items-center">
-                    <h2>{category && category.name}</h2>
-                    <FontAwesomeIcon icon={category && category.icon} />
+                <span className="flex justify-center items-center gap-2">
+                    <h2 className="dark:text-brown text-white text-lg" >{category && category.name}</h2>
+                    <FontAwesomeIcon className="dark:text-brown text-white text-lg" icon={category && category.icon} />
                 </span>
             </header>
-            <Card className={`basis-full sm:basis-5/12 dark:text-white text-brown ${colorBG}`} image={projectInfo.image} />
-            <Card className={`basis-6/12 grow dark:text-white text-brown${colorBG}`} title={project!.name} content={projectInfo.description} tools={projectInfo.tools} />
+            <Card className={`sm:col-span-1 col-span-3 dark:text-white text-brown ${colorBG}`} image={projectInfo.image} />
+            <Card className={`sm:col-span-2 col-span-3 dark:text-white text-brown ${colorBG}`} title={project!.name} content={projectInfo.description} tools={projectInfo.tools} />
 
-            <Link href={projectInfo.link}><button className={`basis-5/12 grow rounded p-2 h-10 dark:text-white text-brown${colorBG}`}>Open in new tab</button></Link>
-
-            {projectInfo.githubLink && <Link href={projectInfo.githubLink}>   <button className={`basis-5/12 grow rounded p-1 h-10 dark:text-white text-brown${colorBG}`}>View on GitHub</button></Link>}
-
-
-            <Card className={`basis-3/12 grow dark:text-white text-brown${colorBG}`} title="Objective" content={projectInfo.objective} />
-            <Card className={`basis-3/12 grow dark:text-white text-brown${colorBG}`} title="Purpose" content={projectInfo.purpose} />
-            <Card className={`basis-3/12 grow dark:text-white text-brown${colorBG}`} title="Approach" content={projectInfo.approach} />
+            <Link className="col-span-3 justify-self-center	" href={projectInfo.link}><button className={` rounded p-2 h-10 dark:text-white text-brown ${colorBG}`}>Open in new tab</button></Link>
+            {projectInfo.githubLink && <Link className="col-span-3" href={projectInfo.githubLink}>   <button className={`basis-5/12 grow rounded p-1 h-10 dark:text-white text-brown${colorBG}`}>View on GitHub</button></Link>}
+            <Card className={`sm:col-span-1 col-span-3 dark:text-white text-brown ${colorBG}`} title="Objective" content={projectInfo.objective} />
+            <Card className={`sm:col-span-1 col-span-3 dark:text-white text-brown ${colorBG}`} title="Purpose" content={projectInfo.purpose} />
+            <Card className={`sm:col-span-1 col-span-3 dark:text-white text-brown ${colorBG}`} title="Approach" content={projectInfo.approach} />
 
         </main>
     );
