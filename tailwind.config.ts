@@ -10,7 +10,12 @@ module.exports = {
 
   ],
   safelist: [
-
+    'shadow-drop-green',
+    'shadow-drop-blue',
+    'shadow-drop-purple',
+    'shadow-drop-red',
+    'shadow-drop-orange',
+    'shadow-drop-yellow',
     'border-green-300',
     'border-green-400',
     'border-green-500',
@@ -36,6 +41,12 @@ module.exports = {
     'border-yellow-500',
     'border-yellow-600',
     'border-brown',
+    'focus:outline-green-300',
+    'focus:outline-red-300',
+    'focus:outline-orange-300',
+    'focus:outline-yellow-300',
+    'focus:outline-purple-300',
+    'focus:outline-blue-300',
 
 
 
@@ -188,6 +199,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+        'drop-green': '5px 5px 0 0 #5C7F39',
+        'drop-blue': '5px 5px 0 0 #3B7E91',
+        'drop-purple': '5px 5px 0 0 #65477A',
+        'drop-red': '5px 5px 0 0 #8B3A28',
+        'drop-orange': '5px 5px 0 0 #91621D',
+        'drop-yellow': '5px 5px 0 0 #92781B',
+      }
 
     },
   },

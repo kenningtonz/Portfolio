@@ -1,6 +1,6 @@
-import Page from "../../../components/projectPage";
+import Page from "../../components/projectPage";
 import { ProjectE, Tools } from '@/_classes/enums';
-
+import Header from "../../components/header";
 import { ProjectInfo } from '@/_classes/project';
 
 
@@ -23,7 +23,7 @@ export default function MindfulPage() {
         "Mindful Ink is a safe space to grow in spiritual wellness, promoting journaling, self reflection, and creating a community that embraces mindfulness. Mindful Ink sells visually appealing digital printable products including planner pages, mindfulness skills, journaling pages.",
         [Tools.PHP, Tools.Wordpress],
         "Create a Wordpress eCommerce site with a custom theme.",
-        "",
+        [""],
         "Mindful Ink is an outlet for me to express my creativity and to help others grow in their spiritual wellness. I wanted to create a space that was safe and welcoming for people to explore their spiritual wellness. I also wanted to create a space that was visually appealing and easy to navigate.",
         "https://mindfulink.kennedyadams.ca",
         "",
@@ -32,7 +32,11 @@ export default function MindfulPage() {
         "https://github.com/kenningtonz/mindful");
 
     return (
-        <Page projectInfo={mindfulInkInfo} />
+        <>
+            <Header isAnimated={false} />
+            <Page projectInfo={mindfulInkInfo} />
+        </>
+
     );
 }
 

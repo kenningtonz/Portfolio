@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion';
 import Header from '@/components/header';
 import Timeline from '../components/timeline';
@@ -42,7 +43,7 @@ export default function Home() {
       <Header isScrolled={isScrolled} isAnimated={true} />
 
       <main className="flex-col flex min-h-screen ">
-        <section className=" flex flex-wrap items-center justify-center gap-2 p-24 dark:bg-brown  h-dvh">
+        <section className=" flex flex-wrap content-center sm:text-left text-center items-center justify-center gap-2 p-12 dark:bg-brown h-dvh">
           <Image
             src="/logo.png"
             alt="Logo"
@@ -63,7 +64,7 @@ export default function Home() {
         <section id="about" className="  dark:text-white text-brown flex flex-col items-center w-full justify-center gap-2 p-10 dark:bg-brown bg-white">
           {/* <h2>About</h2> */}
           <FontAwesomeIcon className=" dark:text-white text-brown p-4 text-4xl" icon={faUser} />
-          <h2 className="text-3xl dark:text-white text-brown"> Who is Kennedy Adams?</h2>
+          <h2 className="text-3xl dark:text-white text-brown  text-center"> Who is Kennedy Adams?</h2>
           <article className='flex flex-col  gap-4 mb-4 items-center p-4 dark:text-white text-brown'>
 
             <p className='text-xl  text-center'>
@@ -75,14 +76,29 @@ export default function Home() {
             <Image src={"/kennedy.jpg"} alt="kennedy" width={200} height={200} className='rounded  ' />
           </article>
 
-          <h2 className='text-center dark:text-white text-brown text-3xl p-2'>Highlights</h2>
+          <h2 className='text-center dark:text-white text-brown text-3xl p-2'>My Journey</h2>
           <Timeline />
 
         </section>
         <section id="contact" className=" flex flex-col items-center w-full  gap-2 p-24 dark:bg-brown h-dvh bg-white dark:text-white text-brown">
           <FontAwesomeIcon className="   text-3xl" icon={faEnvelope} />
-          <h2 className="text-3xl "> Want to work with me?</h2>
-          <button className='rounded p-2 h-10 text-white dark:text-brown bg-yellow-400'><Link href={"mailto:kennedymmadams@gmail.com"}> Email Me</Link></button>
+          <h2 className="text-3xl  text-center"> Want to work with me?</h2>
+          <motion.button
+            className='rounded p-2 sm:h-10 flex gap-1 text-brown bg-yellow-400'
+            role='link'
+            onClick={() => { window.location.href = "mailto:kennedymmadams@gmail.com" }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>
+            <FontAwesomeIcon className="text-2xl  text-brown " icon={faEnvelope} /> <p>Email Me</p>
+          </motion.button>
+          <motion.button
+            className='rounded p-2 sm:h-10 items-center flex gap-1 text-brown bg-yellow-400'
+            role='link'
+            onClick={() => { window.location.href = "https://www.linkedin.com/in/kennedy-mm-adams/" }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>
+            <FontAwesomeIcon className="text-2xl  text-brown " icon={faLinkedin} /> <p>Connect on LinkedIn</p>
+          </motion.button>
         </section>
       </main>
     </>

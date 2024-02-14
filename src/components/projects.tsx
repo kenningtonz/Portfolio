@@ -1,4 +1,4 @@
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent, useMotionValue } from 'framer-motion';
 import { Content } from '@/components/content'
 import { getWellnessCategories } from '@/_classes/wellness';
 import { useState } from 'react';
@@ -8,7 +8,7 @@ import { colorsHex } from '@/_data/colorsDynamic';
 export const Projects: React.FC<{}> = ({ }) => {
     const wellnessCategories = getWellnessCategories();
     const [width, height] = useDeviceSize();
-    const isMobile = width < 700;
+    const isMobile = width < 600;
     const [active, setActive] = useState({ section: wellnessCategories[0], position: 1, rotation: 0 });
     const [pos, setPos] = useState([0, 1, 2, 3, 4, 5]);
     let pastActive;
@@ -33,21 +33,23 @@ export const Projects: React.FC<{}> = ({ }) => {
         let numOfMovements = shiftArray(id);
 
         let rotationDirection: number = -1;
-
         if (numOfMovements > 3) {
             rotationDirection = 1
             numOfMovements = 6 - numOfMovements;
         }
+        console.log(tempActive.section.color.id)
         if (tempActive.position == 1) {
-            if (tempActive.section.id > 2) {
-                tempActive.position = 0;
+            if (tempActive.section.color.id == 5 || tempActive.section.color.id == 0 || tempActive.section.color.id == 1) {
+                tempActive.position = 2;
             }
             else {
-                tempActive.position = 2;
+                tempActive.position = 0;
             }
         }
 
-        if (tempActive.section.id != pastActive.section.color.id) {
+
+
+        if (tempActive.section.color.id != pastActive.section.color.id) {
             tempActive.rotation = pastActive.rotation + (rotationDirection * 60 * numOfMovements);
             if (tempActive.position == 0 && pastActive.position == 1) {
                 tempActive.rotation = tempActive.rotation + 180;
@@ -57,7 +59,11 @@ export const Projects: React.FC<{}> = ({ }) => {
         }
         setActive(tempActive);
     }
+    // const xGroup = useMotionValue(0)
 
+    // useMotionValueEvent(xGroup, "change", (latest) => {
+    //     console.log(latest)
+    //   })
 
 
     return (
@@ -70,7 +76,6 @@ export const Projects: React.FC<{}> = ({ }) => {
                 variants={{
                     hidden: {
                         display: "none",
-
                     },
                     visible: {
                         display: "flex",
@@ -95,9 +100,9 @@ export const Projects: React.FC<{}> = ({ }) => {
                         variants={{
                             left: {
                                 rotate: isMobile ? active.rotation + 70 : active.rotation,
-                                x: isMobile ? width / -13 : width / -18,
+                                x: isMobile ? (width / -20) - 10 : -70,
                                 y: isMobile ? -80 : 0,
-                                scale: isMobile ? 0.35 : 0.5
+                                scale: isMobile ? 0.35 : 0.5,
                             },
                             middle: {
                                 rotate: active.rotation,
@@ -105,8 +110,8 @@ export const Projects: React.FC<{}> = ({ }) => {
                                 y: 0,
                             },
                             right: {
-                                rotate: isMobile ? active.rotation + 60 : active.rotation,
-                                x: isMobile ? width / 13 : width / 18,
+                                rotate: isMobile ? active.rotation - 70 : active.rotation,
+                                x: isMobile ? (width / 20) + 10 : 70,
                                 y: isMobile ? -80 : 0,
                                 scale: isMobile ? 0.35 : 0.5
                             },
@@ -127,21 +132,21 @@ export const Projects: React.FC<{}> = ({ }) => {
                                     d={`${cat.color.backgroundPath}`}
                                     variants={{
                                         active:
-                                            { fill: colorsHex[cat.color.name][200] }, inactive: { fill: isMobile ? colorsHex[active.section.color.name][200] : colorsHex[cat.color.name][600] }
+                                            { fill: colorsHex[cat.color.name][200] },
+                                        inactive: { fill: isMobile && active.position != 1 ? colorsHex[active.section.color.name][200] : colorsHex[cat.color.name][600] }
                                     }}
                                     animate={active.position != 1 && active.section.color.id == cat.color.id ? "active" : "inactive"}
                                 />
-
                             ))}
                         </motion.g>
                         {wellnessCategories.map((cat) => (
                             <motion.g
-
                                 style={{ x: -50, y: -50 }}
                                 id={cat.color.id.toString()}
                                 whileHover={{ scale: 1.05, cursor: "pointer", zIndex: 200 }}
                                 whileTap={{ scale: 0.9 }}
                                 key={cat.color.id}
+                                // className={`focus:outline-2 focus:outline-${cat.color.name}-300 `}
                                 onClick={handleClick}
                                 whileInView={{ scale: 0.9 }}
                             >

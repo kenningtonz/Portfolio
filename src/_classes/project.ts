@@ -21,21 +21,21 @@ class Project {
 export class ProjectInfo {
     slug: string;
     description: string;
-    objective: string;
-    approach: string;
-    purpose: string;
+    date: string;
+    challenge: string;
+    process: string[];
     link: string;
     githubLink?: string;
     image: string;
     tools: Tools[];
     project: ProjectE;
 
-    constructor(description: string, tools: Tools[], objective: string, approach: string, purpose: string, link: string, image: string, slug: string, project: ProjectE, githubLink?: string) {
+    constructor(description: string, tools: Tools[], challenge: string, process: string[], date: string, link: string, image: string, slug: string, project: ProjectE, githubLink?: string) {
         this.description = description;
         this.tools = tools;
-        this.objective = objective;
-        this.approach = approach;
-        this.purpose = purpose;
+        this.challenge = challenge;
+        this.process = process;
+        this.date = date;
         this.link = link;
         this.image = image;
         this.slug = slug;
@@ -45,14 +45,14 @@ export class ProjectInfo {
 }
 
 let foundersDrive = new Project("Founder's Drive", "/logos/foundersdrive.png", "foundersdrive", WellnessE.Occupational, ProjectE.FounderDrive);
-let workout = new Project("Workout", "/logo.png", "workout", WellnessE.Physical, ProjectE.Workout);
+// let workout = new Project("Workout", "/logo.png", "workout", WellnessE.Physical, ProjectE.Workout);
 let greenLife = new Project("GreenLife Grocer", "/logos/greenlife.png", "greenlife", WellnessE.Physical, ProjectE.GreenLife);
 let mindfulInk = new Project("Mindful Ink", "/logos/mindfulInk.png", "mindfulink", WellnessE.Spiritual, ProjectE.MindfulInk);
-let radiantRealms = new Project("Radiant Realms", "/logo.png", "radiantrealms", WellnessE.Mental, ProjectE.RadiantRealms);
-let socialProject = new Project("Social Project", "/logo.png", "social", WellnessE.Social, ProjectE.Social);
-let environmentalProject = new Project("Environmental Project", "/logo.png", "environmental", WellnessE.Environmental, ProjectE.Environmental);
+let radiantRealms = new Project("Radiant Realms", "/logos/radiantrealms.png", "radiantrealms", WellnessE.Mental, ProjectE.RadiantRealms);
+let hobbyBuddy = new Project("Hobby Buddy", "/logo.png", "hobbybuddy", WellnessE.Social, ProjectE.HobbyBuddy);
+let comfortCorner = new Project("Comfort Corner", "/logo.png", "comfortcorner", WellnessE.Environmental, ProjectE.ComfortCorner);
 
-let projects = [foundersDrive, workout, greenLife, mindfulInk, radiantRealms, socialProject, environmentalProject]
+let projects = [foundersDrive, greenLife, mindfulInk, radiantRealms, hobbyBuddy, comfortCorner]
 
 
 

@@ -46,14 +46,18 @@ const Header: React.FC<{ isScrolled?: boolean, isAnimated: boolean }> = ({ isScr
             </motion.div>
             <div className='flex items-center gap-4'>
                 <motion.button
+                    onClick={() => { window.location.href = "/#about" }}
+                    role='link'
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}>
-                    <Link href="/#about">    <FontAwesomeIcon className="text-2xl dark:text-white text-brown " icon={faUser} /></Link>
+                    <FontAwesomeIcon className="text-2xl dark:text-white text-brown " icon={faUser} />
                 </motion.button>
                 <motion.button
+                    role='link'
+                    onClick={() => { window.location.href = "/#contact" }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}>
-                    <Link href="/#contact">    <FontAwesomeIcon className="text-2xl dark:text-white text-brown " icon={faEnvelope} /></Link>
+                    <FontAwesomeIcon className="text-2xl dark:text-white text-brown " icon={faEnvelope} />
                 </motion.button>
                 <motion.button
                     whileHover={{ scale: 1.1 }}
