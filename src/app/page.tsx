@@ -26,7 +26,6 @@ export default function Home() {
 	};
 
 	useEffect(() => {
-		window.scrollTo(0, 0);
 		handleScroll();
 		if (isScrolled) {
 			console.log("scrolled");

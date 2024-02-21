@@ -46,7 +46,6 @@ export const Projects: React.FC<{}> = ({}) => {
 			rotationDirection = 1;
 			numOfMovements = 6 - numOfMovements;
 		}
-		console.log(tempActive.section.color.id);
 		if (tempActive.position == 1) {
 			if (
 				tempActive.section.color.id == 5 ||
@@ -65,16 +64,9 @@ export const Projects: React.FC<{}> = ({}) => {
 			if (tempActive.position == 0 && pastActive.position == 1) {
 				tempActive.rotation = tempActive.rotation + 180;
 			}
-			console.log(tempActive.position);
-			console.log(tempActive.rotation);
 		}
 		setActive(tempActive);
 	}
-	// const xGroup = useMotionValue(0)
-
-	// useMotionValueEvent(xGroup, "change", (latest) => {
-	//     console.log(latest)
-	//   })
 
 	return (
 		<section
@@ -119,7 +111,6 @@ export const Projects: React.FC<{}> = ({}) => {
 								rotate: isMobile ? active.rotation + 90 : active.rotation,
 								x: isMobile ? 0 : -70,
 								y: isMobile ? -70 : 0,
-								scale: 0.5,
 							},
 							middle: {
 								rotate: active.rotation,
@@ -130,10 +121,8 @@ export const Projects: React.FC<{}> = ({}) => {
 								rotate: isMobile ? active.rotation - 90 : active.rotation,
 								x: isMobile ? 0 : 70,
 								y: isMobile ? -70 : 0,
-								scale: 0.5,
 							},
 						}}
-						style={{ originX: "0", originY: "0", scale: 0.5 }}
 						animate={
 							active.position == 1 ? "middle" : active.position == 2 ? "left" : "right"
 						}
@@ -144,18 +133,25 @@ export const Projects: React.FC<{}> = ({}) => {
 							x: { duration: 0.5 },
 						}}
 					>
-						<motion.g style={{ originX: "0", originY: "0", scale: 5 }}>
+						<motion.g>
 							{wellnessCategories.map((cat) => (
 								<motion.path
 									fill={`${colorsHex[cat.color.name][600]}`}
 									key={`${cat.color.id}background`}
 									id={cat.color.id.toString()}
-									style={{ originX: "0", originY: "0", x: -245.8, y: -207.4 }}
 									d={`${cat.color.backgroundPath}`}
+									strokeWidth={0.5}
 									variants={{
-										active: { fill: colorsHex[cat.color.name][200] },
+										active: {
+											fill: colorsHex[cat.color.name][200],
+											stroke: colorsHex[cat.color.name][200],
+										},
 										inactive: {
 											fill:
+												isMobile && active.position != 1
+													? colorsHex[active.section.color.name][200]
+													: colorsHex[cat.color.name][600],
+											stroke:
 												isMobile && active.position != 1
 													? colorsHex[active.section.color.name][200]
 													: colorsHex[cat.color.name][600],
@@ -171,7 +167,7 @@ export const Projects: React.FC<{}> = ({}) => {
 						</motion.g>
 						{wellnessCategories.map((cat) => (
 							<motion.g
-								style={{ x: -50, y: -50 }}
+								// style={{ originX: "-50", originY: "-50" }}
 								role='button'
 								id={cat.color.id.toString()}
 								whileHover={{ scale: 1.05, cursor: "pointer", zIndex: 200 }}
