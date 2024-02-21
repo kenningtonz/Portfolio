@@ -1,35 +1,161 @@
 "use client";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+
+import Image from "next/image";
 
 const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: (i: number) => {
-        const delay = 1 + i * 0.5;
-        return {
-            pathLength: 1,
-            opacity: 1,
-            transition: {
-                pathLength: { delay, duration: 1, bounce: 0 },
-                opacity: { delay, duration: 0.01 }
-            }
-        };
-    }
-};
-export default function Loading() {
-    return (
-        <motion.svg
-            initial="hidden"
-            animate="visible"
-            viewBox="0 0 100 100"
-        >
-            <motion.path x={-5} y={-5} variants={draw} custom={1} d="M49.99,38.454l.01-30c2.8,0,5.54.29,8.18.84l4.49-7.79c.83-1.44,2.67-1.93,4.1-1.1l16.46,9.5c1.43.83,1.92,2.66,1.1,4.1l-4.51,7.8c1.82,2.04,3.44,4.26,4.82,6.64l.01.03-25.98,15c0-.01-.01-.02-.02-.03-1.73-2.98-4.96-4.99-8.65-4.99h-.01Z" fill="none" stroke="#ffdc5e" stroke-miterlimit="10" stroke-width="2" />
-            <motion.path variants={draw} custom={6} d="M60,48.454c0,1.81-.48,3.51-1.33,4.98,0,.01-.01.02-.02.03l25.98,15.01.02-.03c1.36-2.36,2.49-4.87,3.35-7.49h9c1.66,0,3-1.34,3-3v-19c0-1.66-1.34-3-3-3h-9c-.86-2.63-1.99-5.13-3.35-7.48l-.01-.03-25.99,15c.01.01.02.02.02.03.85,1.47,1.33,3.17,1.33,4.98Z" fill="none" stroke="#c5ecac" stroke-miterlimit="10" stroke-width="2" />
-            <motion.path variants={draw} custom={5} d="M50,88.454c2.8,0,5.54-.29,8.18-.84l4.49,7.79c.83,1.44,2.67,1.93,4.1,1.1l16.46-9.5c1.43-.83,1.92-2.66,1.1-4.1l-4.51-7.8c1.82-2.04,3.43-4.26,4.81-6.63l.02-.03-25.98-15.01c0,.01-.01.02-.02.03-1.73,2.98-4.95,4.99-8.64,4.99h-.03s-.01,30-.01,30h.03Z" fill="none" stroke="#aef7ff" stroke-miterlimit="10" stroke-width="2" />
-            <motion.path variants={draw} custom={4} d="M20.18,75.104l-4.51,7.8c-.82,1.44-.33,3.27,1.1,4.1l16.46,9.5c1.43.83,3.27.34,4.1-1.1l4.49-7.79c2.63.55,5.36.84,8.15.84h.03s.01-30,.01-30h-.01q-.01,0-.02,0c-3.69-.01-6.91-2.01-8.63-4.99-.01-.01-.02-.02-.02-.03l-25.98,15,.01.03c1.38,2.38,3,4.6,4.82,6.64Z" fill="none" stroke="#d4bbfc" stroke-miterlimit="10" stroke-width="2" />
-            <motion.path variants={draw} custom={3} d="M3,60.954h9c.86,2.62,1.99,5.13,3.35,7.48l.01.03,25.99-15c-.01-.01-.02-.02-.02-.03-.85-1.47-1.33-3.17-1.33-4.98,0-1.82.49-3.52,1.34-4.99,0-.01,0-.02.01-.02l-25.98-15.01-.01.02c-1.36,2.36-2.49,4.86-3.36,7.5H3c-1.66,0-3,1.34-3,3v19c0,1.66,1.34,3,3,3Z" fill="none" stroke="#faab99" stroke-miterlimit="10" stroke-width="2" />
-            <motion.path variants={draw} custom={2} d="M16.77,9.904L33.23.404c1.43-.83,3.27-.34,4.1,1.1l4.49,7.79c2.64-.55,5.38-.84,8.18-.84l-.01,30c-3.69,0-6.91,2.01-8.64,4.99-.01,0-.01.01-.01.02l-25.98-15.01.01-.02c1.38-2.37,2.99-4.59,4.81-6.63l-4.51-7.8c-.82-1.44-.33-3.27,1.1-4.1Z" fill="none" stroke="#fcbc5d" stroke-miterlimit="10" stroke-width="2" />
-            <motion.path variants={{ hidden: {}, visible: {} }} d="M24.734,52.533v-8.159c0-.552.448-1,1-1h12.851c.683,0,1.165-.669.949-1.316l-3.922-11.765c-.275-.825.562-1.584,1.357-1.229l41.584,18.579c.791.353.789,1.477-.004,1.828l-41.588,18.386c-.794.351-1.628-.407-1.353-1.231l3.926-11.777c.216-.648-.266-1.316-.949-1.316h-12.851c-.552,0-1-.448-1-1Z" fill="#fff" stroke-width="0" />
+	hidden: { pathLength: 0, opacity: 0, scale: 1.05 },
+	visible: (i: number) => {
+		const delay = i / 3;
+		return {
+			pathLength: 1,
 
-        </motion.svg>
-    )
+			opacity: 1,
+			transition: {
+				pathLength: { delay, duration: 0.4, bounce: 0 },
+				opacity: { delay, duration: 0.01 },
+				ease: "linear",
+			},
+		};
+	},
+};
+
+export default function SplashScreen() {
+	const [show, setShow] = useState(true);
+	const splashRef = useRef();
+	useEffect(() => {
+		setTimeout(() => {
+			setShow(false);
+		}, 4500);
+	}, []);
+
+	if (!show) return null;
+
+	return (
+		<motion.div
+			animate={{ opacity: 0 }}
+			transition={{ delay: 3.5, duration: 1 }}
+			className='splashScreen'
+		>
+			{/* <Image src="/loader.gif" alt="Logo" width={400} height={400}  className='m-auto' priority /> */}
+			<motion.svg
+				initial='hidden'
+				animate='visible'
+				viewBox='-10 -10 110 110'
+				preserveAspectRatio={"xMidYMid meet"}
+			>
+				<motion.g
+					initial={{ opacity: 0, scale: 1.05 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 2.5 }}
+				>
+					<path
+						d='M21.66,21.202l14.322,8.28.008-.012c.562-.976,1.03-2.014,1.385-3.098h3.722c.687,0,1.241-.554,1.241-1.241v-7.858c0-.687-.554-1.241-1.241-1.241h-3.722c-.356-1.088-.823-2.122-1.385-3.093l-.004-.012-14.326,8.275Z'
+						fill='#c5ecac'
+						stroke='#c5ecac'
+						strokeWidth={0.2}
+					/>
+					<path
+						d='M21.66,37.744c1.158,0,2.291-.12,3.383-.347l1.857,3.222c.343.596,1.104.798,1.696.455l6.807-3.929c.591-.343.794-1.1.455-1.696l-1.865-3.226c.753-.844,1.419-1.762,1.989-2.742l.008-.012-14.33-8.267-.012,16.542h.012Z'
+						fill='#aef7ff'
+						stroke='#aef7ff'
+						strokeWidth={0.2}
+					/>
+					<path
+						d='M7.918,5.259l6.807-3.929c.591-.343,1.352-.141,1.696.455l1.857,3.222c1.092-.227,2.225-.347,3.383-.347v16.542L7.334,12.93l.004-.008c.571-.98,1.237-1.898,1.989-2.742l-1.865-3.226c-.339-.596-.136-1.352.455-1.696Z'
+						fill='#fcbc5d'
+						stroke='#fcbc5d'
+						strokeWidth={0.2}
+					/>
+					<path
+						d='M21.66,4.659c1.158,0,2.291.12,3.383.347l1.857-3.222c.343-.596,1.104-.798,1.696-.455l6.807,3.929c.591.343.794,1.1.455,1.696l-1.865,3.226c.753.844,1.423,1.762,1.993,2.746l.004.012-14.33,8.263V4.659Z'
+						fill='#ffdc5e'
+						stroke='#ffdc5e'
+						strokeWidth={0.2}
+					/>
+					<path
+						d='M9.328,32.223l-1.865,3.226c-.339.596-.136,1.352.455,1.696l6.807,3.929c.591.343,1.352.141,1.696-.455l1.857-3.222c1.088.227,2.217.347,3.371.347h.012v-16.542s-14.33,8.263-14.33,8.263l.004.012c.571.984,1.241,1.902,1.993,2.746Z'
+						fill='#d4bbfc'
+						stroke='#d4bbfc'
+						strokeWidth={0.2}
+					/>
+					<path
+						d='M2.223,26.371h3.722c.356,1.084.823,2.122,1.385,3.093l.004.012,14.326-8.275L7.339,12.922l-.004.008c-.562.976-1.03,2.01-1.39,3.102h-3.722c-.687,0-1.241.554-1.241,1.241v7.858c0,.687.554,1.241,1.241,1.241Z'
+						fill='#faab99'
+						stroke='#faab99'
+						strokeWidth={0.2}
+					/>
+				</motion.g>
+
+				<motion.path
+					d='M21.67,4.495c1.158,0,2.29.12,3.382.347l1.856-3.22c.343-.595,1.104-.798,1.695-.455l6.805,3.927c.591.343.794,1.1.455,1.695l-1.864,3.225c.752.843,1.422,1.761,1.993,2.745l.004.012'
+					fill='none'
+					stroke='#ffdc5e'
+					strokeMiterlimit='10'
+					strokeWidth='2'
+					variants={draw}
+					custom={0}
+				/>
+				<motion.path
+					d='M35.994,12.771c.562.971,1.029,2.005,1.385,3.092h3.721c.686,0,1.24.554,1.24,1.24v7.855c0,.686-.554,1.24-1.24,1.24h-3.721c-.356,1.083-.823,2.121-1.385,3.096'
+					fill='none'
+					stroke='#c5ecac'
+					strokeMiterlimit='10'
+					strokeWidth='2'
+					variants={draw}
+					custom={1}
+				/>
+				<motion.path
+					d='M35.994,29.295l-.008.012c-.57.98-1.236,1.898-1.988,2.741l1.864,3.225c.339.595.136,1.352-.455,1.695l-6.805,3.927c-.591.343-1.352.141-1.695-.455l-1.856-3.22c-1.091.227-2.224.347-3.382.347'
+					fill='none'
+					stroke='#aef7ff'
+					strokeMiterlimit='10'
+					strokeWidth='2'
+					variants={draw}
+					custom={2}
+				/>
+				<motion.path
+					d='M21.67,37.567h-.012c-1.153,0-2.282-.12-3.369-.347l-1.856,3.22c-.343.595-1.104.798-1.695.455l-6.805-3.927c-.591-.343-.794-1.1-.455-1.695l1.864-3.225c-.752-.843-1.422-1.761-1.993-2.745l-.004-.012'
+					fill='none'
+					stroke='#d4bbfc'
+					strokeMiterlimit='10'
+					strokeWidth='2'
+					variants={draw}
+					custom={3}
+				/>
+				<motion.path
+					d='M7.346,29.291c-.562-.971-1.029-2.009-1.385-3.092h-3.721c-.686,0-1.24-.554-1.24-1.24v-7.855c0-.686.554-1.24,1.24-1.24h3.721c.36-1.091.827-2.125,1.389-3.1l.004-.008'
+					fill='none'
+					stroke='#faab99'
+					strokeMiterlimit='10'
+					strokeWidth='2'
+					variants={draw}
+					custom={4}
+				/>
+				<motion.path
+					d='M7.354,12.755c.57-.98,1.236-1.897,1.988-2.741l-1.864-3.224c-.339-.595-.136-1.352.455-1.695l6.805-3.927c.591-.343,1.352-.141,1.695.455l1.856,3.22c1.091-.227,2.224-.347,3.382-.347'
+					fill='none'
+					stroke='#fcbc5d'
+					strokeMiterlimit='10'
+					strokeWidth='2'
+					variants={draw}
+					custom={5}
+				/>
+
+				<motion.path
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 3 }}
+					d='M11.211,23.857v-3.374c0-.228.185-.414.414-.414h5.315c.282,0,.482-.277.392-.544l-1.622-4.866c-.114-.341.233-.655.561-.508l17.198,7.684c.327.146.326.611-.001.756l-17.199,7.604c-.328.145-.673-.168-.56-.509l1.623-4.87c.089-.268-.11-.544-.392-.544h-5.315c-.228,0-.414-.185-.414-.414Z'
+					fill='#fff'
+				/>
+			</motion.svg>
+		</motion.div>
+	);
 }
+// export  function Loading() {
+//     return (
+
+//     )
+// }
