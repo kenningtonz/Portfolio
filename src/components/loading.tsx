@@ -2,12 +2,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-import Image from "next/image";
-
 const draw = {
 	hidden: { pathLength: 0, opacity: 0, scale: 1.05 },
 	visible: (i: number) => {
-		const delay = i / 3;
+		const delay = i / 5;
 		return {
 			pathLength: 1,
 
@@ -27,7 +25,7 @@ export default function SplashScreen() {
 	useEffect(() => {
 		setTimeout(() => {
 			setShow(false);
-		}, 4500);
+		}, 3000);
 	}, []);
 
 	if (!show) return null;
@@ -35,7 +33,7 @@ export default function SplashScreen() {
 	return (
 		<motion.div
 			animate={{ opacity: 0 }}
-			transition={{ delay: 3.5, duration: 1 }}
+			transition={{ delay: 2, duration: 1 }}
 			className='splashScreen'
 		>
 			{/* <Image src="/loader.gif" alt="Logo" width={400} height={400}  className='m-auto' priority /> */}
@@ -48,7 +46,7 @@ export default function SplashScreen() {
 				<motion.g
 					initial={{ opacity: 0, scale: 1.05 }}
 					animate={{ opacity: 1 }}
-					transition={{ delay: 2.5 }}
+					transition={{ delay: 1 }}
 				>
 					<path
 						d='M21.66,21.202l14.322,8.28.008-.012c.562-.976,1.03-2.014,1.385-3.098h3.722c.687,0,1.241-.554,1.241-1.241v-7.858c0-.687-.554-1.241-1.241-1.241h-3.722c-.356-1.088-.823-2.122-1.385-3.093l-.004-.012-14.326,8.275Z'
@@ -146,7 +144,7 @@ export default function SplashScreen() {
 				<motion.path
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					transition={{ delay: 3 }}
+					transition={{ delay: 1.5 }}
 					d='M11.211,23.857v-3.374c0-.228.185-.414.414-.414h5.315c.282,0,.482-.277.392-.544l-1.622-4.866c-.114-.341.233-.655.561-.508l17.198,7.684c.327.146.326.611-.001.756l-17.199,7.604c-.328.145-.673-.168-.56-.509l1.623-4.87c.089-.268-.11-.544-.392-.544h-5.315c-.228,0-.414-.185-.414-.414Z'
 					fill='#fff'
 				/>

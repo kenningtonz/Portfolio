@@ -32,7 +32,7 @@ export class ProjectInfo {
 	description: string;
 	date: string;
 	challenge: string;
-	process: string[];
+	process: { name: string; img: string; steps: string[] }[];
 	link?: string;
 	githubLink?: string;
 	image: string;
@@ -43,7 +43,7 @@ export class ProjectInfo {
 		description: string,
 		tools: Tools[],
 		challenge: string,
-		process: string[],
+		process: { name: string; img: string; steps: string[] }[],
 		date: string,
 		image: string,
 		slug: string,
@@ -77,12 +77,27 @@ let mindfulInkInfo = new ProjectInfo(
 	],
 	"Create a Wordpress eCommerce site with a custom theme.",
 	[
-		"Design",
-		"Developed Logo and Brand using Adobe Illustrator. Designed page layouts and digital products using Penpot.app.",
-		"Back-end",
-		"Created custom theme and plugin. ",
-		"Front-end",
-		"Developed the site using Wordpress and PHP. Implemented WooCommerce for the store.",
+		{
+			name: "design",
+			img: "./icons/pen.svg",
+			steps: [
+				"Developed Logo and Brand using Adobe Illustrator.",
+				"Designed page layouts and digital products using Penpot.app.",
+			],
+		},
+		{
+			name: " Back-end",
+			img: "./icons/database.svg",
+			steps: ["Created custom theme and plugin. "],
+		},
+		{
+			name: "Front-end",
+			img: "./icons/object-group.svg",
+			steps: [
+				"Developed the site using Wordpress and PHP.",
+				" Implemented WooCommerce for the store.",
+			],
+		},
 	],
 	"January 2024 - April 2024",
 	"../images/mindfulink.png",
@@ -104,12 +119,31 @@ let greenLifeInfo = new ProjectInfo(
 	],
 	"To design and develop an online grocery store using MySQL",
 	[
-		"Design",
-		"Developed Logo and Brand using Adobe Illustrator. Designed page layouts using Sketch.",
-		"Front-End",
-		"Structured the project in NextJS, implemented essential functionalities such as user system, services, cart, and checkout, displayed services from the database, and styled using CSS for a polished appearance.",
-		"Back-End",
-		"Established and managed the database, handling data the transfer processes.",
+		{
+			name: "Design",
+			img: "./icons/pen.svg",
+			steps: [
+				"Developed Logo and Brand using Adobe Illustrator.",
+				"Designed page layouts using Sketch.",
+			],
+		},
+		{
+			name: "Front-End",
+			img: "./icons/object-group.svg",
+			steps: [
+				"Structured the project in NextJS",
+				" Implemented essential functionalities such as user system, services, cart, and checkout",
+				" Displayed services from the database",
+				"Styled using CSS for a polished appearance.",
+			],
+		},
+		{
+			name: "Back-End",
+			img: "./icons/database.svg",
+			steps: [
+				"Established and managed the database, handling data the transfer processes.",
+			],
+		},
 	],
 	"January 2024 - April 2024",
 	"",
@@ -134,14 +168,42 @@ let radiantRealmsInfo = new ProjectInfo(
 	],
 	"To design and develop a react and react-router site to handle business operations for an online company.",
 	[
-		"Design",
-		"Developed website pages through flowcharts, wireframes, Adobe Firefly images, and research.",
-		"Back-End",
-		"Established and managed the database, handling data the transfer processes.",
-		"Front-End",
-		"Structured the project in React with React Router, implemented essential functionalities such as user system, services, cart, and checkout, displayed services from the database, and styled using SASS for a polished appearance.",
-		"Returning",
-		" Enhanced functionality with service filters and booking features, transitioned to Firebase Auth for the login system, reorganized the project structure, and refreshed the site's design including a new logo created in Illustrator.",
+		{
+			name: "Design",
+			img: "./icons/pen.svg",
+			steps: [
+				"Developed website pages through flowcharts, wireframes, Adobe Firefly images, and research.",
+			],
+		},
+		{
+			name: "Back-End",
+			img: "./icons/database.svg",
+			steps: [
+				"Established and managed the database, handling data the transfer processes.",
+			],
+		},
+
+		{
+			name: "Front-End",
+			img: "./icons/object-group.svg",
+			steps: [
+				"Structured the project in React with React Router",
+				"implemented essential functionalities such as user system, services, cart, and checkout.",
+				"Displayed services from the database. ",
+				" Styled using SASS for a polished appearance.",
+			],
+		},
+
+		{
+			name: "Returning",
+			img: "./icons/code.svg",
+			steps: [
+				" Enhanced functionality with service filters and booking features.",
+				"Transitioned to Firebase Auth for the login system.",
+				"Reorganized the project structure.",
+				" Refreshed the site's design including a new logo created in Illustrator.",
+			],
+		},
 	],
 	"November 2023 - February 2024",
 
@@ -153,20 +215,74 @@ let radiantRealmsInfo = new ProjectInfo(
 );
 let comfortCornerInfo = new ProjectInfo(
 	"Comfort Corner is a web-based game where players create and customize their own virtual sanctuary, designed to evoke feelings of safety, comfort, and connection with their physical surroundings. With low-poly 3D graphics and immersive audio, the game offers a peaceful environment filled with customizable elements, from furniture and decorations to natural landscapes and ambient sounds. ",
-	[Tools.CSS, Tools.JavaScript, Tools.React],
+	[
+		Tools.CSS,
+		Tools.JavaScript,
+		Tools.React,
+		Tools.Threejs,
+		Tools.FramerMotion,
+		Tools.ReactThreeFiber,
+		Tools.FramerMotion,
+		Tools.Zustand,
+		Tools.ReactThreeDrei,
+		Tools.Tailwind,
+		Tools.Git,
+		Tools.Blender,
+		Tools.Illustrator,
+	],
 	"To design and develop a web-based game that uses local storage to save user data.",
-	[""],
-	"February 2024",
-	"",
+	[
+		{
+			name: "Ideation & Design",
+			img: "./icons/pen.svg",
+			steps: [
+				"Found low poly assets, edited them in blender.",
+				" Created base island model in blender and arranged models to create different environments. ",
+				"Created the base house model.",
+				" Designed the UI, colour scheme, and logo.",
+			],
+		},
+		{
+			name: "Technical Development",
+			img: "./icons/object-group.svg",
+			steps: [
+				"Researched options for react libraries. ",
+				"Created the base grid system and loading in models.",
+				" Integrated ui controls to manipulate the objects. ",
+				"Created the environment options",
+			],
+		},
+		{
+			name: "Future Development",
+			img: "./icons/code.svg",
+			steps: [
+				"Add more environments. ",
+				"Make the models myself. ",
+				"Add a share to social media feature. ",
+				"Add a gallary showcase. ",
+				"Add an undo function",
+			],
+		},
+	],
+	"February/March 2024",
+	"../images/comfortcorner.png",
 	"comfortcorner",
-	ProjectE.ComfortCorner
+	ProjectE.ComfortCorner,
+	"https://github.com/kenningtonz/comfort-corner",
+	"https://comfortcorner.kennedyadams.ca"
 );
 
 let hobbyBuddyInfo = new ProjectInfo(
 	"Hobby Buddy is a web application designed to connect individuals with shared interests and hobbies, facilitating meaningful social interactions and fostering new friendships. Users can create profiles, search for like-minded hobby buddies, and connect with others who share their passions.",
 	[Tools.React, Tools.JavaScript],
 	"",
-	[""],
+	[
+		{
+			name: "Design",
+			img: "./icons/pen.svg",
+			steps: [""],
+		},
+	],
 	"March 2024",
 	"",
 	"hobbybuddy",
@@ -177,10 +293,34 @@ let hobbyBuddyInfo = new ProjectInfo(
 let foundersDriveInfo = new ProjectInfo(
 	"Founder's Drive is a platform for entrepreneurs to find resources and connect with other entrepreneurs. The site is built using Wordpress",
 	[Tools.Wordpress, Tools.CSS, Tools.PHP],
-	"",
-	["Design"],
+	"Create a Wordpress site for a start up entrepreneur podcast.",
+	[
+		{
+			name: "Design",
+			img: "./icons/pen.svg",
+			steps: ["Researched different Wordpress themes, landing on Astra."],
+		},
+		{
+			name: "Back-End",
+			img: "./icons/database.svg",
+			steps: ["Created a custom post type for the podcast."],
+		},
+		{
+			name: "Front-End",
+			img: "./icons/object-group.svg",
+			steps: ["Used provided designs to create the site."],
+		},
+		{
+			name: "Testing",
+			img: "./icons/bug.svg",
+			steps: [
+				"Tested the site for bugs and issues.",
+				"Tested for responsiveness on different devices and browsers.",
+				"Focused on accessibility, and edited theme files to ensure WCAG 2.1 AA compliance.",
+			],
+		},
+	],
 	"January 2023 - August 2023",
-
 	"/images/foundersdrive.png",
 	"foundersdrive",
 	ProjectE.FounderDrive,
@@ -235,7 +375,7 @@ let hobbyBuddy = new Project(
 );
 let comfortCorner = new Project(
 	"Comfort Corner",
-	"/logo.png",
+	"/logos/comfortcorner.png",
 	"comfortcorner",
 	WellnessE.Environmental,
 	ProjectE.ComfortCorner,

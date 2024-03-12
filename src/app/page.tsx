@@ -7,8 +7,9 @@ import { faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { motion, useScroll } from "framer-motion";
 import Header from "@/components/header";
-import Timeline from "../components/timeline";
-
+import { TimelineHighlight } from "@/components/timeline/highlightsTimeline";
+import { timelineEvents } from "@/lib/classes/timelineEvents";
+import Footer from "@/components/footer";
 import SplashScreen from "@/components/loading";
 
 import { Projects } from "@/components/projects";
@@ -50,6 +51,7 @@ export default function Home() {
 						alt='Logo'
 						width={100}
 						height={100}
+						className={"cursor-pointer"}
 						onClick={() => {
 							window.location.href = "/#projects";
 						}}
@@ -68,6 +70,10 @@ export default function Home() {
 						width='38.971'
 						height='54.411'
 						viewBox='0 0 38.971 54.411'
+						className={"cursor-pointer"}
+						onClick={() => {
+							window.location.href = "/#projects";
+						}}
 						variants={{
 							visible: {
 								scale: [0.95, 1.05, 0.95],
@@ -95,29 +101,15 @@ export default function Home() {
 				</section>
 
 				<Projects />
-				{/* <section className='bg-brown text-center p-2 '>
-					<motion.button
-						whileHover={{ scale: 1.1 }}
-						whileTap={{ scale: 0.9 }}
-						className='bg-white text-brown p-1 rounded'
-					>
-						Other Projects
-					</motion.button>
-				</section> */}
+
 				<section
 					id='about'
-					className='  dark:text-white text-brown flex flex-col items-center w-full justify-center gap-2 p-10 dark:bg-brown bg-white'
+					className='  dark:text-white text-brown-dark flex flex-col items-center w-full justify-center gap-2 p-10 dark:bg-brown bg-white'
 				>
 					{/* <h2>About</h2> */}
-					<FontAwesomeIcon
-						className=' dark:text-white text-brown p-4 text-4xl'
-						icon={faUser}
-					/>
-					<h2 className='text-3xl dark:text-white text-brown  text-center'>
-						{" "}
-						Who is Kennedy Adams?
-					</h2>
-					<article className='flex flex-col  gap-4 mb-4 items-center p-4 dark:text-white text-brown'>
+					<FontAwesomeIcon className=' p-4 text-4xl' icon={faUser} />
+					<h2 className='text-3xl text-center'> Who is Kennedy Adams?</h2>
+					<article className='flex flex-col  gap-4 mb-4 items-center p-4 '>
 						<p className='text-xl  text-center'>
 							I’m just a <strong>human</strong>, with probably the most interesting
 							past you’ll hear.
@@ -152,20 +144,34 @@ export default function Home() {
 						/>
 					</article>
 
-					<h2 className='text-center dark:text-white text-brown text-3xl p-2'>
+					<h2 className='text-center dark:text-white text-brown-dark text-3xl p-2'>
 						My Journey
 					</h2>
-					<Timeline />
+					<TimelineHighlight
+						events={timelineEvents.filter((event) => event.highlight == true)}
+					/>
+
+					<motion.button
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+						role='link'
+						onClick={() => {
+							window.location.href = "/more";
+						}}
+						className='bg-yellow-500 text-brown-dark py-2 px-4 text-lg rounded'
+					>
+						View More
+					</motion.button>
 				</section>
 				<section
 					id='contact'
-					className=' flex flex-col items-center w-full  gap-2 p-24 dark:bg-brown h-dvh bg-white dark:text-white text-brown'
+					className=' flex flex-col items-center w-full  gap-2 px-24 dark:bg-brown py-48 bg-white dark:text-white text-brown-dark'
 				>
 					<FontAwesomeIcon className='   text-3xl' icon={faEnvelope} />
 					<h2 className='text-3xl  text-center'> Want to work with me?</h2>
 					<div className='flex gap-4 mt-4'>
 						<motion.button
-							className='rounded py-2 px-4 h-12  flex gap-1 bg-yellow-400'
+							className='rounded py-2 px-4 h-12  flex gap-1 bg-yellow-500'
 							role='link'
 							onClick={() => {
 								window.location.href = "mailto:kennedymmadams@gmail.com";
@@ -173,11 +179,14 @@ export default function Home() {
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.9 }}
 						>
-							<FontAwesomeIcon className='text-3xl  text-brown ' icon={faEnvelope} />
+							<FontAwesomeIcon
+								className='text-3xl  text-brown-dark '
+								icon={faEnvelope}
+							/>
 						</motion.button>
 
 						<motion.button
-							className='rounded py-2 px-4 h-12  items-center flex gap-1 bg-yellow-400'
+							className='rounded py-2 px-4 h-12  items-center flex gap-1 bg-yellow-500'
 							role='link'
 							onClick={() => {
 								window.location.href = "https://www.linkedin.com/in/kennedy-mm-adams/";
@@ -185,11 +194,15 @@ export default function Home() {
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.9 }}
 						>
-							<FontAwesomeIcon className='text-3xl  text-brown ' icon={faLinkedin} />
+							<FontAwesomeIcon
+								className='text-3xl text-brown-dark'
+								icon={faLinkedin}
+							/>
 						</motion.button>
 					</div>
 				</section>
 			</main>
+			<Footer />
 		</>
 	);
 }

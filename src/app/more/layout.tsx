@@ -1,15 +1,17 @@
-import Header from '@/components/header'
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import "../globals.css";
 
 export default function ProjectPageLayout({
-    children,
+	children,
 }: {
-    children: React.ReactNode
+	children: React.ReactNode;
 }) {
-    return (
-        <>
-            <Header isAnimated={false} />
-            {children}
-        </>
-    )
+	return (
+		<>
+			<Header isAnimated={false} />
+			{children}
+			<Footer />
+		</>
+	);
 }

@@ -1,6 +1,6 @@
-import { Tools, ToolsCat } from "../_classes/enums";
+import { Tools, ToolsCat } from "@/lib/classes/enums";
 
-export const Chips: React.FC<{ chips: Tools[]; className?: string }> = ({
+const Chips: React.FC<{ chips: Tools[]; className?: string }> = ({
 	chips,
 	className,
 }) => {
@@ -21,3 +21,5 @@ export const Chips: React.FC<{ chips: Tools[]; className?: string }> = ({
 		</ul>
 	);
 };
+
+export default Chips;

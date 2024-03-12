@@ -4,6 +4,7 @@ import * as React from "react";
 import * as TabsPrimitive from "@radix-ui/react-tabs";
 
 import { cn } from "@/lib/utils";
+import { colors } from "@/lib/data/colorsDynamic";
 
 const Tabs = TabsPrimitive.Root;
 
@@ -14,7 +15,7 @@ const TabsList = React.forwardRef<
 	<TabsPrimitive.List
 		ref={ref}
 		className={cn(
-			"inline-flex h-10 items-stretch justify-stretch  text-brown w-full ",
+			"inline-flex px-2 sm:h-10  items-stretch justify-stretch gap-2 text-brown w-full flex-wrap sm:flex-nowrap",
 			className
 		)}
 		{...props}
@@ -29,9 +30,10 @@ const TabsTrigger = React.forwardRef<
 	<TabsPrimitive.Trigger
 		ref={ref}
 		className={cn(
-			"inline-flex items-center grow justify-center whitespace-nowrap rounded-t px-3 py-1.5 text-lg font-medium  transition-all focus-visible:outline-none focus-visible:ring-2  focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  data-[state=active]:text-black data-[state=inactive]:bg-white",
+			"flex-1 inline-flex items-center grow justify-center whitespace-nowrap rounded px-3 py-1.5 text-lg font-medium  transition-all focus-visible:outline-none focus-visible:ring-2  focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  data-[state=active]:text-brown-dark ",
 			className,
-			`ring-offset-${color}-200 focus-visible:ring-${color}-300 data-[state=active]:bg-${color}-200 `
+
+			`data-[state=active]:bg-${color}-600  data-[state=inactive]:bg-${color} ring-offset-${color} focus-visible:ring-${color}-400  data-[state=active]:text-white  `
 		)}
 		{...props}
 	/>
@@ -45,9 +47,9 @@ const TabsContent = React.forwardRef<
 	<TabsPrimitive.Content
 		ref={ref}
 		className={cn(
-			"h-full p-2 focus-visible:outline-none focus-visible:ring-2  focus-visible:ring-offset-2 rounded-b",
+			"h-full p-2 focus-visible:outline-none focus-visible:ring-2 mt-4 focus-visible:ring-offset-2 min-h-dvh rounded-t",
 			className,
-			`bg-${color}-200 ring-offset-${color}-300 focus-visible:ring-${color}-300 shadow-drop-${color}-soft`
+			`bg-${color}-200 ring-offset-${color} focus-visible:ring-${color}-300 `
 		)}
 		{...props}
 	/>

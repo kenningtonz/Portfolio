@@ -8,9 +8,8 @@ import {
 	faCircleHalfStroke,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
-import { useTheme } from "../_classes/theme";
+import { useTheme } from "@/lib/classes/theme";
 
 const Header: React.FC<{ isScrolled?: boolean; isAnimated: boolean }> = ({
 	isScrolled,
@@ -35,25 +34,31 @@ const Header: React.FC<{ isScrolled?: boolean; isAnimated: boolean }> = ({
 			animate={animate()}
 			variants={{
 				hidden: { backgroundColor: "#FFFFFF00" },
-				visible: { backgroundColor: theme === "dark" ? "#221603" : "#FFFFFF" },
+				visible: { backgroundColor: theme === "dark" ? "#2B1C12" : "#FFFFFF" },
 			}}
 			className={`z-30 flex items-center justify-between  ${
 				isAnimated && "fixed"
 			} min-h-16 w-full p-4`}
 		>
-			<motion.div
+			<motion.a
 				className='flex items-center gap-4'
 				animate={animate()}
 				variants={{ hidden: { y: -100 }, visible: { y: 0 } }}
+				href='/'
 			>
-				<Link href='/'>
-					{" "}
-					<Image src='/logo.png' alt='Logo' width={50} height={50} />
-				</Link>
-				<h1 className='text-4xl font-display dark:text-white text-brown'>
+				<motion.img
+					whileHover={{ scale: 1.05 }}
+					whileTap={{ scale: 0.9 }}
+					src='/logo.png'
+					alt='Logo'
+					width={50}
+					height={50}
+				/>
+				<span className='text-4xl font-display dark:text-white text-brown '>
 					Kennedy Adams
-				</h1>
-			</motion.div>
+				</span>
+			</motion.a>
+
 			<div className='flex items-center gap-4'>
 				<motion.button
 					onClick={() => {

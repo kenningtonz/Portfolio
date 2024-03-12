@@ -1,6 +1,13 @@
 "use client";
-import { fredoka } from "@/_ui/fonts";
-import { useTheme } from "../_classes/theme";
+// import { fredoka } from "@/lib/fonts";
+import { Fredoka } from "next/font/google";
+import { useTheme } from "@/lib/classes/theme";
+
+const fredoka = Fredoka({
+	weight: ["300", "400", "500", "600", "700"],
+	style: "normal",
+	subsets: ["latin"],
+});
 
 export default function Body({ children }: { children: React.ReactNode }) {
 	const { theme } = useTheme();

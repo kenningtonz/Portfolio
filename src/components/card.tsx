@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import { Tools } from "../_classes/enums";
-import { Chips } from "./chips";
 
 const Card: React.FC<{
 	customContent?: React.ReactNode;

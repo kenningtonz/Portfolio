@@ -5,10 +5,10 @@ import {
 	useMotionValue,
 } from "framer-motion";
 import { Content } from "@/components/content";
-import { getWellnessCategories } from "@/_classes/wellness";
+import { getWellnessCategories } from "@/lib/classes/wellness";
 import { useState } from "react";
-import { useDeviceSize } from "@/_data/deviceSize";
-import { colorsHex } from "@/_data/colorsDynamic";
+import { useDeviceSize } from "@/lib/data/deviceSize";
+import { colorsHex } from "@/lib/data/colorsDynamic";
 
 export const Projects: React.FC<{}> = ({}) => {
 	const wellnessCategories = getWellnessCategories();
@@ -71,7 +71,7 @@ export const Projects: React.FC<{}> = ({}) => {
 	return (
 		<section
 			id='projects'
-			className={`flex sectionFlip items-center h relative	`}
+			className={`flex sectionFlip items-center h-dvh relative	`}
 			data-position={active.position}
 		>
 			<motion.div
@@ -136,25 +136,25 @@ export const Projects: React.FC<{}> = ({}) => {
 						<motion.g>
 							{wellnessCategories.map((cat) => (
 								<motion.path
-									fill={`${colorsHex[cat.color.name][600]}`}
+									fill={`${colorsHex[cat.color.name]["dark"]}`}
 									key={`${cat.color.id}background`}
 									id={cat.color.id.toString()}
 									d={`${cat.color.backgroundPath}`}
 									strokeWidth={0.5}
 									variants={{
 										active: {
-											fill: colorsHex[cat.color.name][200],
-											stroke: colorsHex[cat.color.name][200],
+											fill: colorsHex[cat.color.name]["base"],
+											stroke: colorsHex[cat.color.name]["base"],
 										},
 										inactive: {
 											fill:
 												isMobile && active.position != 1
-													? colorsHex[active.section.color.name][200]
-													: colorsHex[cat.color.name][600],
+													? colorsHex[active.section.color.name]["base"]
+													: colorsHex[cat.color.name]["dark"],
 											stroke:
 												isMobile && active.position != 1
-													? colorsHex[active.section.color.name][200]
-													: colorsHex[cat.color.name][600],
+													? colorsHex[active.section.color.name]["base"]
+													: colorsHex[cat.color.name]["dark"],
 										},
 									}}
 									animate={
@@ -179,12 +179,14 @@ export const Projects: React.FC<{}> = ({}) => {
 							>
 								<motion.path
 									id={cat.color.id.toString()}
-									fill={`${colorsHex[cat.color.name][200]}`}
+									fill={`${colorsHex[cat.color.name]["base"]}`}
 									d={`${cat.color.arrowPath}`}
-									style={{
-										filter: `drop-shadow(-1px 0px 2px ${colorsHex[cat.color.name][500]})`,
-										scale: 0.9,
-									}}
+									style={
+										{
+											// filter: `drop-shadow(-1px 0px 2px ${colorsHex[cat.color.name][700]})`,
+											// scale: 0.9,
+										}
+									}
 									variants={{
 										active: { opacity: 0 },
 										inactive: { opacity: 1 },
@@ -197,7 +199,7 @@ export const Projects: React.FC<{}> = ({}) => {
 								/>
 								<motion.path
 									id={cat.color.id.toString()}
-									fill={`${colorsHex[cat.color.name][500]}`}
+									fill={`${colorsHex[cat.color.name][700]}`}
 									d={`${cat.color.iconPath}`}
 								/>
 							</motion.g>

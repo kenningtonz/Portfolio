@@ -21,6 +21,19 @@ export enum Tools {
 	WooCommerce = "WooCommerce",
 	Penpot = "Penpot",
 	Sketch = "Sketch",
+	Blender = "Blender",
+	Threejs = "Three.js",
+	Zustand = "Zustand",
+	ReactThreeFiber = "React Three Fiber",
+	ReactThreeDrei = "React Three Drei",
+	FramerMotion = "Framer Motion",
+	CSharp = "C#",
+	Unity = "Unity",
+	Procreate = "Procreate",
+	Krita = "Krita",
+	Bolt = "Bolt",
+	Cplusplus = "C++",
+	Aesprite = "Aesprite",
 }
 
 export const ToolsCat = {
@@ -31,17 +44,39 @@ export const ToolsCat = {
 		Tools.CSS,
 		Tools.SASS,
 		Tools.PHP,
+		Tools.CSharp,
+		Tools.Cplusplus,
+		Tools.Bolt,
 	],
-	frameworks: [Tools.React, Tools.NextJS, Tools.Node, Tools.Flutter],
+	frameworks: [
+		Tools.React,
+		Tools.NextJS,
+		Tools.Node,
+		Tools.Flutter,
+		Tools.Unity,
+	],
 	libraries: [
 		Tools.ReactRouter,
 		Tools.PreactSignals,
 		Tools.PrimeReactUI,
 		Tools.Tailwind,
+		Tools.Zustand,
+		Tools.ReactThreeFiber,
+		Tools.ReactThreeDrei,
+		Tools.FramerMotion,
+		Tools.Threejs,
 	],
 	databases: [Tools.Firebase, Tools.MySQL],
 	tools: [Tools.Git, Tools.Wordpress, Tools.WooCommerce],
-	software: [Tools.Illustrator, Tools.Penpot, Tools.Sketch],
+	software: [
+		Tools.Illustrator,
+		Tools.Penpot,
+		Tools.Sketch,
+		Tools.Blender,
+		Tools.Procreate,
+		Tools.Krita,
+		Tools.Aesprite,
+	],
 
 	getCategory(tool: Tools) {
 		if (this.languages.includes(tool)) {
@@ -52,6 +87,8 @@ export const ToolsCat = {
 			return "databases";
 		} else if (this.tools.includes(tool)) {
 			return "tools";
+		} else if (this.software.includes(tool)) {
+			return "software";
 		}
 		return "other";
 	},
@@ -61,6 +98,7 @@ export const ToolsCat = {
 			frameworks: [],
 			databases: [],
 			tools: [],
+			software: [],
 			other: [],
 		};
 		tools.forEach((tool) => {
@@ -85,8 +123,10 @@ export const ToolsCat = {
 				return "bg-yellow-500";
 			case "tools":
 				return "bg-red-500";
-			default:
+			case "software":
 				return "bg-purple-500";
+			default:
+				return "bg-orange-500";
 		}
 	},
 };
