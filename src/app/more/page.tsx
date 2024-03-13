@@ -24,7 +24,7 @@ export default function MorePage() {
 				// 	window.location.href = "/more";
 				// }}
 				arial-label='download resume'
-				className='bg-yellow-500 text-brown-dark py-2 px-4 text-base rounded'
+				className='bg-yellow-500 text-brown-dark py-2 px-4 text-base rounded font-semibold'
 			>
 				Download Resume
 			</motion.a>

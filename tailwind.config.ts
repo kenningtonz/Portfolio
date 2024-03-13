@@ -222,8 +222,7 @@ const config = {
 			white: "#FFFFFF",
 		},
 		fontFamily: {
-			display: ["Fredoka", "sans-serif"],
-			body: ["Fredoka", "sans-serif"],
+			sans: ["var(--font-fredoka)"],
 		},
 		borderRadius: {
 			DEFAULT: "10px",

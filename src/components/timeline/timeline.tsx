@@ -60,8 +60,13 @@ const TimelineItem: React.FC<{
 				<div
 					className={` ${
 						detailsOpen ? "rounded-t" : "rounded  "
-					} px-8 pt-4 w-full text-center text-brown-dark  z-20 transition-all   `}
+					} px-8 pt-4 w-full text-center text-brown-dark  z-20 transition-all relative  `}
 				>
+					<img
+						src={event.getTypeIcon()}
+						alt='icon'
+						className={`bg-${color}  w-6 absolute left-2 top-2 sm:hidden p-1 rounded z-20`}
+					/>
 					<h3 className='text-xl font-medium'>{event.title}</h3>
 					<p className=' italic'> {event.location}</p>
 					<p className='sm:hidden text-xs'>

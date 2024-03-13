@@ -84,6 +84,13 @@
 	}
 } */
 
+@font-face {
+	font-family: "Fredoka";
+	src: url("@/lib/fonts/Fredoka-Bold.ttf") format("truetype"),
+		url("@/lib/fonts/Fredoka-Light.ttf") format("truetype"),
+		url("@/lib/fonts/Fredoka-SemiBold.ttf") format("truetype");
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -141,7 +148,7 @@ html {
 	-webkit-backdrop-filter: blur(15px);
 }
 
-.splashScreen svg {
+.splashScreen video {
 	position: absolute;
 	top: 20%;
 	left: 25%;

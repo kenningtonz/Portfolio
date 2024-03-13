@@ -182,12 +182,12 @@ export const Projects: React.FC<{}> = ({}) => {
 									id={cat.color.id.toString()}
 									fill={`${colorsHex[cat.color.name]["base"]}`}
 									d={`${cat.color.arrowPath}`}
-									style={
-										{
-											// filter: `drop-shadow(-1px 0px 2px ${colorsHex[cat.color.name][700]})`,
-											// scale: 0.9,
-										}
-									}
+									// style={
+									// 	{
+									// 		// filter: `drop-shadow(-1px 0px 2px ${colorsHex[cat.color.name][700]})`,
+									// 		// scale: 0.9,
+									// 	}
+									// }
 									variants={{
 										active: { opacity: 0 },
 										inactive: { opacity: 1 },

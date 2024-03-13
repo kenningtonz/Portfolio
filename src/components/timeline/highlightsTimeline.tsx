@@ -74,7 +74,7 @@ export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 							<img
 								src={event.getTypeIcon()}
 								alt='icon'
-								className={`bg-${color}  w-8 absolute left-2 top-2 sm:hidden p-1 rounded z-20`}
+								className={`bg-${color}  w-6 absolute left-2 top-2 sm:hidden p-1 rounded z-20`}
 							/>
 						</div>
 						{event === lastEvent ? null : (

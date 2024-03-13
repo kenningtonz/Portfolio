@@ -186,14 +186,19 @@ let radiantRealmsInfo = new ProjectInfo(
 			name: "Design",
 			img: "./icons/pen.svg",
 			steps: [
-				"Developed website pages through flowcharts, wireframes, Adobe Firefly images, and research.",
+				"Flow charted the website's pages.",
+				"Wire-framed each page's layout.",
+				"Generated Images using Adobe Firefly.",
+				"Did research on related sites.",
+				"Gathered the content for the site using AI and other resources.",
 			],
 		},
 		{
 			name: "Back-End",
 			img: "./icons/database.svg",
 			steps: [
-				"Established and managed the database, handling data the transfer processes.",
+				"Created the database using Firestore.",
+				"Worked on transferring data to and from the database.",
 			],
 		},
 
@@ -204,7 +209,7 @@ let radiantRealmsInfo = new ProjectInfo(
 				"Structured the project in React with React Router",
 				"implemented essential functionalities such as user system, services, cart, and checkout.",
 				"Displayed services from the database. ",
-				" Styled using SASS for a polished appearance.",
+				"Styled using SASS for a polished appearance.",
 			],
 		},
 
@@ -212,7 +217,7 @@ let radiantRealmsInfo = new ProjectInfo(
 			name: "Returning",
 			img: "./icons/code.svg",
 			steps: [
-				" Enhanced functionality with service filters and booking features.",
+				"Enhanced functionality with service filters and booking features.",
 				"Transitioned to Firebase Auth for the login system.",
 				"Reorganized the project structure.",
 				" Refreshed the site's design including a new logo created in Illustrator.",
@@ -272,7 +277,7 @@ let comfortCornerInfo = new ProjectInfo(
 				"Add more environments. ",
 				"Make the models myself. ",
 				"Add a share to social media feature. ",
-				"Add a gallary showcase. ",
+				"Add a gallery showcase. ",
 				"Add an undo function",
 			],
 		},
@@ -304,7 +309,7 @@ let buddyLinkInfo = new ProjectInfo(
 );
 
 let foundersDriveInfo = new ProjectInfo(
-	"Founder's Drive is a platform for entrepreneurs to find resources and connect with other entrepreneurs. The site is built using Wordpress",
+	"Founder's Drive is a platform for entrepreneurs to find resources and connect with other entrepreneurs. The site is built using Wordpress.",
 	[Tools.Wordpress, Tools.CSS, Tools.PHP],
 	"Create a Wordpress site for a start up entrepreneur podcast.",
 	[

@@ -60,7 +60,7 @@ export default function Home() {
 					<div className=''>
 						<h1 className='text-4xl font-display text-white '> Kennedy Adams</h1>
 						<h2 className='text-2xl font-display text-white '>
-							Full Stack Developer focusing on Wellness
+							Front End Developer focusing on Wellness
 						</h2>
 					</div>
 				</section>
@@ -158,7 +158,7 @@ export default function Home() {
 						onClick={() => {
 							window.location.href = "/more";
 						}}
-						className='bg-yellow-500 text-brown-dark py-2 px-4 text-lg rounded'
+						className='bg-yellow-500 text-brown-dark py-2 px-4 text-lg rounded  font-semibold'
 					>
 						View More
 					</motion.button>
