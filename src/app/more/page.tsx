@@ -6,44 +6,56 @@ import {
 } from "@/lib/classes/timelineEvents";
 import { Timeline } from "@/components/timeline/timeline";
 import { TimelineProjects } from "@/components/timeline/projectsTimeline";
-
+import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/tabs";
 
 export default function MorePage() {
-	//past projects and expierences
 	return (
-		<section className=' flex flex-wrap content-center sm:text-left text-center items-center justify-center gap-2  bg-brown h-full'>
-			<button className='rounded bg-yellow-500 text-brown-dark text-base flex justify-center items-center hover:underline px-4 py-2'>
+		<main className=' flex flex-col content-center sm:text-left text-center items-center justify-center gap-2  bg-brown h-full'>
+			<h1 className='text-3xl text-center text-white'>Experience</h1>
+
+			<motion.a
+				whileHover={{ scale: 1.1 }}
+				whileTap={{ scale: 0.9 }}
+				role='link'
+				href='/Kennedy_Adams_Resume.pdf'
+				target='_blank'
+				// onClick={() => {
+				// 	window.location.href = "/more";
+				// }}
+				arial-label='download resume'
+				className='bg-yellow-500 text-brown-dark py-2 px-4 text-base rounded'
+			>
 				Download Resume
-			</button>
-			<Tabs defaultValue='work' className=' w-full mt-4'>
+			</motion.a>
+			<Tabs defaultValue='all' className=' w-full mt-4'>
 				<TabsList>
-					{/* <TabsTrigger color='white' value='all'>
+					<TabsTrigger color='white' value='all'>
 						All
-					</TabsTrigger> */}
+					</TabsTrigger>
 					<TabsTrigger color='red' value='work'>
-						Work
+						<h2>Work</h2>
 					</TabsTrigger>
 					<TabsTrigger color='purple' value='education'>
-						Education
+						<h2>Education</h2>
 					</TabsTrigger>
 					{/* <TabsTrigger color='green' value='projects'>
 						Projects
 					</TabsTrigger> */}
 					<TabsTrigger color='blue' value='certification'>
-						Certifications
+						<h2>Certifications</h2>
 					</TabsTrigger>
 					<TabsTrigger color='yellow' value='personal'>
-						Personal
+						<h2>Personal</h2>
 					</TabsTrigger>
 					<TabsTrigger color='orange' value='volunteer'>
-						Volunteer
+						<h2>Volunteer</h2>
 					</TabsTrigger>
 				</TabsList>
 
-				{/* <TabsContent color='brown-light' value='all'>
+				<TabsContent color='brown' value='all'>
 					<Timeline events={timelineEvents} />
-				</TabsContent> */}
+				</TabsContent>
 				<TabsContent color='red' value='work'>
 					<Timeline
 						events={timelineEvents.filter((event) => event.type == TimelineType.Work)}
@@ -82,6 +94,6 @@ export default function MorePage() {
 					<TimelineProjects events={TimelineProjectEvents} />
 				</TabsContent> */}
 			</Tabs>
-		</section>
+		</main>
 	);
 }

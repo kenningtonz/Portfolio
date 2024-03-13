@@ -23,13 +23,11 @@ export const Content: React.FC<{ wellnessE: WellnessE; direction: number }> = ({
 	let projects = getProjectsByCategory(wellnessCategory!.enum);
 
 	return (
-		<section className='flex flex-wrap p-5 font-display my-2 w-full  h-[400px] items-stretch gap-2'>
-			<h2
-				className={`text-4xl font-bold text-center  basis-full ${textAlignment}`}
-			>
+		<section className='flex flex-col p-4  w-full   justify-stretch gap-2'>
+			<h2 className={`text-4xl font-semibold text-center  ${textAlignment}`}>
 				{wellnessCategory!.name}
 			</h2>
-			<p className={`text-lg text-center ${textAlignment}  basis-full`}>
+			<p className={`text-lg text-center ${textAlignment} `}>
 				{wellnessCategory!.description}
 			</p>
 			{projects.map((project) => {
@@ -40,9 +38,9 @@ export const Content: React.FC<{ wellnessE: WellnessE; direction: number }> = ({
 								key={project.slug}
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
-								className={`grow basis-1/4 hover:scale-110 flex  bg-white rounded p-2 flex-col items-center gap-2 	shadow-drop-${wellnessCategory?.color.name}`}
+								className={`grow basis-1/4 hover:scale-110 flex  bg-white rounded p-2 flex-col items-center gap-1 	shadow-drop-${wellnessCategory?.color.name}`}
 							>
-								<img src={project.logo} alt='Logo' width={100} height={100} />
+								<img src={project.logo} alt='Logo' width={80} height={80} />
 								<h3 className='text-xl font-medium '>{project.name}</h3>
 								<p className='text-center'>{project.oneLiner}</p>
 							</motion.div>

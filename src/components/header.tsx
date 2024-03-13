@@ -32,9 +32,10 @@ const Header: React.FC<{ isScrolled?: boolean; isAnimated: boolean }> = ({
 	return (
 		<motion.header
 			animate={animate()}
+			initial={"visible"}
 			variants={{
 				hidden: { backgroundColor: "#FFFFFF00" },
-				visible: { backgroundColor: theme === "dark" ? "#2B1C12" : "#FFFFFF" },
+				visible: { backgroundColor: "#2B1C12" },
 			}}
 			className={`z-30 flex items-center justify-between  ${
 				isAnimated && "fixed"
@@ -65,6 +66,7 @@ const Header: React.FC<{ isScrolled?: boolean; isAnimated: boolean }> = ({
 						window.location.href = "/#about";
 					}}
 					role='link'
+					aria-label='about'
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.9 }}
 				>
@@ -75,6 +77,7 @@ const Header: React.FC<{ isScrolled?: boolean; isAnimated: boolean }> = ({
 				</motion.button>
 				<motion.button
 					role='link'
+					aria-label='contact'
 					onClick={() => {
 						window.location.href = "/#contact";
 					}}

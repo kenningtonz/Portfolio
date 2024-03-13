@@ -78,7 +78,7 @@ let mindfulInkInfo = new ProjectInfo(
 	"Create a Wordpress eCommerce site with a custom theme.",
 	[
 		{
-			name: "design",
+			name: "Design",
 			img: "./icons/pen.svg",
 			steps: [
 				"Developed Logo and Brand using Adobe Illustrator.",
@@ -88,15 +88,20 @@ let mindfulInkInfo = new ProjectInfo(
 		{
 			name: " Back-end",
 			img: "./icons/database.svg",
-			steps: ["Created custom theme and plugin. "],
+			steps: ["Created custom theme and plugin."],
 		},
 		{
 			name: "Front-end",
 			img: "./icons/object-group.svg",
 			steps: [
 				"Developed the site using Wordpress and PHP.",
-				" Implemented WooCommerce for the store.",
+				"Implemented WooCommerce for the store.",
 			],
+		},
+		{
+			name: "Current",
+			img: "./icons/code.svg",
+			steps: ["Creating products.", "Styling the WooCommerce section."],
 		},
 	],
 	"January 2024 - April 2024",
@@ -117,7 +122,7 @@ let greenLifeInfo = new ProjectInfo(
 		Tools.NextJS,
 		Tools.Sketch,
 	],
-	"To design and develop an online grocery store using MySQL",
+	"To design and develop an online grocery store using MySQL.",
 	[
 		{
 			name: "Design",
@@ -132,16 +137,25 @@ let greenLifeInfo = new ProjectInfo(
 			img: "./icons/object-group.svg",
 			steps: [
 				"Structured the project in NextJS",
-				" Implemented essential functionalities such as user system, services, cart, and checkout",
-				" Displayed services from the database",
+				// "Implemented essential functionalities such as user system, services, cart, and checkout",
+				// "Displayed services from the database",
 				"Styled using CSS for a polished appearance.",
 			],
 		},
+		// {
+		// 	name: "Back-End",
+		// 	img: "./icons/database.svg",
+		// 	steps: [
+		// 		"Established and managed the database, handling data the transfer processes.",
+		// 	],
+		// },
 		{
-			name: "Back-End",
-			img: "./icons/database.svg",
+			name: "Current",
+			img: "./icons/code.svg",
 			steps: [
-				"Established and managed the database, handling data the transfer processes.",
+				"Displaying data from the database.",
+				"Styling the site using TailwindCSS.",
+				"Creating functionality for the cart and checkout.",
 			],
 		},
 	],
@@ -222,7 +236,6 @@ let comfortCornerInfo = new ProjectInfo(
 		Tools.Threejs,
 		Tools.FramerMotion,
 		Tools.ReactThreeFiber,
-		Tools.FramerMotion,
 		Tools.Zustand,
 		Tools.ReactThreeDrei,
 		Tools.Tailwind,
@@ -272,21 +285,21 @@ let comfortCornerInfo = new ProjectInfo(
 	"https://comfortcorner.kennedyadams.ca"
 );
 
-let hobbyBuddyInfo = new ProjectInfo(
-	"Hobby Buddy is a web application designed to connect individuals with shared interests and hobbies, facilitating meaningful social interactions and fostering new friendships. Users can create profiles, search for like-minded hobby buddies, and connect with others who share their passions.",
+let buddyLinkInfo = new ProjectInfo(
+	"BuddyLink is a web application designed to enhance and maintain friendships, allowing users to easily catalog their connections and receive timely reminders for staying in touch, fostering stronger and more meaningful relationships.",
 	[Tools.React, Tools.JavaScript],
-	"",
+	"Design and develop a personal project relating to Social Wellness.",
 	[
 		{
-			name: "Design",
-			img: "./icons/pen.svg",
-			steps: [""],
+			name: "Current",
+			img: "./icons/code.svg",
+			steps: ["Planning the project."],
 		},
 	],
 	"March 2024",
 	"",
-	"hobbybuddy",
-	ProjectE.HobbyBuddy,
+	"buddylink",
+	ProjectE.BuddyLink,
 	""
 );
 
@@ -364,14 +377,14 @@ let radiantRealms = new Project(
 	radiantRealmsInfo,
 	"A mental health services booking website."
 );
-let hobbyBuddy = new Project(
-	"Hobby Buddy",
+let buddyLink = new Project(
+	"Buddy Link",
 	"/logo.png",
-	"hobbybuddy",
+	"buddylink",
 	WellnessE.Social,
-	ProjectE.HobbyBuddy,
-	hobbyBuddyInfo,
-	"A web application designed to connect individuals with shared interests and hobbies."
+	ProjectE.BuddyLink,
+	buddyLinkInfo,
+	"A web application designed to friendships alive, by sending timely reminders for staying connected."
 );
 let comfortCorner = new Project(
 	"Comfort Corner",
@@ -388,7 +401,7 @@ let projects = [
 	greenLife,
 	mindfulInk,
 	radiantRealms,
-	hobbyBuddy,
+	buddyLink,
 	comfortCorner,
 ];
 

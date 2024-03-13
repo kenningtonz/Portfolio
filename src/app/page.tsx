@@ -173,6 +173,7 @@ export default function Home() {
 						<motion.button
 							className='rounded py-2 px-4 h-12  flex gap-1 bg-yellow-500'
 							role='link'
+							aria-label='email'
 							onClick={() => {
 								window.location.href = "mailto:kennedymmadams@gmail.com";
 							}}
@@ -188,6 +189,7 @@ export default function Home() {
 						<motion.button
 							className='rounded py-2 px-4 h-12  items-center flex gap-1 bg-yellow-500'
 							role='link'
+							aria-label='linkedin'
 							onClick={() => {
 								window.location.href = "https://www.linkedin.com/in/kennedy-mm-adams/";
 							}}

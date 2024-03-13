@@ -111,10 +111,10 @@ let yellow = new WellnessColor(
 let socialWellness = new WellnessCategory(
 	"Social Wellness",
 	faHeartPulse,
-	[ProjectE.HobbyBuddy],
+	[ProjectE.BuddyLink],
 	green,
 	WellnessE.Social,
-	"the quality of relationships and social interactions in one's life"
+	"the quality of relationships in one's life"
 );
 let environmentalWellness = new WellnessCategory(
 	"Environmental Wellness",
@@ -122,7 +122,7 @@ let environmentalWellness = new WellnessCategory(
 	[ProjectE.ComfortCorner],
 	purple,
 	WellnessE.Environmental,
-	"the well-being of their surroundings and the impact on personal health"
+	"the well-being of one's surroundings"
 );
 let physicalWellness = new WellnessCategory(
 	"Physical Wellness",
@@ -138,7 +138,7 @@ let spiritualWellness = new WellnessCategory(
 	[ProjectE.MindfulInk],
 	blue,
 	WellnessE.Spiritual,
-	"a sense of purpose, meaning, and connection with something beyond oneself "
+	"purpose, meaning, and connection with something beyond oneself "
 );
 let occupationalWellness = new WellnessCategory(
 	"Occupational Wellness",
@@ -146,7 +146,7 @@ let occupationalWellness = new WellnessCategory(
 	[ProjectE.FounderDrive],
 	red,
 	WellnessE.Occupational,
-	"finding satisfaction and fulfillment through one's work or chosen activities"
+	"satisfaction of one's work or activities"
 );
 let mentalWellness = new WellnessCategory(
 	"Mental Wellness",
@@ -154,7 +154,7 @@ let mentalWellness = new WellnessCategory(
 	[ProjectE.RadiantRealms],
 	yellow,
 	WellnessE.Mental,
-	" emotional and psychological well-being"
+	"emotional and psychological well-being"
 );
 
 const wellnessCategories = [

@@ -71,12 +71,12 @@ export const Projects: React.FC<{}> = ({}) => {
 	return (
 		<section
 			id='projects'
-			className={`flex sectionFlip items-center h-dvh relative	`}
+			className={`flex sectionFlip items-center h-[90dvh] relative	`}
 			data-position={active.position}
 		>
 			<motion.div
 				layout
-				className='z-20 items-center px-5'
+				className='z-20 '
 				initial={{ width: 50 }}
 				transition={{ ease: "linear", opacity: { duration: 0.3, delay: 0.5 } }}
 				variants={{
@@ -89,14 +89,14 @@ export const Projects: React.FC<{}> = ({}) => {
 						opacity: 1,
 						alignSelf: isMobile ? "end" : "center",
 						width: isMobile ? "100%" : "50%",
-						height: isMobile ? "65%" : "75%",
+						height: isMobile ? "60%" : 350,
 					},
 				}}
 				animate={active.position == 1 ? "hidden" : "visible"}
 			>
 				<Content wellnessE={active.section.enum} direction={active.position} />
 			</motion.div>
-			<motion.div className='z-10 w-full h-full absolute'>
+			<motion.div className='z-10 w-full h-full absolute '>
 				<motion.svg
 					xmlns='http://www.w3.org/2000/svg'
 					className='h-full w-full '
@@ -169,6 +169,7 @@ export const Projects: React.FC<{}> = ({}) => {
 							<motion.g
 								// style={{ originX: "-50", originY: "-50" }}
 								role='button'
+								aria-label='project-button'
 								id={cat.color.id.toString()}
 								whileHover={{ scale: 1.05, cursor: "pointer", zIndex: 200 }}
 								whileTap={{ scale: 0.9 }}
@@ -198,7 +199,7 @@ export const Projects: React.FC<{}> = ({}) => {
 									}
 								/>
 								<motion.path
-									id={cat.color.id.toString()}
+									id={`${cat.color.id.toString()}-icon`}
 									fill={`${colorsHex[cat.color.name][700]}`}
 									d={`${cat.color.iconPath}`}
 								/>

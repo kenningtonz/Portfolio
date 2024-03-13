@@ -34,24 +34,45 @@ export default function Page({ project }: { project: Project }) {
 					<FontAwesomeIcon className=' text-lg' icon={category && category.icon} />
 				</span>
 			</header>
-			<Chips chips={projectInfo.tools} className='col-span-1   ' />
 
 			{projectInfo.image != "" ? (
 				<img
-					className='rounded-inner object-cover col-span-1  max-h-[200px] w-full drop-shadow-lg object-top	'
+					className={`rounded object-cover col-span-1  max-h-[200px] w-full object-top shadow-drop-${
+						category!.color.name
+					} `}
 					src={projectInfo.image}
 					alt='Logo'
 				/>
 			) : null}
+			<section
+				className={`  col-span-1 bg-white text-brown h-full p-2 px-3 shadow-drop-${
+					category!.color.name
+				} ${
+					projectInfo.image != "" ? "sm:col-span-2" : "sm:col-span-3"
+				} rounded flex flex-col content-stretch `}
+			>
+				<p className='p-2'>{projectInfo.description}</p>
+			</section>
+			<section
+				className={`text-center  sm:col-span-3 col-span-1 bg-white text-brown h-full p-2 px-3 shadow-drop-${
+					category!.color.name
+				} rounded flex flex-col content-stretch `}
+			>
+				<h2 className='text-xl font-semibold'>Objective</h2>
+				<p className='p-2'>{projectInfo.challenge}</p>
+			</section>
 
-			<span className=' flex gap-2 justify-center p-1 col-span-1 '>
+			<span className=' flex gap-2 justify-center p-1 col-span-1 sm:col-span-3 '>
 				{projectInfo.link ? (
 					<motion.button
 						whileHover={{ scale: 1.1 }}
+						aria-label={`project link`}
 						whileTap={{ scale: 0.9 }}
 						role='link'
 						onClick={() => openInNewTab(projectInfo.link!)}
-						className={` rounded py-2 px-4 h-14 text-white text-3xl bg-brown`}
+						className={` rounded py-2 px-4 h-14 text-white text-3xl bg-${
+							category!.color.name
+						}-dark`}
 					>
 						<FontAwesomeIcon icon={faUpRightFromSquare} />
 					</motion.button>
@@ -59,26 +80,23 @@ export default function Page({ project }: { project: Project }) {
 				{projectInfo.githubLink ? (
 					<motion.button
 						role='link'
+						aria-label={`github link`}
 						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.9 }}
 						onClick={() => {
 							openInNewTab(projectInfo.githubLink!);
 						}}
-						className={` rounded py-2 px-4 h-14 text-white text-3xl bg-brown`}
+						className={` rounded py-2 px-4 h-14 text-white text-3xl bg-${
+							category!.color.name
+						}-dark`}
 					>
 						<FontAwesomeIcon icon={faGithub} />
 					</motion.button>
 				) : null}
 			</span>
-			<Card
-				className={`sm:col-span-3 col-span-1 bg-white text-brown `}
-				content={projectInfo.description}
-			/>
-			<Card
-				className={`sm:col-span-3 col-span-1 bg-white `}
-				title='Objective'
-				content={projectInfo.challenge}
-			/>
+
+			<Chips chips={projectInfo.tools} className='sm:col-span-3 col-span-1  ' />
+
 			<div className=' sm:col-span-3 col-span-1'>
 				<h2 className='text-center text-xl font-semibold'>Process</h2>
 				<ProcessTimeline

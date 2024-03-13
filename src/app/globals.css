@@ -151,3 +151,16 @@ html {
 *:focus:not(.focus-visible) {
 	outline: none;
 }
+
+.scrollbarRound::-webkit-scrollbar {
+	@apply rounded-r bg-brown-mid;
+}
+
+.scrollbar::-webkit-scrollbar {
+	@apply bg-brown-mid;
+}
+
+.scrollbar::-webkit-scrollbar-thumb,
+.scrollbarRound::-webkit-scrollbar-thumb {
+	@apply bg-brown-light rounded-inner;
+}

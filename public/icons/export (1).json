@@ -1,0 +1,3289 @@
+{
+  "filename": "Kennedy Adams - Resume (1).pdf",
+  "page_data": [
+    {
+      "page": 0,
+      "image_url": "https://nnts.imgix.net/uploadedfiles/rawocr/b197dadf-da06-455c-bf54-d9f47e4a42bf-1.jpeg?auto=compress&expires=1710292157&or=0&s=ddb031a123b7ebbcb26576f98fae512b",
+      "size": {
+        "width": 2550,
+        "height": 3300
+      },
+      "words": [
+        {
+          "text": "Kennedy",
+          "xmin": 256,
+          "ymin": 119,
+          "xmax": 612,
+          "ymax": 201
+        },
+        {
+          "text": "Adams",
+          "xmin": 635,
+          "ymin": 119,
+          "xmax": 915,
+          "ymax": 184
+        },
+        {
+          "text": "7",
+          "xmin": 250,
+          "ymin": 273,
+          "xmax": 294,
+          "ymax": 301
+        },
+        {
+          "text": "kennedymmadams@gmail.com",
+          "xmin": 320,
+          "ymin": 276,
+          "xmax": 983,
+          "ymax": 321
+        },
+        {
+          "text": "R",
+          "xmin": 1008,
+          "ymin": 266,
+          "xmax": 1048,
+          "ymax": 305
+        },
+        {
+          "text": "905-213-1523",
+          "xmin": 1074,
+          "ymin": 278,
+          "xmax": 1360,
+          "ymax": 310
+        },
+        {
+          "text": "9",
+          "xmin": 1379,
+          "ymin": 266,
+          "xmax": 1421,
+          "ymax": 320
+        },
+        {
+          "text": "Oshawa",
+          "xmin": 1449,
+          "ymin": 276,
+          "xmax": 1615,
+          "ymax": 312
+        },
+        {
+          "text": "|",
+          "xmin": 1622,
+          "ymin": 307,
+          "xmax": 1625,
+          "ymax": 308
+        },
+        {
+          "text": "ON",
+          "xmin": 1644,
+          "ymin": 278,
+          "xmax": 1708,
+          "ymax": 310
+        },
+        {
+          "text": "www.kennedyadams.ca",
+          "xmin": 1797,
+          "ymin": 276,
+          "xmax": 2296,
+          "ymax": 318
+        },
+        {
+          "text": "WORK",
+          "xmin": 419,
+          "ymin": 403,
+          "xmax": 563,
+          "ymax": 437
+        },
+        {
+          "text": "EXPERIENCE",
+          "xmin": 581,
+          "ymin": 403,
+          "xmax": 860,
+          "ymax": 437
+        },
+        {
+          "text": "Durham",
+          "xmin": 253,
+          "ymin": 489,
+          "xmax": 432,
+          "ymax": 524
+        },
+        {
+          "text": "College",
+          "xmin": 452,
+          "ymin": 489,
+          "xmax": 613,
+          "ymax": 536
+        },
+        {
+          "text": "Web",
+          "xmin": 251,
+          "ymin": 571,
+          "xmax": 341,
+          "ymax": 606
+        },
+        {
+          "text": "Developer",
+          "xmin": 361,
+          "ymin": 570,
+          "xmax": 577,
+          "ymax": 612
+        },
+        {
+          "text": "/",
+          "xmin": 591,
+          "ymin": 575,
+          "xmax": 600,
+          "ymax": 600
+        },
+        {
+          "text": "Media",
+          "xmin": 621,
+          "ymin": 571,
+          "xmax": 746,
+          "ymax": 606
+        },
+        {
+          "text": "Assistant",
+          "xmin": 762,
+          "ymin": 572,
+          "xmax": 953,
+          "ymax": 606
+        },
+        {
+          "text": "Sep",
+          "xmin": 1874,
+          "ymin": 572,
+          "xmax": 1950,
+          "ymax": 616
+        },
+        {
+          "text": "2023",
+          "xmin": 1966,
+          "ymin": 572,
+          "xmax": 2066,
+          "ymax": 604
+        },
+        {
+          "text": "|",
+          "xmin": 2083,
+          "ymin": 591,
+          "xmax": 2091,
+          "ymax": 595
+        },
+        {
+          "text": "Apr",
+          "xmin": 2107,
+          "ymin": 573,
+          "xmax": 2182,
+          "ymax": 614
+        },
+        {
+          "text": "2024",
+          "xmin": 2196,
+          "ymin": 572,
+          "xmax": 2298,
+          "ymax": 604
+        },
+        {
+          "text": "Transferring",
+          "xmin": 317,
+          "ymin": 651,
+          "xmax": 578,
+          "ymax": 697
+        },
+        {
+          "text": "course",
+          "xmin": 594,
+          "ymin": 661,
+          "xmax": 733,
+          "ymax": 687
+        },
+        {
+          "text": "content",
+          "xmin": 750,
+          "ymin": 656,
+          "xmax": 910,
+          "ymax": 687
+        },
+        {
+          "text": "into",
+          "xmin": 927,
+          "ymin": 653,
+          "xmax": 1004,
+          "ymax": 687
+        },
+        {
+          "text": "HTML",
+          "xmin": 1022,
+          "ymin": 653,
+          "xmax": 1141,
+          "ymax": 687
+        },
+        {
+          "text": "and",
+          "xmin": 1156,
+          "ymin": 651,
+          "xmax": 1233,
+          "ymax": 687
+        },
+        {
+          "text": "CSS",
+          "xmin": 1251,
+          "ymin": 653,
+          "xmax": 1325,
+          "ymax": 687
+        },
+        {
+          "text": "(",
+          "xmin": 1341,
+          "ymin": 653,
+          "xmax": 1351,
+          "ymax": 680
+        },
+        {
+          "text": "(Bootstrap",
+          "xmin": 1345,
+          "ymin": 653,
+          "xmax": 1569,
+          "ymax": 695
+        },
+        {
+          "text": ")",
+          "xmin": 1567,
+          "ymin": 656,
+          "xmax": 1575,
+          "ymax": 686
+        },
+        {
+          "text": "templates.",
+          "xmin": 1591,
+          "ymin": 651,
+          "xmax": 1812,
+          "ymax": 692
+        },
+        {
+          "text": "Formatting",
+          "xmin": 320,
+          "ymin": 713,
+          "xmax": 550,
+          "ymax": 756
+        },
+        {
+          "text": "templates",
+          "xmin": 565,
+          "ymin": 712,
+          "xmax": 775,
+          "ymax": 754
+        },
+        {
+          "text": "to",
+          "xmin": 791,
+          "ymin": 716,
+          "xmax": 831,
+          "ymax": 747
+        },
+        {
+          "text": "be",
+          "xmin": 848,
+          "ymin": 712,
+          "xmax": 896,
+          "ymax": 746
+        },
+        {
+          "text": "visually",
+          "xmin": 911,
+          "ymin": 711,
+          "xmax": 1066,
+          "ymax": 755
+        },
+        {
+          "text": "appealing",
+          "xmin": 1080,
+          "ymin": 712,
+          "xmax": 1285,
+          "ymax": 756
+        },
+        {
+          "text": "Using",
+          "xmin": 320,
+          "ymin": 772,
+          "xmax": 435,
+          "ymax": 816
+        },
+        {
+          "text": "D2L",
+          "xmin": 452,
+          "ymin": 772,
+          "xmax": 535,
+          "ymax": 805
+        },
+        {
+          "text": "the",
+          "xmin": 557,
+          "ymin": 770,
+          "xmax": 624,
+          "ymax": 805
+        },
+        {
+          "text": "Online",
+          "xmin": 640,
+          "ymin": 771,
+          "xmax": 776,
+          "ymax": 805
+        },
+        {
+          "text": "Learning",
+          "xmin": 794,
+          "ymin": 772,
+          "xmax": 976,
+          "ymax": 816
+        },
+        {
+          "text": "Platform",
+          "xmin": 992,
+          "ymin": 770,
+          "xmax": 1171,
+          "ymax": 805
+        },
+        {
+          "text": "to",
+          "xmin": 1199,
+          "ymin": 775,
+          "xmax": 1237,
+          "ymax": 804
+        },
+        {
+          "text": "implement",
+          "xmin": 1257,
+          "ymin": 770,
+          "xmax": 1484,
+          "ymax": 813
+        },
+        {
+          "text": "course",
+          "xmin": 1500,
+          "ymin": 780,
+          "xmax": 1638,
+          "ymax": 805
+        },
+        {
+          "text": "content",
+          "xmin": 1656,
+          "ymin": 775,
+          "xmax": 1816,
+          "ymax": 805
+        },
+        {
+          "text": "Assist",
+          "xmin": 317,
+          "ymin": 832,
+          "xmax": 438,
+          "ymax": 866
+        },
+        {
+          "text": "with",
+          "xmin": 453,
+          "ymin": 830,
+          "xmax": 537,
+          "ymax": 866
+        },
+        {
+          "text": "the",
+          "xmin": 556,
+          "ymin": 830,
+          "xmax": 622,
+          "ymax": 866
+        },
+        {
+          "text": "filming",
+          "xmin": 638,
+          "ymin": 830,
+          "xmax": 782,
+          "ymax": 875
+        },
+        {
+          "text": "of",
+          "xmin": 796,
+          "ymin": 830,
+          "xmax": 839,
+          "ymax": 866
+        },
+        {
+          "text": "student",
+          "xmin": 850,
+          "ymin": 830,
+          "xmax": 1013,
+          "ymax": 866
+        },
+        {
+          "text": "interviews",
+          "xmin": 1029,
+          "ymin": 832,
+          "xmax": 1241,
+          "ymax": 866
+        },
+        {
+          "text": "at",
+          "xmin": 1257,
+          "ymin": 835,
+          "xmax": 1295,
+          "ymax": 865
+        },
+        {
+          "text": "events",
+          "xmin": 1311,
+          "ymin": 835,
+          "xmax": 1447,
+          "ymax": 866
+        },
+        {
+          "text": "and",
+          "xmin": 1464,
+          "ymin": 830,
+          "xmax": 1540,
+          "ymax": 866
+        },
+        {
+          "text": "edit",
+          "xmin": 1557,
+          "ymin": 830,
+          "xmax": 1636,
+          "ymax": 866
+        },
+        {
+          "text": "videos",
+          "xmin": 1649,
+          "ymin": 830,
+          "xmax": 1784,
+          "ymax": 866
+        },
+        {
+          "text": "using",
+          "xmin": 1802,
+          "ymin": 832,
+          "xmax": 1912,
+          "ymax": 876
+        },
+        {
+          "text": "Premiere",
+          "xmin": 1928,
+          "ymin": 832,
+          "xmax": 2118,
+          "ymax": 866
+        },
+        {
+          "text": "Pro",
+          "xmin": 2136,
+          "ymin": 832,
+          "xmax": 2204,
+          "ymax": 866
+        },
+        {
+          "text": "|",
+          "xmin": 2204,
+          "ymin": 851,
+          "xmax": 2211,
+          "ymax": 862
+        },
+        {
+          "text": "for",
+          "xmin": 2232,
+          "ymin": 830,
+          "xmax": 2291,
+          "ymax": 866
+        },
+        {
+          "text": "the",
+          "xmin": 318,
+          "ymin": 889,
+          "xmax": 385,
+          "ymax": 924
+        },
+        {
+          "text": "PPL",
+          "xmin": 402,
+          "ymin": 891,
+          "xmax": 476,
+          "ymax": 924
+        },
+        {
+          "text": "YouTube",
+          "xmin": 490,
+          "ymin": 889,
+          "xmax": 676,
+          "ymax": 924
+        },
+        {
+          "text": "channel",
+          "xmin": 693,
+          "ymin": 889,
+          "xmax": 856,
+          "ymax": 924
+        },
+        {
+          "text": "|",
+          "xmin": 852,
+          "ymin": 893,
+          "xmax": 856,
+          "ymax": 915
+        },
+        {
+          "text": "AVID",
+          "xmin": 250,
+          "ymin": 1001,
+          "xmax": 357,
+          "ymax": 1035
+        },
+        {
+          "text": "Legal",
+          "xmin": 375,
+          "ymin": 1000,
+          "xmax": 489,
+          "ymax": 1044
+        },
+        {
+          "text": "Services",
+          "xmin": 507,
+          "ymin": 1000,
+          "xmax": 689,
+          "ymax": 1035
+        },
+        {
+          "text": "Freelance",
+          "xmin": 253,
+          "ymin": 1080,
+          "xmax": 454,
+          "ymax": 1116
+        },
+        {
+          "text": "Online",
+          "xmin": 471,
+          "ymin": 1080,
+          "xmax": 607,
+          "ymax": 1116
+        },
+        {
+          "text": "Presence",
+          "xmin": 624,
+          "ymin": 1082,
+          "xmax": 813,
+          "ymax": 1116
+        },
+        {
+          "text": "&",
+          "xmin": 831,
+          "ymin": 1082,
+          "xmax": 858,
+          "ymax": 1114
+        },
+        {
+          "text": "Web",
+          "xmin": 875,
+          "ymin": 1080,
+          "xmax": 965,
+          "ymax": 1116
+        },
+        {
+          "text": "Devel",
+          "xmin": 985,
+          "ymin": 1080,
+          "xmax": 1097,
+          "ymax": 1116
+        },
+        {
+          "text": "loper",
+          "xmin": 1087,
+          "ymin": 1080,
+          "xmax": 1200,
+          "ymax": 1123
+        },
+        {
+          "text": "Apr",
+          "xmin": 1900,
+          "ymin": 1083,
+          "xmax": 1975,
+          "ymax": 1124
+        },
+        {
+          "text": "2023",
+          "xmin": 1989,
+          "ymin": 1082,
+          "xmax": 2089,
+          "ymax": 1115
+        },
+        {
+          "text": "|",
+          "xmin": 2107,
+          "ymin": 1101,
+          "xmax": 2113,
+          "ymax": 1102
+        },
+        {
+          "text": "|ul",
+          "xmin": 2134,
+          "ymin": 1080,
+          "xmax": 2180,
+          "ymax": 1116
+        },
+        {
+          "text": "2023",
+          "xmin": 2196,
+          "ymin": 1082,
+          "xmax": 2296,
+          "ymax": 1115
+        },
+        {
+          "text": "|",
+          "xmin": 276,
+          "ymin": 1172,
+          "xmax": 286,
+          "ymax": 1181
+        },
+        {
+          "text": "Headed",
+          "xmin": 320,
+          "ymin": 1161,
+          "xmax": 480,
+          "ymax": 1197
+        },
+        {
+          "text": "development",
+          "xmin": 498,
+          "ymin": 1161,
+          "xmax": 777,
+          "ymax": 1204
+        },
+        {
+          "text": "of",
+          "xmin": 792,
+          "ymin": 1161,
+          "xmax": 835,
+          "ymax": 1197
+        },
+        {
+          "text": "an",
+          "xmin": 846,
+          "ymin": 1171,
+          "xmax": 893,
+          "ymax": 1197
+        },
+        {
+          "text": "informative",
+          "xmin": 913,
+          "ymin": 1161,
+          "xmax": 1153,
+          "ymax": 1197
+        },
+        {
+          "text": "WordPress",
+          "xmin": 1169,
+          "ymin": 1161,
+          "xmax": 1398,
+          "ymax": 1197
+        },
+        {
+          "text": "site",
+          "xmin": 1414,
+          "ymin": 1163,
+          "xmax": 1485,
+          "ymax": 1196
+        },
+        {
+          "text": "for",
+          "xmin": 1501,
+          "ymin": 1161,
+          "xmax": 1561,
+          "ymax": 1197
+        },
+        {
+          "text": "a",
+          "xmin": 1574,
+          "ymin": 1171,
+          "xmax": 1592,
+          "ymax": 1195
+        },
+        {
+          "text": "paralegal",
+          "xmin": 1614,
+          "ymin": 1161,
+          "xmax": 1804,
+          "ymax": 1205
+        },
+        {
+          "text": "start-up.",
+          "xmin": 1822,
+          "ymin": 1166,
+          "xmax": 1997,
+          "ymax": 1202
+        },
+        {
+          "text": "Formulated",
+          "xmin": 320,
+          "ymin": 1221,
+          "xmax": 561,
+          "ymax": 1257
+        },
+        {
+          "text": "legal",
+          "xmin": 580,
+          "ymin": 1221,
+          "xmax": 672,
+          "ymax": 1267
+        },
+        {
+          "text": "pages",
+          "xmin": 691,
+          "ymin": 1231,
+          "xmax": 812,
+          "ymax": 1268
+        },
+        {
+          "text": "|",
+          "xmin": 812,
+          "ymin": 1249,
+          "xmax": 818,
+          "ymax": 1254
+        },
+        {
+          "text": "adhering",
+          "xmin": 840,
+          "ymin": 1221,
+          "xmax": 1027,
+          "ymax": 1267
+        },
+        {
+          "text": "to",
+          "xmin": 1041,
+          "ymin": 1226,
+          "xmax": 1079,
+          "ymax": 1257
+        },
+        {
+          "text": "Canadian",
+          "xmin": 1098,
+          "ymin": 1221,
+          "xmax": 1293,
+          "ymax": 1257
+        },
+        {
+          "text": "web",
+          "xmin": 1309,
+          "ymin": 1222,
+          "xmax": 1395,
+          "ymax": 1257
+        },
+        {
+          "text": "regulations",
+          "xmin": 1413,
+          "ymin": 1221,
+          "xmax": 1646,
+          "ymax": 1267
+        },
+        {
+          "text": "-",
+          "xmin": 276,
+          "ymin": 1292,
+          "xmax": 286,
+          "ymax": 1302
+        },
+        {
+          "text": "Enhanced",
+          "xmin": 320,
+          "ymin": 1281,
+          "xmax": 524,
+          "ymax": 1317
+        },
+        {
+          "text": "website",
+          "xmin": 540,
+          "ymin": 1281,
+          "xmax": 702,
+          "ymax": 1316
+        },
+        {
+          "text": "usability",
+          "xmin": 720,
+          "ymin": 1281,
+          "xmax": 893,
+          "ymax": 1324
+        },
+        {
+          "text": "|",
+          "xmin": 892,
+          "ymin": 1294,
+          "xmax": 898,
+          "ymax": 1313
+        },
+        {
+          "text": "SEO",
+          "xmin": 919,
+          "ymin": 1283,
+          "xmax": 1001,
+          "ymax": 1316
+        },
+        {
+          "text": "performance",
+          "xmin": 1019,
+          "ymin": 1281,
+          "xmax": 1291,
+          "ymax": 1324
+        },
+        {
+          "text": "|",
+          "xmin": 1291,
+          "ymin": 1300,
+          "xmax": 1298,
+          "ymax": 1316
+        },
+        {
+          "text": "and",
+          "xmin": 1319,
+          "ymin": 1281,
+          "xmax": 1395,
+          "ymax": 1317
+        },
+        {
+          "text": "accessibility",
+          "xmin": 1412,
+          "ymin": 1281,
+          "xmax": 1663,
+          "ymax": 1324
+        },
+        {
+          "text": "to",
+          "xmin": 1677,
+          "ymin": 1286,
+          "xmax": 1717,
+          "ymax": 1317
+        },
+        {
+          "text": "meet",
+          "xmin": 1734,
+          "ymin": 1286,
+          "xmax": 1839,
+          "ymax": 1317
+        },
+        {
+          "text": "WCAG",
+          "xmin": 1854,
+          "ymin": 1283,
+          "xmax": 1981,
+          "ymax": 1316
+        },
+        {
+          "text": "2.1",
+          "xmin": 2000,
+          "ymin": 1283,
+          "xmax": 2052,
+          "ymax": 1315
+        },
+        {
+          "text": "AA",
+          "xmin": 2075,
+          "ymin": 1284,
+          "xmax": 2131,
+          "ymax": 1316
+        },
+        {
+          "text": "standards",
+          "xmin": 318,
+          "ymin": 1340,
+          "xmax": 527,
+          "ymax": 1375
+        },
+        {
+          "text": "Established",
+          "xmin": 320,
+          "ymin": 1400,
+          "xmax": 557,
+          "ymax": 1436
+        },
+        {
+          "text": "a",
+          "xmin": 574,
+          "ymin": 1410,
+          "xmax": 591,
+          "ymax": 1435
+        },
+        {
+          "text": "social",
+          "xmin": 611,
+          "ymin": 1400,
+          "xmax": 727,
+          "ymax": 1436
+        },
+        {
+          "text": "medi",
+          "xmin": 745,
+          "ymin": 1400,
+          "xmax": 844,
+          "ymax": 1436
+        },
+        {
+          "text": "ia",
+          "xmin": 842,
+          "ymin": 1402,
+          "xmax": 871,
+          "ymax": 1436
+        },
+        {
+          "text": "presence",
+          "xmin": 890,
+          "ymin": 1410,
+          "xmax": 1081,
+          "ymax": 1442
+        },
+        {
+          "text": "on",
+          "xmin": 1097,
+          "ymin": 1410,
+          "xmax": 1146,
+          "ymax": 1436
+        },
+        {
+          "text": "Instagram",
+          "xmin": 1166,
+          "ymin": 1403,
+          "xmax": 1373,
+          "ymax": 1445
+        },
+        {
+          "text": "and",
+          "xmin": 1392,
+          "ymin": 1400,
+          "xmax": 1468,
+          "ymax": 1436
+        },
+        {
+          "text": "Facebook.",
+          "xmin": 1487,
+          "ymin": 1400,
+          "xmax": 1696,
+          "ymax": 1436
+        },
+        {
+          "text": "Created",
+          "xmin": 319,
+          "ymin": 1460,
+          "xmax": 482,
+          "ymax": 1495
+        },
+        {
+          "text": "distinctive",
+          "xmin": 500,
+          "ymin": 1460,
+          "xmax": 710,
+          "ymax": 1495
+        },
+        {
+          "text": "brand",
+          "xmin": 729,
+          "ymin": 1459,
+          "xmax": 849,
+          "ymax": 1495
+        },
+        {
+          "text": "identity,",
+          "xmin": 869,
+          "ymin": 1459,
+          "xmax": 1035,
+          "ymax": 1503
+        },
+        {
+          "text": "including",
+          "xmin": 1054,
+          "ymin": 1459,
+          "xmax": 1244,
+          "ymax": 1505
+        },
+        {
+          "text": "logo",
+          "xmin": 1259,
+          "ymin": 1459,
+          "xmax": 1345,
+          "ymax": 1506
+        },
+        {
+          "text": "|",
+          "xmin": 1345,
+          "ymin": 1479,
+          "xmax": 1352,
+          "ymax": 1494
+        },
+        {
+          "text": "essential",
+          "xmin": 1374,
+          "ymin": 1459,
+          "xmax": 1556,
+          "ymax": 1495
+        },
+        {
+          "text": "assets",
+          "xmin": 1574,
+          "ymin": 1464,
+          "xmax": 1703,
+          "ymax": 1495
+        },
+        {
+          "text": "business",
+          "xmin": 1732,
+          "ymin": 1459,
+          "xmax": 1913,
+          "ymax": 1495
+        },
+        {
+          "text": "cards",
+          "xmin": 1930,
+          "ymin": 1460,
+          "xmax": 2041,
+          "ymax": 1495
+        },
+        {
+          "text": ",",
+          "xmin": 2041,
+          "ymin": 1485,
+          "xmax": 2048,
+          "ymax": 1494
+        },
+        {
+          "text": "flyers,",
+          "xmin": 2068,
+          "ymin": 1459,
+          "xmax": 2191,
+          "ymax": 1502
+        },
+        {
+          "text": "and",
+          "xmin": 2208,
+          "ymin": 1459,
+          "xmax": 2285,
+          "ymax": 1495
+        },
+        {
+          "text": "stickers",
+          "xmin": 318,
+          "ymin": 1520,
+          "xmax": 477,
+          "ymax": 1555
+        },
+        {
+          "text": "using",
+          "xmin": 494,
+          "ymin": 1521,
+          "xmax": 604,
+          "ymax": 1563
+        },
+        {
+          "text": "Adobe",
+          "xmin": 618,
+          "ymin": 1520,
+          "xmax": 753,
+          "ymax": 1555
+        },
+        {
+          "text": "Illustrator",
+          "xmin": 771,
+          "ymin": 1520,
+          "xmax": 974,
+          "ymax": 1554
+        },
+        {
+          "text": "Founder's",
+          "xmin": 253,
+          "ymin": 1628,
+          "xmax": 473,
+          "ymax": 1664
+        },
+        {
+          "text": "Drive",
+          "xmin": 491,
+          "ymin": 1628,
+          "xmax": 607,
+          "ymax": 1664
+        },
+        {
+          "text": "Web",
+          "xmin": 250,
+          "ymin": 1711,
+          "xmax": 341,
+          "ymax": 1746
+        },
+        {
+          "text": "Developer",
+          "xmin": 361,
+          "ymin": 1710,
+          "xmax": 577,
+          "ymax": 1755
+        },
+        {
+          "text": "lan",
+          "xmin": 1889,
+          "ymin": 1712,
+          "xmax": 1946,
+          "ymax": 1745
+        },
+        {
+          "text": "2023",
+          "xmin": 1965,
+          "ymin": 1712,
+          "xmax": 2066,
+          "ymax": 1746
+        },
+        {
+          "text": "|",
+          "xmin": 2082,
+          "ymin": 1731,
+          "xmax": 2091,
+          "ymax": 1735
+        },
+        {
+          "text": "Apr",
+          "xmin": 2107,
+          "ymin": 1713,
+          "xmax": 2182,
+          "ymax": 1752
+        },
+        {
+          "text": "2024",
+          "xmin": 2197,
+          "ymin": 1712,
+          "xmax": 2298,
+          "ymax": 1746
+        },
+        {
+          "text": "Created",
+          "xmin": 319,
+          "ymin": 1792,
+          "xmax": 481,
+          "ymax": 1826
+        },
+        {
+          "text": "and",
+          "xmin": 496,
+          "ymin": 1792,
+          "xmax": 573,
+          "ymax": 1826
+        },
+        {
+          "text": "currently",
+          "xmin": 588,
+          "ymin": 1792,
+          "xmax": 777,
+          "ymax": 1835
+        },
+        {
+          "text": "managing",
+          "xmin": 790,
+          "ymin": 1793,
+          "xmax": 996,
+          "ymax": 1837
+        },
+        {
+          "text": "foundersdrive.com",
+          "xmin": 1008,
+          "ymin": 1791,
+          "xmax": 1408,
+          "ymax": 1827
+        },
+        {
+          "text": "a",
+          "xmin": 1434,
+          "ymin": 1801,
+          "xmax": 1453,
+          "ymax": 1824
+        },
+        {
+          "text": "WordPress-based",
+          "xmin": 1467,
+          "ymin": 1791,
+          "xmax": 1838,
+          "ymax": 1826
+        },
+        {
+          "text": "website",
+          "xmin": 1851,
+          "ymin": 1791,
+          "xmax": 2012,
+          "ymax": 1826
+        },
+        {
+          "text": "for",
+          "xmin": 2026,
+          "ymin": 1791,
+          "xmax": 2086,
+          "ymax": 1826
+        },
+        {
+          "text": "ra",
+          "xmin": 2081,
+          "ymin": 1801,
+          "xmax": 2118,
+          "ymax": 1827
+        },
+        {
+          "text": "start-up",
+          "xmin": 2131,
+          "ymin": 1796,
+          "xmax": 2296,
+          "ymax": 1834
+        },
+        {
+          "text": "entrepreneurship",
+          "xmin": 319,
+          "ymin": 1851,
+          "xmax": 692,
+          "ymax": 1893
+        },
+        {
+          "text": "podcast",
+          "xmin": 710,
+          "ymin": 1837,
+          "xmax": 879,
+          "ymax": 1894
+        },
+        {
+          "text": "incorporating",
+          "xmin": 903,
+          "ymin": 1852,
+          "xmax": 1187,
+          "ymax": 1896
+        },
+        {
+          "text": "external",
+          "xmin": 1202,
+          "ymin": 1850,
+          "xmax": 1372,
+          "ymax": 1884
+        },
+        {
+          "text": "HTML",
+          "xmin": 1391,
+          "ymin": 1852,
+          "xmax": 1510,
+          "ymax": 1886
+        },
+        {
+          "text": "CSS",
+          "xmin": 1538,
+          "ymin": 1852,
+          "xmax": 1612,
+          "ymax": 1886
+        },
+        {
+          "text": "D",
+          "xmin": 1610,
+          "ymin": 1870,
+          "xmax": 1621,
+          "ymax": 1887
+        },
+        {
+          "text": "and",
+          "xmin": 1639,
+          "ymin": 1850,
+          "xmax": 1716,
+          "ymax": 1886
+        },
+        {
+          "text": "PHP",
+          "xmin": 1735,
+          "ymin": 1852,
+          "xmax": 1816,
+          "ymax": 1886
+        },
+        {
+          "text": "expertise",
+          "xmin": 1835,
+          "ymin": 1852,
+          "xmax": 2033,
+          "ymax": 1893
+        },
+        {
+          "text": "|",
+          "xmin": 2028,
+          "ymin": 1868,
+          "xmax": 2035,
+          "ymax": 1881
+        },
+        {
+          "text": "Implemented",
+          "xmin": 320,
+          "ymin": 1910,
+          "xmax": 600,
+          "ymax": 1954
+        },
+        {
+          "text": "an",
+          "xmin": 617,
+          "ymin": 1920,
+          "xmax": 666,
+          "ymax": 1946
+        },
+        {
+          "text": "optimization",
+          "xmin": 684,
+          "ymin": 1912,
+          "xmax": 945,
+          "ymax": 1954
+        },
+        {
+          "text": "strategy",
+          "xmin": 962,
+          "ymin": 1915,
+          "xmax": 1133,
+          "ymax": 1955
+        },
+        {
+          "text": "|",
+          "xmin": 1131,
+          "ymin": 1923,
+          "xmax": 1141,
+          "ymax": 1945
+        },
+        {
+          "text": "elevating",
+          "xmin": 1160,
+          "ymin": 1910,
+          "xmax": 1349,
+          "ymax": 1955
+        },
+        {
+          "text": "website",
+          "xmin": 1363,
+          "ymin": 1910,
+          "xmax": 1524,
+          "ymax": 1945
+        },
+        {
+          "text": "usability",
+          "xmin": 1541,
+          "ymin": 1910,
+          "xmax": 1717,
+          "ymax": 1953
+        },
+        {
+          "text": "|",
+          "xmin": 1710,
+          "ymin": 1921,
+          "xmax": 1722,
+          "ymax": 1944
+        },
+        {
+          "text": "SEO",
+          "xmin": 1741,
+          "ymin": 1912,
+          "xmax": 1821,
+          "ymax": 1945
+        },
+        {
+          "text": "performance",
+          "xmin": 1841,
+          "ymin": 1910,
+          "xmax": 2113,
+          "ymax": 1953
+        },
+        {
+          "text": "|",
+          "xmin": 2120,
+          "ymin": 1941,
+          "xmax": 2120,
+          "ymax": 1942
+        },
+        {
+          "text": "loading",
+          "xmin": 2142,
+          "ymin": 1910,
+          "xmax": 2296,
+          "ymax": 1956
+        },
+        {
+          "text": "speed",
+          "xmin": 318,
+          "ymin": 1971,
+          "xmax": 448,
+          "ymax": 2016
+        },
+        {
+          "text": "and",
+          "xmin": 471,
+          "ymin": 1970,
+          "xmax": 548,
+          "ymax": 2006
+        },
+        {
+          "text": "accessibility",
+          "xmin": 565,
+          "ymin": 1970,
+          "xmax": 815,
+          "ymax": 2015
+        },
+        {
+          "text": "to",
+          "xmin": 829,
+          "ymin": 1975,
+          "xmax": 870,
+          "ymax": 2006
+        },
+        {
+          "text": "align",
+          "xmin": 885,
+          "ymin": 1971,
+          "xmax": 981,
+          "ymax": 2016
+        },
+        {
+          "text": "with",
+          "xmin": 997,
+          "ymin": 1971,
+          "xmax": 1084,
+          "ymax": 2006
+        },
+        {
+          "text": "WCAG",
+          "xmin": 1101,
+          "ymin": 1972,
+          "xmax": 1231,
+          "ymax": 2006
+        },
+        {
+          "text": "2.1",
+          "xmin": 1248,
+          "ymin": 1972,
+          "xmax": 1301,
+          "ymax": 2003
+        },
+        {
+          "text": "AA",
+          "xmin": 1323,
+          "ymin": 1973,
+          "xmax": 1378,
+          "ymax": 2006
+        },
+        {
+          "text": "standards.",
+          "xmin": 1394,
+          "ymin": 1970,
+          "xmax": 1610,
+          "ymax": 2006
+        },
+        {
+          "text": "Utilizing",
+          "xmin": 320,
+          "ymin": 2029,
+          "xmax": 487,
+          "ymax": 2074
+        },
+        {
+          "text": "Google",
+          "xmin": 502,
+          "ymin": 2029,
+          "xmax": 648,
+          "ymax": 2074
+        },
+        {
+          "text": "Analytics",
+          "xmin": 662,
+          "ymin": 2029,
+          "xmax": 849,
+          "ymax": 2073
+        },
+        {
+          "text": "to",
+          "xmin": 864,
+          "ymin": 2034,
+          "xmax": 904,
+          "ymax": 2065
+        },
+        {
+          "text": "track",
+          "xmin": 920,
+          "ymin": 2029,
+          "xmax": 1023,
+          "ymax": 2065
+        },
+        {
+          "text": "website",
+          "xmin": 1037,
+          "ymin": 2030,
+          "xmax": 1199,
+          "ymax": 2065
+        },
+        {
+          "text": "views",
+          "xmin": 1214,
+          "ymin": 2031,
+          "xmax": 1329,
+          "ymax": 2065
+        },
+        {
+          "text": "and",
+          "xmin": 1344,
+          "ymin": 2029,
+          "xmax": 1419,
+          "ymax": 2065
+        },
+        {
+          "text": "trends",
+          "xmin": 1438,
+          "ymin": 2030,
+          "xmax": 1579,
+          "ymax": 2065
+        },
+        {
+          "text": "|",
+          "xmin": 1579,
+          "ymin": 2059,
+          "xmax": 1581,
+          "ymax": 2061
+        },
+        {
+          "text": "Department",
+          "xmin": 253,
+          "ymin": 2141,
+          "xmax": 529,
+          "ymax": 2182
+        },
+        {
+          "text": "of",
+          "xmin": 543,
+          "ymin": 2139,
+          "xmax": 589,
+          "ymax": 2174
+        },
+        {
+          "text": "National",
+          "xmin": 603,
+          "ymin": 2139,
+          "xmax": 795,
+          "ymax": 2174
+        },
+        {
+          "text": "Defense",
+          "xmin": 814,
+          "ymin": 2139,
+          "xmax": 995,
+          "ymax": 2174
+        },
+        {
+          "text": ".",
+          "xmin": 992,
+          "ymin": 2154,
+          "xmax": 1005,
+          "ymax": 2175
+        },
+        {
+          "text": "Government",
+          "xmin": 1024,
+          "ymin": 2141,
+          "xmax": 1308,
+          "ymax": 2174
+        },
+        {
+          "text": "of",
+          "xmin": 1323,
+          "ymin": 2139,
+          "xmax": 1367,
+          "ymax": 2174
+        },
+        {
+          "text": "Canada",
+          "xmin": 1382,
+          "ymin": 2139,
+          "xmax": 1545,
+          "ymax": 2174
+        },
+        {
+          "text": "Game",
+          "xmin": 252,
+          "ymin": 2222,
+          "xmax": 374,
+          "ymax": 2256
+        },
+        {
+          "text": "Developer",
+          "xmin": 392,
+          "ymin": 2220,
+          "xmax": 607,
+          "ymax": 2263
+        },
+        {
+          "text": "May",
+          "xmin": 1862,
+          "ymin": 2222,
+          "xmax": 1948,
+          "ymax": 2265
+        },
+        {
+          "text": "2022",
+          "xmin": 1963,
+          "ymin": 2222,
+          "xmax": 2063,
+          "ymax": 2254
+        },
+        {
+          "text": "|",
+          "xmin": 2080,
+          "ymin": 2241,
+          "xmax": 2088,
+          "ymax": 2245
+        },
+        {
+          "text": "Sep",
+          "xmin": 2105,
+          "ymin": 2222,
+          "xmax": 2181,
+          "ymax": 2263
+        },
+        {
+          "text": "2022",
+          "xmin": 2196,
+          "ymin": 2222,
+          "xmax": 2296,
+          "ymax": 2254
+        },
+        {
+          "text": "Programed",
+          "xmin": 320,
+          "ymin": 2301,
+          "xmax": 552,
+          "ymax": 2348
+        },
+        {
+          "text": "in",
+          "xmin": 571,
+          "ymin": 2303,
+          "xmax": 603,
+          "ymax": 2336
+        },
+        {
+          "text": "the",
+          "xmin": 621,
+          "ymin": 2301,
+          "xmax": 687,
+          "ymax": 2337
+        },
+        {
+          "text": "language",
+          "xmin": 705,
+          "ymin": 2302,
+          "xmax": 893,
+          "ymax": 2347
+        },
+        {
+          "text": "(",
+          "xmin": 911,
+          "ymin": 2303,
+          "xmax": 925,
+          "ymax": 2330
+        },
+        {
+          "text": "C#",
+          "xmin": 920,
+          "ymin": 2303,
+          "xmax": 963,
+          "ymax": 2337
+        },
+        {
+          "text": "using",
+          "xmin": 993,
+          "ymin": 2303,
+          "xmax": 1104,
+          "ymax": 2347
+        },
+        {
+          "text": "the",
+          "xmin": 1118,
+          "ymin": 2301,
+          "xmax": 1184,
+          "ymax": 2337
+        },
+        {
+          "text": "engine",
+          "xmin": 1201,
+          "ymin": 2303,
+          "xmax": 1340,
+          "ymax": 2347
+        },
+        {
+          "text": "|",
+          "xmin": 1340,
+          "ymin": 2319,
+          "xmax": 1347,
+          "ymax": 2337
+        },
+        {
+          "text": "Unity",
+          "xmin": 1370,
+          "ymin": 2303,
+          "xmax": 1478,
+          "ymax": 2345
+        },
+        {
+          "text": "Traversed",
+          "xmin": 317,
+          "ymin": 2361,
+          "xmax": 526,
+          "ymax": 2396
+        },
+        {
+          "text": "and",
+          "xmin": 543,
+          "ymin": 2361,
+          "xmax": 619,
+          "ymax": 2397
+        },
+        {
+          "text": "developed",
+          "xmin": 637,
+          "ymin": 2361,
+          "xmax": 854,
+          "ymax": 2404
+        },
+        {
+          "text": "on",
+          "xmin": 872,
+          "ymin": 2371,
+          "xmax": 921,
+          "ymax": 2397
+        },
+        {
+          "text": "an",
+          "xmin": 939,
+          "ymin": 2371,
+          "xmax": 986,
+          "ymax": 2396
+        },
+        {
+          "text": "existing",
+          "xmin": 1005,
+          "ymin": 2363,
+          "xmax": 1165,
+          "ymax": 2407
+        },
+        {
+          "text": "project,",
+          "xmin": 1182,
+          "ymin": 2363,
+          "xmax": 1337,
+          "ymax": 2405
+        },
+        {
+          "text": "with",
+          "xmin": 1353,
+          "ymin": 2361,
+          "xmax": 1440,
+          "ymax": 2396
+        },
+        {
+          "text": "little",
+          "xmin": 1459,
+          "ymin": 2361,
+          "xmax": 1547,
+          "ymax": 2395
+        },
+        {
+          "text": "documentation",
+          "xmin": 1563,
+          "ymin": 2361,
+          "xmax": 1885,
+          "ymax": 2397
+        },
+        {
+          "text": "Developed",
+          "xmin": 320,
+          "ymin": 2420,
+          "xmax": 542,
+          "ymax": 2463
+        },
+        {
+          "text": "training",
+          "xmin": 559,
+          "ymin": 2422,
+          "xmax": 722,
+          "ymax": 2466
+        },
+        {
+          "text": "scenarios",
+          "xmin": 735,
+          "ymin": 2422,
+          "xmax": 934,
+          "ymax": 2456
+        },
+        {
+          "text": "in",
+          "xmin": 952,
+          "ymin": 2422,
+          "xmax": 982,
+          "ymax": 2454
+        },
+        {
+          "text": "the",
+          "xmin": 1002,
+          "ymin": 2420,
+          "xmax": 1068,
+          "ymax": 2455
+        },
+        {
+          "text": "Navy's",
+          "xmin": 1086,
+          "ymin": 2422,
+          "xmax": 1215,
+          "ymax": 2463
+        },
+        {
+          "text": "Virtual",
+          "xmin": 1230,
+          "ymin": 2421,
+          "xmax": 1366,
+          "ymax": 2454
+        },
+        {
+          "text": "fleet",
+          "xmin": 1382,
+          "ymin": 2420,
+          "xmax": 1478,
+          "ymax": 2456
+        },
+        {
+          "text": "specializing",
+          "xmin": 1501,
+          "ymin": 2421,
+          "xmax": 1741,
+          "ymax": 2466
+        },
+        {
+          "text": "in",
+          "xmin": 1758,
+          "ymin": 2422,
+          "xmax": 1789,
+          "ymax": 2454
+        },
+        {
+          "text": "auditory",
+          "xmin": 1808,
+          "ymin": 2420,
+          "xmax": 1985,
+          "ymax": 2466
+        },
+        {
+          "text": "scenarios",
+          "xmin": 1999,
+          "ymin": 2422,
+          "xmax": 2198,
+          "ymax": 2454
+        },
+        {
+          "text": "Assisted",
+          "xmin": 317,
+          "ymin": 2480,
+          "xmax": 488,
+          "ymax": 2516
+        },
+        {
+          "text": "in",
+          "xmin": 508,
+          "ymin": 2482,
+          "xmax": 539,
+          "ymax": 2516
+        },
+        {
+          "text": "the",
+          "xmin": 558,
+          "ymin": 2480,
+          "xmax": 624,
+          "ymax": 2516
+        },
+        {
+          "text": "design",
+          "xmin": 641,
+          "ymin": 2480,
+          "xmax": 775,
+          "ymax": 2527
+        },
+        {
+          "text": "of",
+          "xmin": 793,
+          "ymin": 2480,
+          "xmax": 836,
+          "ymax": 2516
+        },
+        {
+          "text": "training",
+          "xmin": 847,
+          "ymin": 2482,
+          "xmax": 1010,
+          "ymax": 2525
+        },
+        {
+          "text": "scenarios",
+          "xmin": 1024,
+          "ymin": 2482,
+          "xmax": 1228,
+          "ymax": 2516
+        },
+        {
+          "text": "Collaborated",
+          "xmin": 319,
+          "ymin": 2539,
+          "xmax": 588,
+          "ymax": 2574
+        },
+        {
+          "text": "with",
+          "xmin": 605,
+          "ymin": 2539,
+          "xmax": 692,
+          "ymax": 2574
+        },
+        {
+          "text": "other",
+          "xmin": 710,
+          "ymin": 2539,
+          "xmax": 822,
+          "ymax": 2574
+        },
+        {
+          "text": "developers",
+          "xmin": 838,
+          "ymin": 2539,
+          "xmax": 1069,
+          "ymax": 2583
+        },
+        {
+          "text": "in",
+          "xmin": 1087,
+          "ymin": 2541,
+          "xmax": 1116,
+          "ymax": 2575
+        },
+        {
+          "text": "the",
+          "xmin": 1136,
+          "ymin": 2539,
+          "xmax": 1202,
+          "ymax": 2574
+        },
+        {
+          "text": "creation",
+          "xmin": 1219,
+          "ymin": 2541,
+          "xmax": 1388,
+          "ymax": 2575
+        },
+        {
+          "text": "of",
+          "xmin": 1407,
+          "ymin": 2539,
+          "xmax": 1447,
+          "ymax": 2574
+        },
+        {
+          "text": "training",
+          "xmin": 1461,
+          "ymin": 2541,
+          "xmax": 1623,
+          "ymax": 2585
+        },
+        {
+          "text": "scenarios.",
+          "xmin": 1637,
+          "ymin": 2541,
+          "xmax": 1846,
+          "ymax": 2575
+        },
+        {
+          "text": "O'",
+          "xmin": 252,
+          "ymin": 2651,
+          "xmax": 295,
+          "ymax": 2681
+        },
+        {
+          "text": "Neill",
+          "xmin": 290,
+          "ymin": 2649,
+          "xmax": 401,
+          "ymax": 2684
+        },
+        {
+          "text": "C.V.I",
+          "xmin": 419,
+          "ymin": 2651,
+          "xmax": 513,
+          "ymax": 2684
+        },
+        {
+          "text": "Peer",
+          "xmin": 253,
+          "ymin": 2732,
+          "xmax": 347,
+          "ymax": 2766
+        },
+        {
+          "text": "Tutor",
+          "xmin": 360,
+          "ymin": 2732,
+          "xmax": 474,
+          "ymax": 2764
+        },
+        {
+          "text": "2017",
+          "xmin": 2054,
+          "ymin": 2732,
+          "xmax": 2153,
+          "ymax": 2764
+        },
+        {
+          "text": "7",
+          "xmin": 2147,
+          "ymin": 2732,
+          "xmax": 2180,
+          "ymax": 2755
+        },
+        {
+          "text": "2018",
+          "xmin": 2196,
+          "ymin": 2732,
+          "xmax": 2294,
+          "ymax": 2764
+        },
+        {
+          "text": "Created",
+          "xmin": 319,
+          "ymin": 2812,
+          "xmax": 482,
+          "ymax": 2847
+        },
+        {
+          "text": "personalized",
+          "xmin": 501,
+          "ymin": 2811,
+          "xmax": 767,
+          "ymax": 2853
+        },
+        {
+          "text": "education",
+          "xmin": 786,
+          "ymin": 2812,
+          "xmax": 993,
+          "ymax": 2847
+        },
+        {
+          "text": "plans",
+          "xmin": 1012,
+          "ymin": 2811,
+          "xmax": 1121,
+          "ymax": 2855
+        },
+        {
+          "text": "to",
+          "xmin": 1137,
+          "ymin": 2816,
+          "xmax": 1177,
+          "ymax": 2847
+        },
+        {
+          "text": "assist",
+          "xmin": 1192,
+          "ymin": 2813,
+          "xmax": 1309,
+          "ymax": 2847
+        },
+        {
+          "text": "students",
+          "xmin": 1323,
+          "ymin": 2811,
+          "xmax": 1506,
+          "ymax": 2847
+        },
+        {
+          "text": "who",
+          "xmin": 1520,
+          "ymin": 2811,
+          "xmax": 1607,
+          "ymax": 2847
+        },
+        {
+          "text": "required",
+          "xmin": 1626,
+          "ymin": 2811,
+          "xmax": 1804,
+          "ymax": 2851
+        },
+        {
+          "text": "a",
+          "xmin": 1822,
+          "ymin": 2821,
+          "xmax": 1839,
+          "ymax": 2845
+        },
+        {
+          "text": "peer",
+          "xmin": 1860,
+          "ymin": 2821,
+          "xmax": 1954,
+          "ymax": 2856
+        },
+        {
+          "text": "tutor",
+          "xmin": 1969,
+          "ymin": 2816,
+          "xmax": 2073,
+          "ymax": 2846
+        },
+        {
+          "text": "Ran",
+          "xmin": 320,
+          "ymin": 2873,
+          "xmax": 395,
+          "ymax": 2907
+        },
+        {
+          "text": "math",
+          "xmin": 414,
+          "ymin": 2872,
+          "xmax": 519,
+          "ymax": 2907
+        },
+        {
+          "text": "support",
+          "xmin": 536,
+          "ymin": 2876,
+          "xmax": 702,
+          "ymax": 2914
+        },
+        {
+          "text": "discussions",
+          "xmin": 718,
+          "ymin": 2872,
+          "xmax": 958,
+          "ymax": 2907
+        },
+        {
+          "text": "for",
+          "xmin": 973,
+          "ymin": 2871,
+          "xmax": 1033,
+          "ymax": 2907
+        },
+        {
+          "text": "groups",
+          "xmin": 1046,
+          "ymin": 2881,
+          "xmax": 1192,
+          "ymax": 2914
+        },
+        {
+          "text": "of",
+          "xmin": 1209,
+          "ymin": 2871,
+          "xmax": 1251,
+          "ymax": 2907
+        },
+        {
+          "text": "20",
+          "xmin": 1264,
+          "ymin": 2873,
+          "xmax": 1311,
+          "ymax": 2907
+        },
+        {
+          "text": "to",
+          "xmin": 1327,
+          "ymin": 2876,
+          "xmax": 1365,
+          "ymax": 2907
+        },
+        {
+          "text": "25",
+          "xmin": 1384,
+          "ymin": 2873,
+          "xmax": 1429,
+          "ymax": 2907
+        },
+        {
+          "text": "students.",
+          "xmin": 1447,
+          "ymin": 2872,
+          "xmax": 1636,
+          "ymax": 2907
+        },
+        {
+          "text": "Marked",
+          "xmin": 320,
+          "ymin": 2930,
+          "xmax": 475,
+          "ymax": 2966
+        },
+        {
+          "text": "assignments",
+          "xmin": 493,
+          "ymin": 2932,
+          "xmax": 759,
+          "ymax": 2976
+        },
+        {
+          "text": "and",
+          "xmin": 773,
+          "ymin": 2930,
+          "xmax": 849,
+          "ymax": 2966
+        },
+        {
+          "text": "kept",
+          "xmin": 869,
+          "ymin": 2930,
+          "xmax": 959,
+          "ymax": 2975
+        },
+        {
+          "text": "detailed",
+          "xmin": 974,
+          "ymin": 2930,
+          "xmax": 1140,
+          "ymax": 2966
+        },
+        {
+          "text": "records",
+          "xmin": 1159,
+          "ymin": 2931,
+          "xmax": 1316,
+          "ymax": 2966
+        },
+        {
+          "text": "of",
+          "xmin": 1333,
+          "ymin": 2930,
+          "xmax": 1376,
+          "ymax": 2966
+        },
+        {
+          "text": "course",
+          "xmin": 1388,
+          "ymin": 2940,
+          "xmax": 1527,
+          "ymax": 2966
+        },
+        {
+          "text": "work",
+          "xmin": 1542,
+          "ymin": 2931,
+          "xmax": 1645,
+          "ymax": 2966
+        },
+        {
+          "text": "Helped",
+          "xmin": 320,
+          "ymin": 2990,
+          "xmax": 466,
+          "ymax": 3034
+        },
+        {
+          "text": "foster",
+          "xmin": 483,
+          "ymin": 2990,
+          "xmax": 607,
+          "ymax": 3026
+        },
+        {
+          "text": "and",
+          "xmin": 621,
+          "ymin": 2990,
+          "xmax": 697,
+          "ymax": 3025
+        },
+        {
+          "text": "maintain",
+          "xmin": 716,
+          "ymin": 2992,
+          "xmax": 898,
+          "ymax": 3025
+        },
+        {
+          "text": "an",
+          "xmin": 915,
+          "ymin": 3000,
+          "xmax": 963,
+          "ymax": 3025
+        },
+        {
+          "text": "inclusive",
+          "xmin": 982,
+          "ymin": 2990,
+          "xmax": 1160,
+          "ymax": 3024
+        },
+        {
+          "text": "and",
+          "xmin": 1176,
+          "ymin": 2990,
+          "xmax": 1251,
+          "ymax": 3026
+        },
+        {
+          "text": "positive",
+          "xmin": 1271,
+          "ymin": 2992,
+          "xmax": 1431,
+          "ymax": 3033
+        },
+        {
+          "text": "learning",
+          "xmin": 1449,
+          "ymin": 2991,
+          "xmax": 1618,
+          "ymax": 3036
+        },
+        {
+          "text": "atmosphere.",
+          "xmin": 1633,
+          "ymin": 2990,
+          "xmax": 1900,
+          "ymax": 3036
+        },
+        {
+          "text": "Game",
+          "xmin": 252,
+          "ymin": 3102,
+          "xmax": 380,
+          "ymax": 3136
+        },
+        {
+          "text": "Development",
+          "xmin": 398,
+          "ymin": 3100,
+          "xmax": 701,
+          "ymax": 3145
+        },
+        {
+          "text": "Society,",
+          "xmin": 715,
+          "ymin": 3100,
+          "xmax": 889,
+          "ymax": 3144
+        },
+        {
+          "text": "Ontario",
+          "xmin": 906,
+          "ymin": 3100,
+          "xmax": 1079,
+          "ymax": 3136
+        },
+        {
+          "text": "Tech",
+          "xmin": 1093,
+          "ymin": 3100,
+          "xmax": 1197,
+          "ymax": 3136
+        },
+        {
+          "text": "University",
+          "xmin": 1215,
+          "ymin": 3100,
+          "xmax": 1445,
+          "ymax": 3144
+        },
+        {
+          "text": "Liaison",
+          "xmin": 253,
+          "ymin": 3183,
+          "xmax": 394,
+          "ymax": 3217
+        },
+        {
+          "text": "lan",
+          "xmin": 1889,
+          "ymin": 3184,
+          "xmax": 1946,
+          "ymax": 3217
+        },
+        {
+          "text": "2019",
+          "xmin": 1965,
+          "ymin": 3183,
+          "xmax": 2066,
+          "ymax": 3216
+        },
+        {
+          "text": "|",
+          "xmin": 2083,
+          "ymin": 3202,
+          "xmax": 2091,
+          "ymax": 3204
+        },
+        {
+          "text": "Apr",
+          "xmin": 2107,
+          "ymin": 3184,
+          "xmax": 2183,
+          "ymax": 3225
+        },
+        {
+          "text": "2019",
+          "xmin": 2196,
+          "ymin": 3183,
+          "xmax": 2297,
+          "ymax": 3215
+        }
+      ],
+      "raw_text": "Kennedy Adams 7 kennedymmadams@gmail.com R 905-213-1523 9 Oshawa | ON www.kennedyadams.ca WORK EXPERIENCE Durham College Web Developer / Media Assistant Sep 2023 | Apr 2024 Transferring course content into HTML and CSS ( (Bootstrap ) templates. Formatting templates to be visually appealing Using D2L the Online Learning Platform to implement course content Assist with the filming of student interviews at events and edit videos using Premiere Pro | for the PPL YouTube channel | AVID Legal Services Freelance Online Presence & Web Devel loper Apr 2023 | |ul 2023 | Headed development of an informative WordPress site for a paralegal start-up. Formulated legal pages | adhering to Canadian web regulations - Enhanced website usability | SEO performance | and accessibility to meet WCAG 2.1 AA standards Established a social medi ia presence on Instagram and Facebook. Created distinctive brand identity, including logo | essential assets business cards , flyers, and stickers using Adobe Illustrator Founder's Drive Web Developer lan 2023 | Apr 2024 Created and currently managing foundersdrive.com a WordPress-based website for ra start-up entrepreneurship podcast incorporating external HTML CSS D and PHP expertise | Implemented an optimization strategy | elevating website usability | SEO performance | loading speed and accessibility to align with WCAG 2.1 AA standards. Utilizing Google Analytics to track website views and trends | Department of National Defense . Government of Canada Game Developer May 2022 | Sep 2022 Programed in the language ( C# using the engine | Unity Traversed and developed on an existing project, with little documentation Developed training scenarios in the Navy's Virtual fleet specializing in auditory scenarios Assisted in the design of training scenarios Collaborated with other developers in the creation of training scenarios. O' Neill C.V.I Peer Tutor 2017 7 2018 Created personalized education plans to assist students who required a peer tutor Ran math support discussions for groups of 20 to 25 students. Marked assignments and kept detailed records of course work Helped foster and maintain an inclusive and positive learning atmosphere. Game Development Society, Ontario Tech University Liaison lan 2019 | Apr 2019 "
+    },
+    {
+      "page": 1,
+      "image_url": "https://nnts.imgix.net/uploadedfiles/rawocr/b197dadf-da06-455c-bf54-d9f47e4a42bf-2.jpeg?auto=compress&expires=1710292157&or=0&s=c87f680c16e785eb662dbbc27f8519b8",
+      "size": {
+        "width": 2550,
+        "height": 3300
+      },
+      "words": [
+        {
+          "text": "Established",
+          "xmin": 320,
+          "ymin": 13,
+          "xmax": 557,
+          "ymax": 49
+        },
+        {
+          "text": "strong",
+          "xmin": 574,
+          "ymin": 18,
+          "xmax": 710,
+          "ymax": 58
+        },
+        {
+          "text": "connections",
+          "xmin": 724,
+          "ymin": 15,
+          "xmax": 977,
+          "ymax": 49
+        },
+        {
+          "text": "W",
+          "xmin": 993,
+          "ymin": 23,
+          "xmax": 1027,
+          "ymax": 49
+        },
+        {
+          "text": "with",
+          "xmin": 1023,
+          "ymin": 13,
+          "xmax": 1081,
+          "ymax": 49
+        },
+        {
+          "text": "fellow",
+          "xmin": 1098,
+          "ymin": 13,
+          "xmax": 1223,
+          "ymax": 49
+        },
+        {
+          "text": "students",
+          "xmin": 1237,
+          "ymin": 14,
+          "xmax": 1419,
+          "ymax": 49
+        },
+        {
+          "text": "fostering",
+          "xmin": 1447,
+          "ymin": 13,
+          "xmax": 1635,
+          "ymax": 58
+        },
+        {
+          "text": "a",
+          "xmin": 1650,
+          "ymin": 24,
+          "xmax": 1667,
+          "ymax": 47
+        },
+        {
+          "text": "supportive",
+          "xmin": 1686,
+          "ymin": 15,
+          "xmax": 1911,
+          "ymax": 58
+        },
+        {
+          "text": "environment",
+          "xmin": 1928,
+          "ymin": 15,
+          "xmax": 2199,
+          "ymax": 49
+        },
+        {
+          "text": "conducive",
+          "xmin": 319,
+          "ymin": 73,
+          "xmax": 530,
+          "ymax": 109
+        },
+        {
+          "text": "to",
+          "xmin": 546,
+          "ymin": 78,
+          "xmax": 586,
+          "ymax": 109
+        },
+        {
+          "text": "growth",
+          "xmin": 601,
+          "ymin": 73,
+          "xmax": 748,
+          "ymax": 118
+        },
+        {
+          "text": "and",
+          "xmin": 765,
+          "ymin": 73,
+          "xmax": 841,
+          "ymax": 109
+        },
+        {
+          "text": "devel",
+          "xmin": 859,
+          "ymin": 73,
+          "xmax": 965,
+          "ymax": 109
+        },
+        {
+          "text": "lopment.",
+          "xmin": 956,
+          "ymin": 73,
+          "xmax": 1148,
+          "ymax": 117
+        },
+        {
+          "text": "Demonstrated",
+          "xmin": 320,
+          "ymin": 132,
+          "xmax": 622,
+          "ymax": 168
+        },
+        {
+          "text": "exceptional",
+          "xmin": 641,
+          "ymin": 132,
+          "xmax": 878,
+          "ymax": 178
+        },
+        {
+          "text": "teamwork",
+          "xmin": 898,
+          "ymin": 132,
+          "xmax": 1110,
+          "ymax": 168
+        },
+        {
+          "text": "by",
+          "xmin": 1127,
+          "ymin": 132,
+          "xmax": 1174,
+          "ymax": 176
+        },
+        {
+          "text": "actively",
+          "xmin": 1188,
+          "ymin": 132,
+          "xmax": 1345,
+          "ymax": 177
+        },
+        {
+          "text": "participating",
+          "xmin": 1361,
+          "ymin": 134,
+          "xmax": 1625,
+          "ymax": 176
+        },
+        {
+          "text": "in",
+          "xmin": 1641,
+          "ymin": 134,
+          "xmax": 1670,
+          "ymax": 167
+        },
+        {
+          "text": "the",
+          "xmin": 1690,
+          "ymin": 133,
+          "xmax": 1757,
+          "ymax": 168
+        },
+        {
+          "text": "setup",
+          "xmin": 1772,
+          "ymin": 137,
+          "xmax": 1888,
+          "ymax": 176
+        },
+        {
+          "text": "and",
+          "xmin": 1904,
+          "ymin": 132,
+          "xmax": 1981,
+          "ymax": 168
+        },
+        {
+          "text": "cleanup",
+          "xmin": 1999,
+          "ymin": 132,
+          "xmax": 2163,
+          "ymax": 177
+        },
+        {
+          "text": "of",
+          "xmin": 2180,
+          "ymin": 132,
+          "xmax": 2221,
+          "ymax": 168
+        },
+        {
+          "text": "weekly",
+          "xmin": 318,
+          "ymin": 192,
+          "xmax": 462,
+          "ymax": 237
+        },
+        {
+          "text": "sessions",
+          "xmin": 476,
+          "ymin": 194,
+          "xmax": 652,
+          "ymax": 227
+        },
+        {
+          "text": "ensuring",
+          "xmin": 681,
+          "ymin": 194,
+          "xmax": 865,
+          "ymax": 239
+        },
+        {
+          "text": "smooth",
+          "xmin": 879,
+          "ymin": 192,
+          "xmax": 1038,
+          "ymax": 228
+        },
+        {
+          "text": "operations",
+          "xmin": 1056,
+          "ymin": 194,
+          "xmax": 1282,
+          "ymax": 236
+        },
+        {
+          "text": "|",
+          "xmin": 1283,
+          "ymin": 220,
+          "xmax": 1290,
+          "ymax": 223
+        },
+        {
+          "text": "Served",
+          "xmin": 318,
+          "ymin": 251,
+          "xmax": 459,
+          "ymax": 287
+        },
+        {
+          "text": "as",
+          "xmin": 476,
+          "ymin": 261,
+          "xmax": 519,
+          "ymax": 287
+        },
+        {
+          "text": "a",
+          "xmin": 536,
+          "ymin": 261,
+          "xmax": 555,
+          "ymax": 285
+        },
+        {
+          "text": "vital",
+          "xmin": 572,
+          "ymin": 251,
+          "xmax": 655,
+          "ymax": 286
+        },
+        {
+          "text": "liaison",
+          "xmin": 675,
+          "ymin": 251,
+          "xmax": 804,
+          "ymax": 286
+        },
+        {
+          "text": "between",
+          "xmin": 824,
+          "ymin": 251,
+          "xmax": 1001,
+          "ymax": 287
+        },
+        {
+          "text": "first-year",
+          "xmin": 1019,
+          "ymin": 251,
+          "xmax": 1208,
+          "ymax": 296
+        },
+        {
+          "text": "students",
+          "xmin": 1223,
+          "ymin": 251,
+          "xmax": 1406,
+          "ymax": 287
+        },
+        {
+          "text": "and",
+          "xmin": 1422,
+          "ymin": 252,
+          "xmax": 1498,
+          "ymax": 287
+        },
+        {
+          "text": "upperclassmen",
+          "xmin": 1517,
+          "ymin": 251,
+          "xmax": 1837,
+          "ymax": 295
+        },
+        {
+          "text": "I",
+          "xmin": 1844,
+          "ymin": 283,
+          "xmax": 1844,
+          "ymax": 285
+        },
+        {
+          "text": "facilitating",
+          "xmin": 1866,
+          "ymin": 251,
+          "xmax": 2084,
+          "ymax": 298
+        },
+        {
+          "text": "efficient",
+          "xmin": 2099,
+          "ymin": 251,
+          "xmax": 2267,
+          "ymax": 287
+        },
+        {
+          "text": "scheduling",
+          "xmin": 318,
+          "ymin": 311,
+          "xmax": 546,
+          "ymax": 357
+        },
+        {
+          "text": "of",
+          "xmin": 561,
+          "ymin": 311,
+          "xmax": 604,
+          "ymax": 347
+        },
+        {
+          "text": "opti",
+          "xmin": 616,
+          "ymin": 313,
+          "xmax": 694,
+          "ymax": 354
+        },
+        {
+          "text": "imal",
+          "xmin": 689,
+          "ymin": 312,
+          "xmax": 773,
+          "ymax": 347
+        },
+        {
+          "text": "ti",
+          "xmin": 790,
+          "ymin": 313,
+          "xmax": 813,
+          "ymax": 345
+        },
+        {
+          "text": "imes",
+          "xmin": 808,
+          "ymin": 313,
+          "xmax": 903,
+          "ymax": 347
+        },
+        {
+          "text": "and",
+          "xmin": 920,
+          "ymin": 312,
+          "xmax": 996,
+          "ymax": 347
+        },
+        {
+          "text": "coordinating",
+          "xmin": 1014,
+          "ymin": 298,
+          "xmax": 1281,
+          "ymax": 357
+        },
+        {
+          "text": "engaging",
+          "xmin": 1296,
+          "ymin": 313,
+          "xmax": 1486,
+          "ymax": 357
+        },
+        {
+          "text": "activities",
+          "xmin": 1500,
+          "ymin": 313,
+          "xmax": 1681,
+          "ymax": 347
+        },
+        {
+          "text": "for",
+          "xmin": 1698,
+          "ymin": 311,
+          "xmax": 1758,
+          "ymax": 347
+        },
+        {
+          "text": "various",
+          "xmin": 1770,
+          "ymin": 313,
+          "xmax": 1923,
+          "ymax": 345
+        },
+        {
+          "text": "events",
+          "xmin": 1940,
+          "ymin": 316,
+          "xmax": 2076,
+          "ymax": 347
+        },
+        {
+          "text": "|",
+          "xmin": 2077,
+          "ymin": 339,
+          "xmax": 2084,
+          "ymax": 341
+        },
+        {
+          "text": "Led",
+          "xmin": 320,
+          "ymin": 371,
+          "xmax": 390,
+          "ymax": 406
+        },
+        {
+          "text": "efforts",
+          "xmin": 407,
+          "ymin": 370,
+          "xmax": 542,
+          "ymax": 406
+        },
+        {
+          "text": "to",
+          "xmin": 557,
+          "ymin": 375,
+          "xmax": 597,
+          "ymax": 406
+        },
+        {
+          "text": "enhance",
+          "xmin": 612,
+          "ymin": 370,
+          "xmax": 790,
+          "ymax": 406
+        },
+        {
+          "text": "participation",
+          "xmin": 807,
+          "ymin": 372,
+          "xmax": 1070,
+          "ymax": 414
+        },
+        {
+          "text": "in",
+          "xmin": 1088,
+          "ymin": 372,
+          "xmax": 1119,
+          "ymax": 405
+        },
+        {
+          "text": "weekly",
+          "xmin": 1135,
+          "ymin": 371,
+          "xmax": 1279,
+          "ymax": 415
+        },
+        {
+          "text": "sessions",
+          "xmin": 1291,
+          "ymin": 372,
+          "xmax": 1467,
+          "ymax": 405
+        },
+        {
+          "text": "through",
+          "xmin": 1482,
+          "ymin": 371,
+          "xmax": 1649,
+          "ymax": 414
+        },
+        {
+          "text": "adept",
+          "xmin": 1664,
+          "ymin": 370,
+          "xmax": 1785,
+          "ymax": 415
+        },
+        {
+          "text": "utilization",
+          "xmin": 1800,
+          "ymin": 371,
+          "xmax": 2000,
+          "ymax": 405
+        },
+        {
+          "text": "of",
+          "xmin": 2019,
+          "ymin": 370,
+          "xmax": 2060,
+          "ymax": 405
+        },
+        {
+          "text": "persuasive",
+          "xmin": 2073,
+          "ymin": 372,
+          "xmax": 2296,
+          "ymax": 414
+        },
+        {
+          "text": "communication",
+          "xmin": 319,
+          "ymin": 432,
+          "xmax": 644,
+          "ymax": 466
+        },
+        {
+          "text": "and",
+          "xmin": 664,
+          "ymin": 430,
+          "xmax": 738,
+          "ymax": 465
+        },
+        {
+          "text": "interpersonal",
+          "xmin": 759,
+          "ymin": 430,
+          "xmax": 1040,
+          "ymax": 473
+        },
+        {
+          "text": "abilities.",
+          "xmin": 1056,
+          "ymin": 430,
+          "xmax": 1227,
+          "ymax": 464
+        },
+        {
+          "text": "EDUCATION",
+          "xmin": 422,
+          "ymin": 554,
+          "xmax": 695,
+          "ymax": 588
+        },
+        {
+          "text": "Durham",
+          "xmin": 253,
+          "ymin": 640,
+          "xmax": 434,
+          "ymax": 676
+        },
+        {
+          "text": "College",
+          "xmin": 452,
+          "ymin": 640,
+          "xmax": 613,
+          "ymax": 686
+        },
+        {
+          "text": "Ontario",
+          "xmin": 252,
+          "ymin": 723,
+          "xmax": 410,
+          "ymax": 755
+        },
+        {
+          "text": "College",
+          "xmin": 427,
+          "ymin": 721,
+          "xmax": 579,
+          "ymax": 768
+        },
+        {
+          "text": "Diploma",
+          "xmin": 596,
+          "ymin": 721,
+          "xmax": 769,
+          "ymax": 764
+        },
+        {
+          "text": "in",
+          "xmin": 788,
+          "ymin": 723,
+          "xmax": 820,
+          "ymax": 755
+        },
+        {
+          "text": "Web",
+          "xmin": 837,
+          "ymin": 721,
+          "xmax": 929,
+          "ymax": 756
+        },
+        {
+          "text": "Development",
+          "xmin": 948,
+          "ymin": 721,
+          "xmax": 1231,
+          "ymax": 766
+        },
+        {
+          "text": "April",
+          "xmin": 2084,
+          "ymin": 721,
+          "xmax": 2180,
+          "ymax": 766
+        },
+        {
+          "text": "2024",
+          "xmin": 2196,
+          "ymin": 723,
+          "xmax": 2297,
+          "ymax": 755
+        },
+        {
+          "text": "College",
+          "xmin": 319,
+          "ymin": 803,
+          "xmax": 469,
+          "ymax": 847
+        },
+        {
+          "text": "Honour",
+          "xmin": 488,
+          "ymin": 804,
+          "xmax": 647,
+          "ymax": 838
+        },
+        {
+          "text": "Roll",
+          "xmin": 664,
+          "ymin": 802,
+          "xmax": 736,
+          "ymax": 838
+        },
+        {
+          "text": "Fal",
+          "xmin": 767,
+          "ymin": 803,
+          "xmax": 820,
+          "ymax": 838
+        },
+        {
+          "text": "||",
+          "xmin": 816,
+          "ymin": 803,
+          "xmax": 829,
+          "ymax": 830
+        },
+        {
+          "text": "2022",
+          "xmin": 850,
+          "ymin": 804,
+          "xmax": 948,
+          "ymax": 838
+        },
+        {
+          "text": "W",
+          "xmin": 976,
+          "ymin": 804,
+          "xmax": 1022,
+          "ymax": 836
+        },
+        {
+          "text": "Vinter",
+          "xmin": 1014,
+          "ymin": 804,
+          "xmax": 1116,
+          "ymax": 838
+        },
+        {
+          "text": "2023",
+          "xmin": 1132,
+          "ymin": 804,
+          "xmax": 1233,
+          "ymax": 836
+        },
+        {
+          "text": "and",
+          "xmin": 1261,
+          "ymin": 803,
+          "xmax": 1337,
+          "ymax": 838
+        },
+        {
+          "text": "Fall",
+          "xmin": 1356,
+          "ymin": 802,
+          "xmax": 1422,
+          "ymax": 835
+        },
+        {
+          "text": "2023",
+          "xmin": 1439,
+          "ymin": 804,
+          "xmax": 1539,
+          "ymax": 835
+        },
+        {
+          "text": "Ontario",
+          "xmin": 252,
+          "ymin": 886,
+          "xmax": 424,
+          "ymax": 921
+        },
+        {
+          "text": "Tech",
+          "xmin": 439,
+          "ymin": 886,
+          "xmax": 542,
+          "ymax": 921
+        },
+        {
+          "text": "University",
+          "xmin": 561,
+          "ymin": 886,
+          "xmax": 793,
+          "ymax": 932
+        },
+        {
+          "text": "Bachel",
+          "xmin": 253,
+          "ymin": 968,
+          "xmax": 389,
+          "ymax": 1004
+        },
+        {
+          "text": "lor",
+          "xmin": 384,
+          "ymin": 968,
+          "xmax": 438,
+          "ymax": 1003
+        },
+        {
+          "text": "of",
+          "xmin": 453,
+          "ymin": 968,
+          "xmax": 495,
+          "ymax": 1004
+        },
+        {
+          "text": "Information",
+          "xmin": 509,
+          "ymin": 968,
+          "xmax": 756,
+          "ymax": 1004
+        },
+        {
+          "text": "Technology",
+          "xmin": 772,
+          "ymin": 968,
+          "xmax": 1014,
+          "ymax": 1012
+        },
+        {
+          "text": "in",
+          "xmin": 1030,
+          "ymin": 970,
+          "xmax": 1062,
+          "ymax": 1003
+        },
+        {
+          "text": "Game",
+          "xmin": 1081,
+          "ymin": 971,
+          "xmax": 1202,
+          "ymax": 1004
+        },
+        {
+          "text": "Development",
+          "xmin": 1221,
+          "ymin": 968,
+          "xmax": 1504,
+          "ymax": 1013
+        },
+        {
+          "text": "and",
+          "xmin": 1518,
+          "ymin": 969,
+          "xmax": 1594,
+          "ymax": 1004
+        },
+        {
+          "text": "Entrepreneurship",
+          "xmin": 1613,
+          "ymin": 968,
+          "xmax": 1984,
+          "ymax": 1012
+        },
+        {
+          "text": "April",
+          "xmin": 2084,
+          "ymin": 968,
+          "xmax": 2180,
+          "ymax": 1012
+        },
+        {
+          "text": "2022",
+          "xmin": 2196,
+          "ymin": 970,
+          "xmax": 2296,
+          "ymax": 1004
+        },
+        {
+          "text": "Graduated",
+          "xmin": 331,
+          "ymin": 1049,
+          "xmax": 553,
+          "ymax": 1085
+        },
+        {
+          "text": "with",
+          "xmin": 571,
+          "ymin": 1049,
+          "xmax": 657,
+          "ymax": 1085
+        },
+        {
+          "text": "Di",
+          "xmin": 677,
+          "ymin": 1051,
+          "xmax": 713,
+          "ymax": 1084
+        },
+        {
+          "text": "istinction",
+          "xmin": 705,
+          "ymin": 1051,
+          "xmax": 897,
+          "ymax": 1085
+        }
+      ],
+      "raw_text": "Established strong connections W with fellow students fostering a supportive environment conducive to growth and devel lopment. Demonstrated exceptional teamwork by actively participating in the setup and cleanup of weekly sessions ensuring smooth operations | Served as a vital liaison between first-year students and upperclassmen I facilitating efficient scheduling of opti imal ti imes and coordinating engaging activities for various events | Led efforts to enhance participation in weekly sessions through adept utilization of persuasive communication and interpersonal abilities. EDUCATION Durham College Ontario College Diploma in Web Development April 2024 College Honour Roll Fal || 2022 W Vinter 2023 and Fall 2023 Ontario Tech University Bachel lor of Information Technology in Game Development and Entrepreneurship April 2022 Graduated with Di istinction "
+    }
+  ]
+}

@@ -103,7 +103,7 @@ export const timelineEvents = [
 		new Date("2022-04-15")
 	),
 	new TimelineEvent(
-		"Game Developement Society Liaison",
+		"Game Development Society Liaison",
 		[
 			"Established strong connections with fellow students, fostering a supportive environment conducive to growth and development.",
 			"Demonstrated exceptional teamwork by actively participating in the setup and cleanup of weekly sessions, ensuring smooth operations.",
@@ -143,11 +143,8 @@ export const timelineEvents = [
 	new TimelineEvent(
 		"Web Developer / Media Assistant",
 		[
-			"Transferring course content into HTML and CSS (Bootstrap) templates.",
-			"Formatting templates to be visually appealing.",
-			"Using D2L, the Online Learning Platform, to implement course content.",
-			"Edit videos using Premiere Pro, for the PPL YouTube channel.",
-			"Assist with the filming of student interviews at events.",
+			"Developed and maintained responsive websites using HTML, CSS (Bootstrap), and JavaScript to ensure an optimal user experience across multiple devices.",
+			"Assisted in the production and editing of multimedia content for promotional materials, including brochures, videos, and presentations, to support marketing campaigns.",
 		],
 		"Durham College, Oshawa, ON",
 		TimelineType.Work,
@@ -176,7 +173,7 @@ export const timelineEvents = [
 			"Created and currently managing foundersdrive.com, a WordPress-based website for a start-up entrepreneurship podcast, incorporating external HTML, CSS, and PHP expertise.",
 			"Implemented an optimization strategy, elevating website usability, SEO performance, loading speed, and accessibility to align seamlessly with WCAG 2.1 AA standards.",
 			"Utilizing Google Analytics to track website views and trends.",
-			"Worked with a team to implement provided content and design.",
+			"Collaborated with design and content teams to ensure seamless integration of visual elements and efficient content management.",
 		],
 		"Founder's Drive, Oshawa, ON",
 		TimelineType.Work,

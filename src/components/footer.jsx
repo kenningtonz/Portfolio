@@ -13,6 +13,7 @@ const Footer = () => {
 				<button
 					className='px-1'
 					role='link'
+					aria-label='linkedin'
 					onClick={() => {
 						window.location.href = "https://www.linkedin.com/in/kennedy-mm-adams/";
 					}}
@@ -21,6 +22,7 @@ const Footer = () => {
 				</button>
 				<button
 					className='px-1'
+					aria-label='email'
 					role='link'
 					onClick={() => {
 						window.location.href = "mailto:kennedymmadams@gmail.com";

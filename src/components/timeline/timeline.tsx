@@ -15,22 +15,27 @@ const TimelineItem: React.FC<{
 	const colorBG = `bg-${event.getTypeColor()}`;
 	return (
 		<li key={event.title} className='flex mx-4 sm:m-4  sm:flex-row flex-col'>
-			<div className='hidden items-start w-48 pt-0.5 sm:flex text-brown'>
-				<p className='w-4/5 pt-1'>
-					{event.dateStart
-						? `${event.dateStart.toLocaleDateString("en-CA", {
-								year: "numeric",
-								month: "long",
-						  })}`
-						: null}
-					{event.dateEnd && event.dateStart ? " - " : null}
-					{event.dateEnd
-						? `${event.dateEnd.toLocaleDateString("en-CA", {
-								year: "numeric",
-								month: "long",
-						  })}`
-						: null}
-				</p>
+			<div className='hidden items-start w-48 pt-0.5 sm:flex text-white text-right'>
+				<div className='w-4/5 pr-4 pt-1'>
+					<p>
+						{event.dateStart
+							? `${event.dateStart.toLocaleDateString("en-CA", {
+									year: "numeric",
+									month: "short",
+							  })}`
+							: null}
+						{event.dateEnd && event.dateStart ? " - " : null}
+					</p>
+
+					<p>
+						{event.dateEnd
+							? `${event.dateEnd.toLocaleDateString("en-CA", {
+									year: "numeric",
+									month: "short",
+							  })}`
+							: null}
+					</p>
+				</div>
 
 				{isLastEvent ? null : (
 					<div
@@ -38,9 +43,10 @@ const TimelineItem: React.FC<{
 						className={`bg-${color}-600 w-0.5 h-full translate-x-5 translate-y-10 opacity-80`}
 					></div>
 				)}
-				<div
-					aria-hidden='true'
-					className={`bg-${color}-600 w-12 h-10 p-1 rounded-round z-20`}
+				<img
+					src={event.getTypeIcon()}
+					alt='icon'
+					className={`bg-${color}-500 w-10 h-10 p-1 rounded z-20`}
 				/>
 				<div
 					aria-hidden='true'
@@ -49,12 +55,12 @@ const TimelineItem: React.FC<{
 			</div>
 
 			<div
-				className={`   w-full text-center z-10 sm:w-96 rounded overflow-hidden  `}
+				className={`   w-full text-center z-10 sm:w-96 rounded overflow-hidden border-2  border-${color}-600 bg-${color} `}
 			>
 				<div
-					className={`bg-${color}-600 ${
-						detailsOpen ? "rounded-t" : "rounded"
-					} px-8 pt-4 w-full text-center text-white  z-20 transition-all`}
+					className={` ${
+						detailsOpen ? "rounded-t" : "rounded  "
+					} px-8 pt-4 w-full text-center text-brown-dark  z-20 transition-all   `}
 				>
 					<h3 className='text-xl font-medium'>{event.title}</h3>
 					<p className=' italic'> {event.location}</p>

@@ -13,7 +13,9 @@ export default function Body({ children }: { children: React.ReactNode }) {
 	const { theme } = useTheme();
 	return (
 		// <MotionConfig reducedMotion="user">
-		<body className={`${fredoka.className} antialiased ${theme} min-h-screen`}>
+		<body
+			className={`${fredoka.className} antialiased ${theme} min-h-screen scrollbar`}
+		>
 			{children}
 		</body>
 		// </MotionConfig>

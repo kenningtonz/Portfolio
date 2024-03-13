@@ -116,17 +116,17 @@ export const ToolsCat = {
 		let category = this.getCategory(tool);
 		switch (category) {
 			case "languages":
-				return "bg-blue-500";
+				return "blue";
 			case "frameworks":
-				return "bg-green-500";
+				return "green";
 			case "databases":
-				return "bg-yellow-500";
+				return "yellow";
 			case "tools":
-				return "bg-red-500";
+				return "red";
 			case "software":
-				return "bg-purple-500";
+				return "purple";
 			default:
-				return "bg-orange-500";
+				return "orange";
 		}
 	},
 };
@@ -137,7 +137,7 @@ export enum ProjectE {
 	GreenLife = "greenlife",
 	MindfulInk = "mindfulink",
 	RadiantRealms = "radiantrealms",
-	HobbyBuddy = "hobbybuddy",
+	BuddyLink = "buddylink",
 	ComfortCorner = "comfortcorner",
 }
 
