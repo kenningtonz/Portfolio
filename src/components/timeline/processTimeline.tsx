@@ -9,7 +9,7 @@ export const ProcessTimeline: React.FC<{
 
 	return (
 		<>
-			<ul className='flex flex-col justify-stretch  items-center  text-brown text-base pb-8 sm:text-lg pt-4   sm:p-0'>
+			<ul className='flex flex-col justify-stretch  items-center   text-brown text-base pb-8 sm:text-lg pt-4   sm:p-0'>
 				{processes.map((process, index) => {
 					return (
 						<li key={index} className='flex mx-4 sm:m-4  sm:flex-row flex-col '>
@@ -36,7 +36,7 @@ export const ProcessTimeline: React.FC<{
 							</div>
 
 							<div
-								className={`   w-full text-center z-20 sm:w-96 shadow-drop-${color} bg-${color}-dark rounded px-8 p-4 w-full overflow-hidden  text-white flex flex-col items-center`}
+								className={`  w-full text-center z-20 sm:w-96 shadow-drop-${color} bg-${color}-dark rounded px-8 p-4 w-full overflow-hidden  text-white flex flex-col `}
 							>
 								<img
 									src={process.img}
@@ -46,7 +46,7 @@ export const ProcessTimeline: React.FC<{
 								<h3 className='sm:hidden text-xl font-medium text-center'>
 									{process.name}
 								</h3>
-								<ul className='list-disc text-left'>
+								<ul className='list-disc text-left  	'>
 									{process.steps.map((step, index) => {
 										return (
 											<li

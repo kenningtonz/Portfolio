@@ -81,34 +81,45 @@ let mindfulInkInfo = new ProjectInfo(
 			name: "Design",
 			img: "./icons/pen.svg",
 			steps: [
-				"Developed Logo and Brand using Adobe Illustrator.",
+				"Developed logo, brand, and graphics using Adobe Illustrator.",
 				"Designed page layouts and digital products using Penpot.app.",
+				"Recorded audio, took images, and created colouring pages for the activity portion.",
+				"Generated the copy for the site using AI",
 			],
 		},
 		{
 			name: " Back-end",
 			img: "./icons/database.svg",
-			steps: ["Created custom theme and plugin."],
+			steps: [
+				"Created custom theme and plugin for core block styles.",
+				"Created a plugin for a custom post type and taxonomies.",
+			],
 		},
 		{
 			name: "Front-end",
 			img: "./icons/object-group.svg",
 			steps: [
-				"Developed the site using Wordpress and PHP.",
+				"Using the custom block styles, created the pages for the site.",
 				"Implemented WooCommerce for the store.",
+				"Styled using CSS for a polished appearance.",
 			],
 		},
 		{
-			name: "Current",
+			name: "Future Development",
 			img: "./icons/code.svg",
-			steps: ["Creating products.", "Styling the WooCommerce section."],
+			steps: [
+				"Develop more products.",
+				"Remake the website in a different CMS.",
+				"Add analytics and a cookie policy.",
+			],
 		},
 	],
 	"January 2024 - April 2024",
 	"../images/mindfulink.png",
 	"mindfulInk",
 	ProjectE.MindfulInk,
-	"https://github.com/kenningtonz/mindful"
+	"https://github.com/kenningtonz/mindful",
+	"https://mindfulink.kennedyadams.ca"
 );
 let greenLifeInfo = new ProjectInfo(
 	"GreenLife Grocer is an online grocery store for healthy living. The site is built using NextJS and MySQL The design and branding is original. The images and content are from a provided database.",
@@ -121,6 +132,11 @@ let greenLifeInfo = new ProjectInfo(
 		Tools.CSS,
 		Tools.NextJS,
 		Tools.Sketch,
+		Tools.Tailwind,
+		Tools.Vercel,
+		Tools.phpMyAdmin,
+		Tools.React,
+		Tools.ReactHookForm,
 	],
 	"To design and develop an online grocery store using MySQL.",
 	[
@@ -137,33 +153,33 @@ let greenLifeInfo = new ProjectInfo(
 			img: "./icons/object-group.svg",
 			steps: [
 				"Structured the project in NextJS",
-				// "Implemented essential functionalities such as user system, services, cart, and checkout",
-				// "Displayed services from the database",
-				"Styled using CSS for a polished appearance.",
+				"Implemented essential functionalities such as user system, departments, cart, and checkout",
+				"Styled using Tailwind CSS for a polished appearance.",
 			],
 		},
-		// {
-		// 	name: "Back-End",
-		// 	img: "./icons/database.svg",
-		// 	steps: [
-		// 		"Established and managed the database, handling data the transfer processes.",
-		// 	],
-		// },
 		{
-			name: "Current",
-			img: "./icons/code.svg",
+			name: "Back-End",
+			img: "./icons/database.svg",
 			steps: [
-				"Displaying data from the database.",
-				"Styling the site using TailwindCSS.",
-				"Creating functionality for the cart and checkout.",
+				"Restructured the given database in phpMyAdmin.",
+				"Created PHP services to interact with the database.",
+				"Worked on transferring data to and from the PHP services.",
+				"Using cookies to store user session and cart data.",
+				"Deployed the site using Vercel. Hosting the PHP services on my hosting.",
 			],
+		},
+		{
+			name: "Future Development",
+			img: "./icons/code.svg",
+			steps: ["Add a recipes feature.", "Convert PHP services to Node.js."],
 		},
 	],
 	"January 2024 - April 2024",
-	"",
+	"../images/greenlifegrocer.png",
 	"greenlife",
 	ProjectE.GreenLife,
-	"https://github.com/kenningtonz/GreenLifeGrocer"
+	"https://github.com/kenningtonz/GreenLifeGrocer",
+	"http://greenlife.kennedyadams.ca"
 );
 let radiantRealmsInfo = new ProjectInfo(
 	"Radiant Realms is a mental health services booking website built using React and Firebase. The logo and branding is original. The images were AI generated.",

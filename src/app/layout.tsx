@@ -6,7 +6,6 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import Body from "@/components/body";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "./globals.css";
 
 config.autoAddCss = false;
 

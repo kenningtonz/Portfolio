@@ -34,6 +34,9 @@ export enum Tools {
 	Bolt = "Bolt",
 	Cplusplus = "C++",
 	Aesprite = "Aesprite",
+	Vercel = "Vercel",
+	phpMyAdmin = "phpMyAdmin",
+	ReactHookForm = "React Hook Form",
 }
 
 export const ToolsCat = {
@@ -65,9 +68,10 @@ export const ToolsCat = {
 		Tools.ReactThreeDrei,
 		Tools.FramerMotion,
 		Tools.Threejs,
+		Tools.ReactHookForm,
 	],
-	databases: [Tools.Firebase, Tools.MySQL],
-	tools: [Tools.Git, Tools.Wordpress, Tools.WooCommerce],
+	databases: [Tools.Firebase, Tools.MySQL, Tools.phpMyAdmin],
+	tools: [Tools.Git, Tools.Wordpress, Tools.WooCommerce, Tools.Vercel],
 	software: [
 		Tools.Illustrator,
 		Tools.Penpot,

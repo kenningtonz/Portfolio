@@ -141,6 +141,18 @@ export const timelineEvents = [
 		new Date("2022-05-02")
 	),
 	new TimelineEvent(
+		"Ontario G2 License",
+		[
+			"Completed 30 hours online course and 10 hours in-car training.",
+			"Passed the road test on the first attempt.",
+		],
+		"Champions Driving Academy, Oshawa, ON",
+		TimelineType.Personal,
+		true,
+		new Date("2023-12-20"),
+		new Date("2024-03-19")
+	),
+	new TimelineEvent(
 		"Web Developer / Media Assistant",
 		[
 			"Developed and maintained responsive websites using HTML, CSS (Bootstrap), and JavaScript to ensure an optimal user experience across multiple devices.",

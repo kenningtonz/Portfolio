@@ -59,9 +59,10 @@ export default function Home() {
 					{/* <Image src='/logo.png' alt='Logo' width={100} height={100} /> */}
 					<div className=''>
 						<h1 className='text-4xl font-display text-white '> Kennedy Adams</h1>
-						<h2 className='text-2xl font-display text-white '>
-							Front End Developer focusing on Wellness
-						</h2>
+						<h2 className='text-2xl font-display text-white '>Front End Developer</h2>
+						<p className='text-lg font-display text-white '>
+							A passion for Wellness.
+						</p>
 					</div>
 				</section>
 				<section className='bg-brown text-center p-2 text-white flex justify-center'>
