@@ -51,16 +51,18 @@ export default function Home() {
 						alt='Logo'
 						width={100}
 						height={100}
-						className={"cursor-pointer"}
+						className={"cursor-pointer res-sq-24"}
 						onClick={() => {
 							window.location.href = "/#projects";
 						}}
 					/>
 					{/* <Image src='/logo.png' alt='Logo' width={100} height={100} /> */}
-					<div className=''>
-						<h1 className='text-4xl font-display text-white '> Kennedy Adams</h1>
-						<h2 className='text-2xl font-display text-white '>Front End Developer</h2>
-						<p className='text-lg font-display text-white '>
+					<div className='	'>
+						<h1 className='res-text-4xl font-display text-white '>Kennedy Adams</h1>
+						<h2 className=' res-text-2xl font-display text-white '>
+							Front End Developer
+						</h2>
+						<p className='res-text-lg font-display text-white '>
 							A passion for Wellness.
 						</p>
 					</div>
@@ -108,14 +110,14 @@ export default function Home() {
 					className='  dark:text-white text-brown-dark flex flex-col items-center w-full justify-center gap-2 p-10 dark:bg-brown bg-white'
 				>
 					{/* <h2>About</h2> */}
-					<FontAwesomeIcon className=' p-4 text-4xl' icon={faUser} />
-					<h2 className='text-3xl text-center'> Who is Kennedy Adams?</h2>
+					<FontAwesomeIcon className=' p-4 res-text-4xl' icon={faUser} />
+					<h2 className='res-text-3xl text-center'> Who is Kennedy Adams?</h2>
 					<article className='flex flex-col  gap-4 mb-4 items-center p-4 '>
-						<p className='text-xl  text-center'>
+						<p className='res-text-xl  text-center'>
 							I’m just a <strong>human</strong>, with probably the most interesting
 							past you’ll hear.
 						</p>
-						<p className=' text-xl text-center'>
+						<p className=' res-text-xl text-center'>
 							Years ago, my therapist told me <strong>"your life is</strong>{" "}
 							<motion.span
 								initial={{ backgroundColor: "#FFFFFF" }}
@@ -128,11 +130,11 @@ export default function Home() {
 							but it's <strong>about to get better"</strong>. I didn't know or believe
 							it at the time, but he was right.{" "}
 						</p>
-						<p className=' text-xl text-center'>
+						<p className=' res-text-xl text-center'>
 							After years of helping myself, I'm ready to{" "}
-							<strong className='text-2xl'>help others</strong>.
+							<strong className='res-text-2xl'>help others</strong>.
 						</p>
-						<p className=' text-xl text-center'>
+						<p className=' res-text-xl text-center'>
 							I want use to my experience to make it easier for others to work on
 							themselves.
 						</p>
@@ -141,11 +143,11 @@ export default function Home() {
 							alt='kennedy'
 							width={200}
 							height={200}
-							className='rounded  '
+							className='rounded xl:w-[250px] xl:h-[250px] '
 						/>
 					</article>
 
-					<h2 className='text-center dark:text-white text-brown-dark text-3xl p-2'>
+					<h2 className='text-center dark:text-white text-brown-dark res-text-3xl p-2'>
 						My Journey
 					</h2>
 					<TimelineHighlight
@@ -159,20 +161,20 @@ export default function Home() {
 						onClick={() => {
 							window.location.href = "/more";
 						}}
-						className='bg-yellow-500 text-brown-dark py-2 px-4 text-lg rounded  font-semibold'
+						className='bg-yellow-500 text-brown-dark py-2 px-4 res-text-lg rounded  font-semibold'
 					>
 						View More
 					</motion.button>
 				</section>
 				<section
 					id='contact'
-					className=' flex flex-col items-center w-full  gap-2 px-24 dark:bg-brown py-48 bg-white dark:text-white text-brown-dark'
+					className='h-[80dvh] flex flex-col items-center w-full  gap-2 px-24 dark:bg-brown py-48 bg-white dark:text-white text-brown-dark'
 				>
-					<FontAwesomeIcon className='   text-3xl' icon={faEnvelope} />
-					<h2 className='text-3xl  text-center'> Want to work with me?</h2>
+					<FontAwesomeIcon className='   res-text-3xl' icon={faEnvelope} />
+					<h2 className='res-text-3xl  text-center'> Want to work with me?</h2>
 					<div className='flex gap-4 mt-4'>
 						<motion.button
-							className='rounded py-2 px-4 h-12  flex gap-1 bg-yellow-500'
+							className=' py-2 px-4 res-sq-12  button bg-yellow-500 '
 							role='link'
 							aria-label='email'
 							onClick={() => {
@@ -182,13 +184,13 @@ export default function Home() {
 							whileTap={{ scale: 0.9 }}
 						>
 							<FontAwesomeIcon
-								className='text-3xl  text-brown-dark '
+								className='res-text-3xl  text-brown-dark '
 								icon={faEnvelope}
 							/>
 						</motion.button>
 
 						<motion.button
-							className='rounded py-2 px-4 h-12  items-center flex gap-1 bg-yellow-500'
+							className=' button py-2 px-4 res-sq-12 bg-yellow-500'
 							role='link'
 							aria-label='linkedin'
 							onClick={() => {
@@ -198,7 +200,7 @@ export default function Home() {
 							whileTap={{ scale: 0.9 }}
 						>
 							<FontAwesomeIcon
-								className='text-3xl text-brown-dark'
+								className='res-text-3xl text-brown-dark'
 								icon={faLinkedin}
 							/>
 						</motion.button>

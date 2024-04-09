@@ -37,6 +37,8 @@ export enum Tools {
 	Vercel = "Vercel",
 	phpMyAdmin = "phpMyAdmin",
 	ReactHookForm = "React Hook Form",
+	Expo = "Expo",
+	ReactNative = "React Native",
 }
 
 export const ToolsCat = {
@@ -57,6 +59,8 @@ export const ToolsCat = {
 		Tools.Node,
 		Tools.Flutter,
 		Tools.Unity,
+		Tools.Expo,
+		Tools.ReactNative,
 	],
 	libraries: [
 		Tools.ReactRouter,

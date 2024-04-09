@@ -49,13 +49,14 @@ const Header: React.FC<{ isScrolled?: boolean; isAnimated: boolean }> = ({
 			>
 				<motion.img
 					whileHover={{ scale: 1.05 }}
+					className='res-sq-12'
 					whileTap={{ scale: 0.9 }}
 					src='/logo.png'
 					alt='Logo'
 					width={50}
 					height={50}
 				/>
-				<span className='text-4xl font-display dark:text-white text-brown '>
+				<span className='res-text-3xl font-display dark:text-white text-brown '>
 					Kennedy Adams
 				</span>
 			</motion.a>
@@ -71,7 +72,7 @@ const Header: React.FC<{ isScrolled?: boolean; isAnimated: boolean }> = ({
 					whileTap={{ scale: 0.9 }}
 				>
 					<FontAwesomeIcon
-						className='text-2xl dark:text-white text-brown '
+						className='res-text-2xl dark:text-white text-brown '
 						icon={faUser}
 					/>
 				</motion.button>
@@ -85,7 +86,7 @@ const Header: React.FC<{ isScrolled?: boolean; isAnimated: boolean }> = ({
 					whileTap={{ scale: 0.9 }}
 				>
 					<FontAwesomeIcon
-						className='text-2xl dark:text-white text-brown '
+						className='res-text-2xl dark:text-white text-brown '
 						icon={faEnvelope}
 					/>
 				</motion.button>

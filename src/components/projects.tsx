@@ -71,7 +71,7 @@ export const Projects: React.FC<{}> = ({}) => {
 	return (
 		<section
 			id='projects'
-			className={`flex sectionFlip items-center h-[90dvh] relative	`}
+			className={`flex sectionFlip items-center h-[90dvh] relative 	`}
 			data-position={active.position}
 		>
 			<motion.div

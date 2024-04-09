@@ -6,13 +6,13 @@ import {
 } from "@/lib/classes/timelineEvents";
 import { Timeline } from "@/components/timeline/timeline";
 import { TimelineProjects } from "@/components/timeline/projectsTimeline";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/tabs";
 
 export default function MorePage() {
 	return (
-		<main className=' flex flex-col content-center sm:text-left text-center items-center justify-center gap-2  bg-brown h-full'>
-			<h1 className='text-3xl text-center text-white'>Experience</h1>
+		<main className='container  flex flex-col content-center sm:text-left text-center items-center justify-center gap-2  bg-brown h-full'>
+			<h1 className='res-text-3xl text-center text-white'>Experience</h1>
 
 			<motion.a
 				whileHover={{ scale: 1.1 }}
@@ -24,7 +24,7 @@ export default function MorePage() {
 				// 	window.location.href = "/more";
 				// }}
 				arial-label='download resume'
-				className='bg-yellow-500 text-brown-dark py-2 px-4 text-base rounded font-semibold'
+				className='bg-yellow-500 text-brown-dark py-2 px-4 res-text-base rounded font-semibold'
 			>
 				Download Resume
 			</motion.a>
@@ -53,43 +53,47 @@ export default function MorePage() {
 					</TabsTrigger>
 				</TabsList>
 
-				<TabsContent color='brown' value='all'>
-					<Timeline events={timelineEvents} />
-				</TabsContent>
-				<TabsContent color='red' value='work'>
-					<Timeline
-						events={timelineEvents.filter((event) => event.type == TimelineType.Work)}
-					/>
-				</TabsContent>
+				<AnimatePresence>
+					<TabsContent color='brown' value='all'>
+						<Timeline events={timelineEvents} />
+					</TabsContent>
+					<TabsContent color='red' value='work'>
+						<Timeline
+							events={timelineEvents.filter(
+								(event) => event.type == TimelineType.Work
+							)}
+						/>
+					</TabsContent>
 
-				<TabsContent color='purple' value='education'>
-					<Timeline
-						events={timelineEvents.filter(
-							(event) => event.type == TimelineType.Education
-						)}
-					/>
-				</TabsContent>
-				<TabsContent color='blue' value='certification'>
-					<Timeline
-						events={timelineEvents.filter(
-							(event) => event.type == TimelineType.Certification
-						)}
-					/>
-				</TabsContent>
-				<TabsContent color='yellow' value='personal'>
-					<Timeline
-						events={timelineEvents.filter(
-							(event) => event.type == TimelineType.Personal
-						)}
-					/>
-				</TabsContent>
-				<TabsContent color='orange' value='volunteer'>
-					<Timeline
-						events={timelineEvents.filter(
-							(event) => event.type == TimelineType.Volunteer
-						)}
-					/>
-				</TabsContent>
+					<TabsContent color='purple' value='education'>
+						<Timeline
+							events={timelineEvents.filter(
+								(event) => event.type == TimelineType.Education
+							)}
+						/>
+					</TabsContent>
+					<TabsContent color='blue' value='certification'>
+						<Timeline
+							events={timelineEvents.filter(
+								(event) => event.type == TimelineType.Certification
+							)}
+						/>
+					</TabsContent>
+					<TabsContent color='yellow' value='personal'>
+						<Timeline
+							events={timelineEvents.filter(
+								(event) => event.type == TimelineType.Personal
+							)}
+						/>
+					</TabsContent>
+					<TabsContent color='orange' value='volunteer'>
+						<Timeline
+							events={timelineEvents.filter(
+								(event) => event.type == TimelineType.Volunteer
+							)}
+						/>
+					</TabsContent>
+				</AnimatePresence>
 				{/* <TabsContent color='green' value='projects'>
 					<TimelineProjects events={TimelineProjectEvents} />
 				</TabsContent> */}

@@ -19,7 +19,7 @@ export default function Page({ project }: { project: Project }) {
 
 	return (
 		<section
-			className={`items-center grid grid-flow-row auto-rows-max grid-cols-1 sm:grid-cols-3 p-4 gap-5 h-full  sm:rounded  ${colorBG} text-brown    `}
+			className={`items-center grid grid-flow-row auto-rows-max grid-cols-1 sm:grid-cols-3 p-4 gap-5 h-full  sm:rounded-l  ${colorBG} text-brown    `}
 		>
 			<header
 				className={`sm:col-span-3 col-span-1 flex justify-between items-center pt-4 sm:flex-row flex-col`}
@@ -31,7 +31,10 @@ export default function Page({ project }: { project: Project }) {
 
 				<span className='flex justify-center items-center gap-2'>
 					<h2 className=' text-lg'>{category && category.name}</h2>
-					<FontAwesomeIcon className=' text-lg' icon={category && category.icon} />
+					<FontAwesomeIcon
+						className=' res-text-lg'
+						icon={category && category.icon}
+					/>
 				</span>
 			</header>
 
@@ -51,7 +54,7 @@ export default function Page({ project }: { project: Project }) {
 					projectInfo.image != "" ? "sm:col-span-2" : "sm:col-span-3"
 				} rounded flex flex-col content-stretch `}
 			>
-				<p className='p-2'>{projectInfo.description}</p>
+				<p className='p-2 text-lg'>{projectInfo.description}</p>
 			</section>
 			<section
 				className={`text-center  sm:col-span-3 col-span-1 bg-white text-brown h-full p-2 px-3 shadow-drop-${
@@ -59,7 +62,7 @@ export default function Page({ project }: { project: Project }) {
 				} rounded flex flex-col content-stretch `}
 			>
 				<h2 className='text-xl font-semibold'>Objective</h2>
-				<p className='p-2'>{projectInfo.challenge}</p>
+				<p className='p-2 text-lg'>{projectInfo.challenge}</p>
 			</section>
 
 			<span className=' flex gap-2 justify-center p-1 col-span-1 sm:col-span-3 '>
@@ -98,7 +101,7 @@ export default function Page({ project }: { project: Project }) {
 			<Chips chips={projectInfo.tools} className='sm:col-span-3 col-span-1  ' />
 
 			<div className=' sm:col-span-3 col-span-1'>
-				<h2 className='text-center text-xl font-semibold'>Process</h2>
+				<h2 className='text-center res-text-xl font-semibold'>Process</h2>
 				<ProcessTimeline
 					processes={projectInfo.process}
 					color={category!.color.name}

@@ -11,7 +11,7 @@ const Chips: React.FC<{ chips: Tools[]; className?: string }> = ({
 				let color = ToolsCat.getCategoryColor(chip);
 				return (
 					<li
-						className={`text-brown-dark rounded font-medium px-3 py-1.5  h-8 text-sm  bg-${color}-200 shadow-drop-${color}-sm`}
+						className={`text-brown-dark rounded font-medium px-3 py-1.5  h-8 text-sm   bg-${color}-200 shadow-drop-${color}-sm`}
 						key={chip}
 					>
 						{chip}

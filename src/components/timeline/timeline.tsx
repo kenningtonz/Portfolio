@@ -14,8 +14,14 @@ const TimelineItem: React.FC<{
 	const color = event.getTypeColor();
 	const colorBG = `bg-${event.getTypeColor()}`;
 	return (
-		<li key={event.title} className='flex mx-4 sm:m-4  sm:flex-row flex-col'>
-			<div className='hidden items-start w-48 pt-0.5 sm:flex text-white text-right'>
+		<motion.li
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			key={event.title}
+			className='flex mx-4 sm:m-4  sm:flex-row flex-col'
+		>
+			<div className='hidden items-start w-48 2xl:w-[22rem] pt-0.5 sm:flex text-white text-right'>
 				<div className='w-4/5 pr-4 pt-1'>
 					<p>
 						{event.dateStart
@@ -40,22 +46,22 @@ const TimelineItem: React.FC<{
 				{isLastEvent ? null : (
 					<div
 						aria-hidden='true'
-						className={`bg-${color}-600 w-0.5 h-full translate-x-5 translate-y-10 opacity-80`}
+						className={`bg-${color}-500 w-0.5 2xl:w-1 h-full translate-x-5 2xl:translate-x-[30px] translate-y-10 opacity-80`}
 					></div>
 				)}
 				<img
 					src={event.getTypeIcon()}
 					alt='icon'
-					className={`bg-${color}-500 w-10 h-10 p-1 rounded z-20`}
+					className={`bg-${color}-500 res-sq-10 p-1 rounded z-20`}
 				/>
 				<div
 					aria-hidden='true'
-					className={`bg-${color}-600 h-0.5 w-8 translate-y-5 opacity-80`}
+					className={`bg-${color}-500 h-0.5 2xl:h-1 w-8  xl:w-16 2xl:w-20 translate-y-5 opacity-80`}
 				></div>
 			</div>
 
 			<div
-				className={`   w-full text-center z-10 sm:w-96 rounded overflow-hidden border-2  border-${color}-600 bg-${color} `}
+				className={`   w-full text-center z-10 xl:border-[3px] xl:w-[32rem] 2xl:w-[38rem] sm:w-96 rounded overflow-hidden border-2  border-${color}-600 bg-${color} `}
 			>
 				<div
 					className={` ${
@@ -67,9 +73,9 @@ const TimelineItem: React.FC<{
 						alt='icon'
 						className={`bg-${color}  w-6 absolute left-2 top-2 sm:hidden p-1 rounded z-20`}
 					/>
-					<h3 className='text-xl font-medium'>{event.title}</h3>
+					<h3 className='res-text-xl font-medium'>{event.title}</h3>
 					<p className=' italic'> {event.location}</p>
-					<p className='sm:hidden text-xs'>
+					<p className='sm:hidden res-text-xs'>
 						{event.dateStart
 							? `${event.dateStart.toLocaleDateString("en-CA", {
 									year: "numeric",
@@ -86,7 +92,7 @@ const TimelineItem: React.FC<{
 					</p>
 					<button
 						onClick={() => setDetailsOpen(!detailsOpen)}
-						className={`w-full rounded text-brown-dark text-base flex justify-center items-center hover:underline pt-4`}
+						className={`w-full rounded text-brown-dark res-text-base flex justify-center items-center hover:underline pt-4`}
 					>
 						{detailsOpen ? "Hide" : "View"} Details
 						{detailsOpen ? (
@@ -114,7 +120,7 @@ const TimelineItem: React.FC<{
 							>
 								{event.points.map((point) => {
 									return (
-										<li className='text-sm text-left' key={point}>
+										<li className='res-text-sm text-left' key={point}>
 											{point}
 										</li>
 									);
@@ -134,7 +140,7 @@ const TimelineItem: React.FC<{
 					<div className={` ${colorBG} w-0.5 h-6 `}></div>
 				</span>
 			)}
-		</li>
+		</motion.li>
 	);
 };
 

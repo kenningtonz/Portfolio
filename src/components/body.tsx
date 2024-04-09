@@ -40,7 +40,7 @@ export default function Body({ children }: { children: React.ReactNode }) {
 	return (
 		// <MotionConfig reducedMotion="user">
 		<body
-			className={`${fredoka.className} antialiased ${theme} min-h-screen scrollbar`}
+			className={`${fredoka.className} antialiased ${theme} min-h-screen scrollbar bg-brown `}
 		>
 			{children}
 		</body>

@@ -13,35 +13,35 @@ export const ProcessTimeline: React.FC<{
 				{processes.map((process, index) => {
 					return (
 						<li key={index} className='flex mx-4 sm:m-4  sm:flex-row flex-col '>
-							<div className='hidden items-start w-48 pt-0.5 sm:flex text-brown'>
-								<p className='w-4/5 text-right pr-2 pt-1 font-semibold text-lg'>
+							<div className='hidden items-start w-56 pt-0.5 sm:flex text-brown'>
+								<p className='w-4/5 text-right pr-2  font-semibold text-lg'>
 									{process.name}
 								</p>
 
 								{lastEvent === index ? null : (
 									<div
 										aria-hidden='true'
-										className={`bg-${color}-dark w-0.5 h-full translate-x-5 translate-y-10 opacity-80`}
+										className={`bg-${color}-dark w-0.5   h-full  translate-x-5 translate-y-10 opacity-80`}
 									></div>
 								)}
 								<img
 									src={process.img}
 									alt='icon'
-									className={`bg-${color}-dark w-10 h-10 p-1 rounded z-20`}
+									className={`bg-${color}-dark h-10 w-10 p-1 rounded z-20`}
 								/>
 								<div
 									aria-hidden='true'
-									className={`bg-${color}-dark h-0.5 w-8 translate-y-5 opacity-80`}
+									className={`bg-${color}-dark h-0.5  w-8  translate-y-5 opacity-80`}
 								></div>
 							</div>
 
 							<div
-								className={`  w-full text-center z-20 sm:w-96 shadow-drop-${color} bg-${color}-dark rounded px-8 p-4 w-full overflow-hidden  text-white flex flex-col `}
+								className={`flex-flex-column  w-full text-center z-20 sm:w-96   shadow-drop-${color} bg-${color}-dark rounded px-8 p-4 w-full overflow-hidden  text-white flex flex-col `}
 							>
 								<img
 									src={process.img}
 									alt='icon'
-									className={`bg-${color}-dark w-8 h-8 p-1 rounded z-20 sm:hidden`}
+									className={`self-center bg-${color}-dark w-8 h-8 p-1 rounded z-20 sm:hidden`}
 								/>
 								<h3 className='sm:hidden text-xl font-medium text-center'>
 									{process.name}
@@ -50,7 +50,7 @@ export const ProcessTimeline: React.FC<{
 									{process.steps.map((step, index) => {
 										return (
 											<li
-												className=' text-base font-medium'
+												className='text-base font-medium'
 												key={`${process.name}-${index}`}
 											>
 												{step}

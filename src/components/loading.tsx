@@ -42,7 +42,7 @@ export default function SplashScreen() {
 				alt='Logo'
 				width={400}
 				height={400}
-				className='m-auto'
+				className='m-auto 2xl:w-[500px] 3xl:w-[600px]  h-auto fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
 			/>
 			{/* <motion.svg
 				initial='hidden'

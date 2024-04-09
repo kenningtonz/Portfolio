@@ -23,11 +23,11 @@ export const Content: React.FC<{ wellnessE: WellnessE; direction: number }> = ({
 	let projects = getProjectsByCategory(wellnessCategory!.enum);
 
 	return (
-		<section className='flex flex-col p-4  w-full   justify-stretch gap-2'>
-			<h2 className={`text-4xl font-semibold text-center  ${textAlignment}`}>
+		<section className='2xl:pl-10 flex flex-col p-4  w-full   justify-stretch gap-2'>
+			<h2 className={`res-text-4xl  font-semibold text-center  ${textAlignment}`}>
 				{wellnessCategory!.name}
 			</h2>
-			<p className={`text-lg text-center ${textAlignment} `}>
+			<p className={`res-text-lg text-center ${textAlignment} `}>
 				{wellnessCategory!.description}
 			</p>
 			{projects.map((project) => {
@@ -40,9 +40,15 @@ export const Content: React.FC<{ wellnessE: WellnessE; direction: number }> = ({
 								whileTap={{ scale: 0.95 }}
 								className={`grow basis-1/4 hover:scale-110 flex  bg-white rounded p-2 flex-col items-center gap-1 	shadow-drop-${wellnessCategory?.color.name}`}
 							>
-								<img src={project.logo} alt='Logo' width={80} height={80} />
-								<h3 className='text-xl font-medium '>{project.name}</h3>
-								<p className='text-center'>{project.oneLiner}</p>
+								<img
+									src={project.logo}
+									alt='Logo'
+									width={80}
+									height={80}
+									className='2xl:w-32'
+								/>
+								<h3 className='res-text-xl font-medium '>{project.name}</h3>
+								<p className='res-text-base text-center'>{project.oneLiner}</p>
 							</motion.div>
 						</DialogTrigger>
 						<DialogContent>

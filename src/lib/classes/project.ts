@@ -65,7 +65,7 @@ export class ProjectInfo {
 }
 
 let mindfulInkInfo = new ProjectInfo(
-	"Mindful Ink is a safe space to grow in spiritual wellness, promoting journaling, self reflection, and creating a community that embraces mindfulness. Mindful Ink sells visually appealing digital printable products including planner pages, mindfulness skills, journaling pages.",
+	"Mindful Ink is a safe space to grow in spiritual wellness, promoting journaling, self reflection, and creating a community that embraces mindfulness. Mindful Ink provides an activities section, with free short exercises that help promote spiritual wellness, such as yoga poses, self reflection prompts, and mindfulness exercises. All the graphics and branding are original.",
 	[
 		Tools.PHP,
 		Tools.Wordpress,
@@ -75,7 +75,7 @@ let mindfulInkInfo = new ProjectInfo(
 		Tools.Git,
 		Tools.CSS,
 	],
-	"Create a Wordpress eCommerce site with a custom theme.",
+	"Create a Wordpress site with a custom theme and custom post type.",
 	[
 		{
 			name: "Design",
@@ -100,7 +100,6 @@ let mindfulInkInfo = new ProjectInfo(
 			img: "./icons/object-group.svg",
 			steps: [
 				"Using the custom block styles, created the pages for the site.",
-				"Implemented WooCommerce for the store.",
 				"Styled using CSS for a polished appearance.",
 			],
 		},
@@ -108,7 +107,7 @@ let mindfulInkInfo = new ProjectInfo(
 			name: "Future Development",
 			img: "./icons/code.svg",
 			steps: [
-				"Develop more products.",
+				"Develop the website into an e-commerce store that will sell digital printable products including planner and journaling pages.",
 				"Remake the website in a different CMS.",
 				"Add analytics and a cookie policy.",
 			],
@@ -122,7 +121,7 @@ let mindfulInkInfo = new ProjectInfo(
 	"https://mindfulink.kennedyadams.ca"
 );
 let greenLifeInfo = new ProjectInfo(
-	"GreenLife Grocer is an online grocery store for healthy living. The site is built using NextJS and MySQL The design and branding is original. The images and content are from a provided database.",
+	"GreenLife Grocer, Nourishing Your Body, Nurturing the Planet. An online grocery store that promotes healthy living. The design and branding is original. The images and content are from a provided database.",
 	[
 		Tools.PHP,
 		Tools.MySQL,
@@ -182,7 +181,7 @@ let greenLifeInfo = new ProjectInfo(
 	"http://greenlife.kennedyadams.ca"
 );
 let radiantRealmsInfo = new ProjectInfo(
-	"Radiant Realms is a mental health services booking website built using React and Firebase. The logo and branding is original. The images were AI generated.",
+	"Radiant Realms, Discover, Heal, Thrive, Radiantly.  A mental health services booking website that offers a wide range of therapy services, and contains a smooth booking and checkout process. The logo and branding is original. The images were AI generated.",
 	[
 		Tools.React,
 		Tools.Firebase,
@@ -307,25 +306,57 @@ let comfortCornerInfo = new ProjectInfo(
 );
 
 let buddyLinkInfo = new ProjectInfo(
-	"BuddyLink is a web application designed to enhance and maintain friendships, allowing users to easily catalog their connections and receive timely reminders for staying in touch, fostering stronger and more meaningful relationships.",
-	[Tools.React, Tools.JavaScript],
+	"BuddyLink is an application designed to enhance and maintain friendships, allowing users to easily catalog their connections and receive timely reminders for staying in touch, fostering stronger and more meaningful relationships.",
+	[
+		Tools.Expo,
+		Tools.ReactNative,
+		Tools.React,
+		Tools.JavaScript,
+		Tools.Illustrator,
+	],
 	"Design and develop a personal project relating to Social Wellness.",
 	[
 		{
-			name: "Current",
+			name: "Ideation & Design",
+			img: "./icons/pen.svg",
+			steps: [
+				"Conjured the idea, based off of personal experience. ",
+				"Designed the colour scheme and logo.",
+				"Generated a plan for the project, having to rescope due to time constraints.",
+			],
+		},
+		{
+			name: "Technical Development",
+			img: "./icons/object-group.svg",
+			steps: [
+				"Learned React Native and Expo.",
+				"Created the project structure.",
+				"Implemented the friend list and reminder system.",
+				"Styled using CSS and React Native Stylesheets for a polished appearance.",
+				"Using Expo Notifications, Background Fetch, and AsyncStorage, developed the function to send reminders on mobile.",
+			],
+		},
+		{
+			name: "Future Development",
 			img: "./icons/code.svg",
-			steps: ["Planning the project."],
+			steps: [
+				"Incorporate a database and authentication to save user data.",
+				"Add more friend customization options.",
+				"Have reminder type options, such as sending the message for you.",
+				"Add a form for user's friends to fill out, to help with the reminders.",
+			],
 		},
 	],
-	"March 2024",
-	"",
+	"April 2024",
+	"/images/buddylink.png",
 	"buddylink",
 	ProjectE.BuddyLink,
-	""
+	"https://github.com/kenningtonz/BuddyLink",
+	"https://buddylink.kennedyadams.ca"
 );
 
 let foundersDriveInfo = new ProjectInfo(
-	"Founder's Drive is a platform for entrepreneurs to find resources and connect with other entrepreneurs. The site is built using Wordpress.",
+	"Founder's Drive is a platform for entrepreneurs to find resources and connect with other entrepreneurs. The website hosts a Durham College student created podcast exploring the stories of real business owners and aspiring entrepreneurs",
 	[Tools.Wordpress, Tools.CSS, Tools.PHP],
 	"Create a Wordpress site for a start up entrepreneur podcast.",
 	[
@@ -400,12 +431,12 @@ let radiantRealms = new Project(
 );
 let buddyLink = new Project(
 	"Buddy Link",
-	"/logo.png",
+	"/logos/buddylink.png",
 	"buddylink",
 	WellnessE.Social,
 	ProjectE.BuddyLink,
 	buddyLinkInfo,
-	"A web application designed to friendships alive, by sending timely reminders for staying connected."
+	"An application designed to keep friendships alive, by sending timely reminders for staying connected."
 );
 let comfortCorner = new Project(
 	"Comfort Corner",
