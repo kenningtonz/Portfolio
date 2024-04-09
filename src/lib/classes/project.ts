@@ -313,6 +313,12 @@ let buddyLinkInfo = new ProjectInfo(
 		Tools.React,
 		Tools.JavaScript,
 		Tools.Illustrator,
+		Tools.HTML,
+		Tools.CSS,
+		Tools.TypeScript,
+		Tools.Git,
+		Tools.Zustand,
+		Tools.GoogleCloudServices,
 	],
 	"Design and develop a personal project relating to Social Wellness.",
 	[

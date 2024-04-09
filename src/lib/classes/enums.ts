@@ -39,6 +39,7 @@ export enum Tools {
 	ReactHookForm = "React Hook Form",
 	Expo = "Expo",
 	ReactNative = "React Native",
+	GoogleCloudServices = "Google Cloud Services",
 }
 
 export const ToolsCat = {
@@ -74,7 +75,12 @@ export const ToolsCat = {
 		Tools.Threejs,
 		Tools.ReactHookForm,
 	],
-	databases: [Tools.Firebase, Tools.MySQL, Tools.phpMyAdmin],
+	databases: [
+		Tools.Firebase,
+		Tools.MySQL,
+		Tools.phpMyAdmin,
+		Tools.GoogleCloudServices,
+	],
 	tools: [Tools.Git, Tools.Wordpress, Tools.WooCommerce, Tools.Vercel],
 	software: [
 		Tools.Illustrator,
