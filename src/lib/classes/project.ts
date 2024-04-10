@@ -33,7 +33,7 @@ export class ProjectInfo {
 	date: string;
 	challenge: string;
 	process: { name: string; img: string; steps: string[] }[];
-	link?: string;
+	link: string;
 	githubLink?: string;
 	image: string;
 	tools: Tools[];
@@ -48,8 +48,8 @@ export class ProjectInfo {
 		image: string,
 		slug: string,
 		project: ProjectE,
-		githubLink?: string,
-		link?: string
+		link: string,
+		githubLink?: string
 	) {
 		this.description = description;
 		this.tools = tools;
@@ -221,8 +221,8 @@ let radiantRealmsInfo = new ProjectInfo(
 			name: "Front-End",
 			img: "./icons/object-group.svg",
 			steps: [
-				"Structured the project in React with React Router",
-				"implemented essential functionalities such as user system, services, cart, and checkout.",
+				"Structured the project in React with React Router.",
+				"Implemented essential functionalities such as user system, services, cart, and checkout.",
 				"Displayed services from the database. ",
 				"Styled using SASS for a polished appearance.",
 			],
@@ -282,7 +282,7 @@ let comfortCornerInfo = new ProjectInfo(
 				"Researched options for react libraries. ",
 				"Created the base grid system and loading in models.",
 				" Integrated ui controls to manipulate the objects. ",
-				"Created the environment options",
+				"Created the environment options.",
 			],
 		},
 		{
@@ -362,7 +362,7 @@ let buddyLinkInfo = new ProjectInfo(
 );
 
 let foundersDriveInfo = new ProjectInfo(
-	"Founder's Drive is a platform for entrepreneurs to find resources and connect with other entrepreneurs. The website hosts a Durham College student created podcast exploring the stories of real business owners and aspiring entrepreneurs",
+	"Founder's Drive is a platform for entrepreneurs to find resources and connect with other entrepreneurs. The website hosts a Durham College student created podcast exploring the stories of real business owners and aspiring entrepreneurs.",
 	[Tools.Wordpress, Tools.CSS, Tools.PHP],
 	"Create a Wordpress site for a start up entrepreneur podcast.",
 	[
@@ -424,7 +424,7 @@ let mindfulInk = new Project(
 	WellnessE.Spiritual,
 	ProjectE.MindfulInk,
 	mindfulInkInfo,
-	"An online store for spiritual wellness focused digital printables."
+	"An online community for spiritual wellness."
 );
 let radiantRealms = new Project(
 	"Radiant Realms",

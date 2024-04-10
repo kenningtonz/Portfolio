@@ -66,20 +66,19 @@ export default function Page({ project }: { project: Project }) {
 			</section>
 
 			<span className=' flex gap-2 justify-center p-1 col-span-1 sm:col-span-3 '>
-				{projectInfo.link ? (
-					<motion.button
-						whileHover={{ scale: 1.1 }}
-						aria-label={`project link`}
-						whileTap={{ scale: 0.9 }}
-						role='link'
-						onClick={() => openInNewTab(projectInfo.link!)}
-						className={` rounded py-2 px-4 h-14 text-white text-3xl bg-${
-							category!.color.name
-						}-dark`}
-					>
-						<FontAwesomeIcon icon={faUpRightFromSquare} />
-					</motion.button>
-				) : null}
+				<motion.button
+					whileHover={{ scale: 1.1 }}
+					aria-label={`project link`}
+					whileTap={{ scale: 0.9 }}
+					role='link'
+					onClick={() => openInNewTab(projectInfo.link)}
+					className={` rounded py-2 px-4 h-14 text-white text-3xl bg-${
+						category!.color.name
+					}-dark`}
+				>
+					<FontAwesomeIcon icon={faUpRightFromSquare} />
+				</motion.button>
+
 				{projectInfo.githubLink ? (
 					<motion.button
 						role='link'
