@@ -117,8 +117,8 @@ let mindfulInkInfo = new ProjectInfo(
 	"../images/mindfulink.png",
 	"mindfulInk",
 	ProjectE.MindfulInk,
-	"https://github.com/kenningtonz/mindful",
-	"https://mindfulink.kennedyadams.ca"
+	"https://mindfulink.kennedyadams.ca",
+	"https://github.com/kenningtonz/mindful"
 );
 let greenLifeInfo = new ProjectInfo(
 	"GreenLife Grocer, Nourishing Your Body, Nurturing the Planet. An online grocery store that promotes healthy living. The design and branding is original. The images and content are from a provided database.",
@@ -177,8 +177,8 @@ let greenLifeInfo = new ProjectInfo(
 	"../images/greenlifegrocer.png",
 	"greenlife",
 	ProjectE.GreenLife,
-	"https://github.com/kenningtonz/GreenLifeGrocer",
-	"http://greenlife.kennedyadams.ca"
+	"http://greenlife.kennedyadams.ca",
+	"https://github.com/kenningtonz/GreenLifeGrocer"
 );
 let radiantRealmsInfo = new ProjectInfo(
 	"Radiant Realms, Discover, Heal, Thrive, Radiantly.  A mental health services booking website that offers a wide range of therapy services, and contains a smooth booking and checkout process. The logo and branding is original. The images were AI generated.",
@@ -244,8 +244,8 @@ let radiantRealmsInfo = new ProjectInfo(
 	"../images/radiantrealms.png",
 	"radiantrealms",
 	ProjectE.RadiantRealms,
-	"https://github.com/kenningtonz/Mental-Health-Services",
-	"https://radiantrealms.kennedyadams.ca"
+	"https://radiantrealms.kennedyadams.ca",
+	"https://github.com/kenningtonz/Mental-Health-Services"
 );
 let comfortCornerInfo = new ProjectInfo(
 	"Comfort Corner is a web-based game where players create and customize their own virtual sanctuary, designed to evoke feelings of safety, comfort, and connection with their physical surroundings. With low-poly 3D graphics and immersive audio, the game offers a peaceful environment filled with customizable elements, from furniture and decorations to natural landscapes and ambient sounds. ",
@@ -301,8 +301,8 @@ let comfortCornerInfo = new ProjectInfo(
 	"../images/comfortcorner.png",
 	"comfortcorner",
 	ProjectE.ComfortCorner,
-	"https://github.com/kenningtonz/comfort-corner",
-	"https://comfortcorner.kennedyadams.ca"
+	"https://comfortcorner.kennedyadams.ca",
+	"https://github.com/kenningtonz/comfort-corner"
 );
 
 let buddyLinkInfo = new ProjectInfo(
@@ -357,8 +357,8 @@ let buddyLinkInfo = new ProjectInfo(
 	"/images/buddylink.png",
 	"buddylink",
 	ProjectE.BuddyLink,
-	"https://github.com/kenningtonz/BuddyLink",
-	"https://buddylink.kennedyadams.ca"
+	"https://buddylink.kennedyadams.ca",
+	"https://github.com/kenningtonz/BuddyLink"
 );
 
 let foundersDriveInfo = new ProjectInfo(
