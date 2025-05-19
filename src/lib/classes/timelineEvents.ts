@@ -84,6 +84,19 @@ export class TimelineEvent {
 
 export const timelineEvents = [
 	new TimelineEvent(
+		"Junior Technical Solutions Specialist",
+		[
+			"Develop and debug custom JavaScript snippets for client websites across platforms like WordPress, Shopify, HubSpot, and custom-built sites, including tag implementation via Google Tag Manager.",
+			"Investigate and resolve complex technical issues by querying SQL databases and analyzing system logs using Kibana, Elasticsearch, GraphQL, and Grafana, collaborating closely with product and engineering teams.",
+			"Communicate solutions clearly to both technical and non-technical stakeholders through email, video calls, and technical documentation.",
+			"Build internal tools and contribute to support resources to streamline workflows, reduce resolution time, and enhance team efficiency.",
+		],
+		"StackAdapt, Remote",
+		TimelineType.Work,
+		true,
+		new Date("2024-07-09")
+	),
+	new TimelineEvent(
 		"Ontario College Diploma, Web Development",
 		["College Honour Roll, Fall 2022, Winter 2023, Fall 2023."],
 		"Durham College, Oshawa ON",
@@ -136,7 +149,7 @@ export const timelineEvents = [
 		["DBT Skills Training, Ontario Shores, Whitby, ON"],
 		"Ontario Shores, Whitby, ON",
 		TimelineType.Personal,
-		true,
+		false,
 		new Date("2021-06-29"),
 		new Date("2022-05-02")
 	),
