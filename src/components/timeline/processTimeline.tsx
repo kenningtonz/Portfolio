@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 export const ProcessTimeline: React.FC<{
 	processes: { name: string; img: string; steps: string[] }[];
@@ -12,7 +13,10 @@ export const ProcessTimeline: React.FC<{
 			<ul className='flex flex-col justify-stretch  items-center   text-brown text-base pb-8 sm:text-lg pt-4   sm:p-0'>
 				{processes.map((process, index) => {
 					return (
-						<li key={index} className='flex mx-4 sm:m-4  sm:flex-row flex-col '>
+						<li
+							key={index}
+							className='flex mx-4 sm:m-4  sm:flex-row flex-col '
+						>
 							<div className='hidden items-start w-56 pt-0.5 sm:flex text-brown'>
 								<p className='w-4/5 text-right pr-2  font-semibold text-lg'>
 									{process.name}
@@ -24,7 +28,7 @@ export const ProcessTimeline: React.FC<{
 										className={`bg-${color}-dark w-0.5   h-full  translate-x-5 translate-y-10 opacity-80`}
 									></div>
 								)}
-								<img
+								<Image
 									src={process.img}
 									alt='icon'
 									className={`bg-${color}-dark h-10 w-10 p-1 rounded z-20`}
@@ -38,7 +42,7 @@ export const ProcessTimeline: React.FC<{
 							<div
 								className={`flex-flex-column  w-full text-center z-20 sm:w-96   shadow-drop-${color} bg-${color}-dark rounded px-8 p-4 w-full overflow-hidden  text-white flex flex-col `}
 							>
-								<img
+								<Image
 									src={process.img}
 									alt='icon'
 									className={`self-center bg-${color}-dark w-8 h-8 p-1 rounded z-20 sm:hidden`}
@@ -65,8 +69,12 @@ export const ProcessTimeline: React.FC<{
 									aria-hidden='true'
 									className='flex justify-around sm:hidden opacity-80 '
 								>
-									<div className={` bg-${color}-600  w-0.5 h-6 `}></div>
-									<div className={` bg-${color}-600  w-0.5 h-6 `}></div>
+									<div
+										className={` bg-${color}-600  w-0.5 h-6 `}
+									></div>
+									<div
+										className={` bg-${color}-600  w-0.5 h-6 `}
+									></div>
 								</span>
 							)}
 						</li>

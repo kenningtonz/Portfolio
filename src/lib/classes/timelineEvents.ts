@@ -31,7 +31,7 @@ export class TimelineEvent {
 		highlight: boolean,
 		// tools: Tools[],
 		dateStart?: Date,
-		dateEnd?: Date
+		dateEnd?: Date,
 	) {
 		this.title = title;
 		this.dateStart = dateStart;
@@ -84,7 +84,7 @@ export class TimelineEvent {
 
 export const timelineEvents = [
 	new TimelineEvent(
-		"Junior Technical Solutions Specialist",
+		"Technical Solutions Specialist",
 		[
 			"Develop and debug custom JavaScript snippets for client websites across platforms like WordPress, Shopify, HubSpot, and custom-built sites, including tag implementation via Google Tag Manager.",
 			"Investigate and resolve complex technical issues by querying SQL databases and analyzing system logs using Kibana, Elasticsearch, GraphQL, and Grafana, collaborating closely with product and engineering teams.",
@@ -94,7 +94,7 @@ export const timelineEvents = [
 		"StackAdapt, Remote",
 		TimelineType.Work,
 		true,
-		new Date("2024-07-09")
+		new Date("2024-07-09"),
 	),
 	new TimelineEvent(
 		"Ontario College Diploma, Web Development",
@@ -102,7 +102,7 @@ export const timelineEvents = [
 		"Durham College, Oshawa ON",
 		TimelineType.Education,
 		true,
-		new Date("2024-04-15")
+		new Date("2024-04-15"),
 	),
 	new TimelineEvent(
 		"Bachelor of Information Technology, Game Development and Entrepreneurship",
@@ -113,7 +113,7 @@ export const timelineEvents = [
 		"Ontario Tech University, Oshawa ON",
 		TimelineType.Education,
 		true,
-		new Date("2022-04-15")
+		new Date("2022-04-15"),
 	),
 	new TimelineEvent(
 		"Game Development Society Liaison",
@@ -127,7 +127,7 @@ export const timelineEvents = [
 		TimelineType.Volunteer,
 		false,
 		new Date("2019-01-15"),
-		new Date("2019-04-15")
+		new Date("2019-04-15"),
 	),
 	new TimelineEvent(
 		"Game Developer",
@@ -142,7 +142,7 @@ export const timelineEvents = [
 		TimelineType.Work,
 		true,
 		new Date("2022-05-01"),
-		new Date("2022-09-02")
+		new Date("2022-09-02"),
 	),
 	new TimelineEvent(
 		"Dialectical Behavioral Therapy",
@@ -151,7 +151,7 @@ export const timelineEvents = [
 		TimelineType.Personal,
 		false,
 		new Date("2021-06-29"),
-		new Date("2022-05-02")
+		new Date("2022-05-02"),
 	),
 	new TimelineEvent(
 		"Ontario G2 License",
@@ -163,7 +163,7 @@ export const timelineEvents = [
 		TimelineType.Personal,
 		true,
 		new Date("2023-12-20"),
-		new Date("2024-03-19")
+		new Date("2024-03-19"),
 	),
 	new TimelineEvent(
 		"Web Developer / Media Assistant",
@@ -175,7 +175,7 @@ export const timelineEvents = [
 		TimelineType.Work,
 		false,
 		new Date("2023-09-01"),
-		new Date("2024-04-15")
+		new Date("2024-04-15"),
 	),
 	new TimelineEvent(
 		"Freelance Online Presence & Web Developer",
@@ -190,7 +190,7 @@ export const timelineEvents = [
 		TimelineType.Work,
 		false,
 		new Date("2023-04-23"),
-		new Date("2023-06-30")
+		new Date("2023-06-30"),
 	),
 	new TimelineEvent(
 		"Web Developer",
@@ -204,7 +204,7 @@ export const timelineEvents = [
 		TimelineType.Work,
 		false,
 		new Date("2023-01-16"),
-		new Date("2024-04-15")
+		new Date("2024-04-15"),
 	),
 	new TimelineEvent(
 		"Campus ID Assistant",
@@ -218,7 +218,7 @@ export const timelineEvents = [
 		TimelineType.Work,
 		false,
 		new Date("2022-09-08"),
-		new Date("2023-04-15")
+		new Date("2023-04-15"),
 	),
 	new TimelineEvent(
 		"Jr Business Support Analyst",
@@ -233,7 +233,7 @@ export const timelineEvents = [
 		TimelineType.Work,
 		false,
 		new Date("2020-06-01"),
-		new Date("2022-04-15")
+		new Date("2022-04-15"),
 	),
 	new TimelineEvent(
 		"ID Services Assistant",
@@ -247,7 +247,7 @@ export const timelineEvents = [
 		TimelineType.Work,
 		false,
 		new Date("2019-05-01"),
-		new Date("2020-04-15")
+		new Date("2020-04-15"),
 	),
 	new TimelineEvent(
 		"Mental Health First Aid Certificate, Mental Health Commission of Canada",
@@ -259,7 +259,7 @@ export const timelineEvents = [
 		"Oshawa, ON",
 		TimelineType.Certification,
 		true,
-		new Date("2019-06-20")
+		new Date("2019-06-20"),
 	),
 	new TimelineEvent(
 		"Math Peer Tutor",
@@ -273,7 +273,7 @@ export const timelineEvents = [
 		TimelineType.Volunteer,
 		false,
 		new Date("2017-01-11"),
-		new Date("2017-06-15")
+		new Date("2017-06-15"),
 	),
 	new TimelineEvent(
 		"Community Volunteer",
@@ -287,7 +287,7 @@ export const timelineEvents = [
 		TimelineType.Volunteer,
 		false,
 		new Date("2018-04-01"),
-		new Date("2019-04-15")
+		new Date("2019-04-15"),
 	),
 ];
 
@@ -314,7 +314,7 @@ export class TimelineProject {
 		objective: string,
 		process: string[],
 		duration: string,
-		date: Date
+		date: Date,
 	) {
 		this.title = title;
 		this.role = role;
@@ -344,7 +344,7 @@ export const TimelineProjectEvents = [
 			"I worked on this game as a 2 man team. We both shared the project manager and game design roles, but I focused on 3D Art. It was a super fun project to work on, where I could just lose myself in the low poly 3D modelling. Working with one other person meant we needed to have a pretty small scope, but of course it was a game jam and features got cut.",
 		],
 		"48 hours",
-		new Date("2020-01-30")
+		new Date("2020-01-30"),
 	),
 	new TimelineProject(
 		"Hogue is Home",
@@ -359,7 +359,7 @@ export const TimelineProjectEvents = [
 			"This game was originally supposed to be a horror game where you play as a cat running away from an abusive mother. My group started out with 11 people, and with 5 hours left it was just me and had no game. So I learned unity from a YouTube tutorial and made an awful version of this game. I ended up remaking it into a playable game in December 2019 due to procrastinating from exams. I keep this game in my portfolio to show where I have come from and to share my experience. You are probably wondering who Hogue is. Dr Hogue was my favourite prof in University and let me meme him, so of course I did.",
 		],
 		"48 hours",
-		new Date("2019-01-30")
+		new Date("2019-01-30"),
 	),
 	new TimelineProject(
 		"Hogue-Like",
@@ -374,7 +374,7 @@ export const TimelineProjectEvents = [
 			"The group I worked with for this game consisted of 4 of my close friends and I. I took on the project manager role as well as a 2D artist, and helped with game design and programming. Being a project manager of a group of friends was a new experience for me and taught me a lot of new skills, such as being respectful and positive apposed to being bossy and mean. I had to take account of my friends feelings while also trying to keep the project on track.",
 		],
 		"48 hours",
-		new Date("2021-10-16")
+		new Date("2021-10-16"),
 	),
 	new TimelineProject(
 		"Hogue's Bones",
@@ -389,7 +389,7 @@ export const TimelineProjectEvents = [
 			"I was originally going to be solo but found a few people I didn't know and decided to be a group instead. Since I was the most experienced of the group I ended up taking on a lead developer and project manager role. I took charge of the group and helped out where I could in programming and art. It was a super fun experience and we made a game we could be proud of.",
 		],
 		"48 hours",
-		new Date("2021-01-16")
+		new Date("2021-01-16"),
 	),
 	new TimelineProject(
 		"NintenHogues",
@@ -404,7 +404,7 @@ export const TimelineProjectEvents = [
 			"I knew I was going to be busy for this game jam but I still wanted to make a game. So I came up with a simple idea regarding Hogue as usual. I took inspiration from NintenDogs and Petz Catz 2, the game I had as a kid. This game was easy to work on and in my opinion turned out well. I did all the art on my new at the time iPad in procreate. Working on this game was an overall fun and non stressful experience, exactly what I needed at the time.",
 		],
 		"48 hours",
-		new Date("2020-10-16")
+		new Date("2020-10-16"),
 	),
 	new TimelineProject(
 		"Luna & Sol",
@@ -419,7 +419,7 @@ export const TimelineProjectEvents = [
 			"My team members focused on the level design, while I did the 2D and 3D art, as well as all of the programming. The game is inspired by fireboy and watergirl. Players control 2 characters and must get them to the corresponding door to advance to the next level. Moving walls and fans are controlled by levers and buttons that the player must interact with. Players can collect gems but only the corresponding colour to the player, as well as entering liquid that corresponds to the player's colour. The game tracks the time, gems collected, and the number of deaths. Scores can be saved and viewed, as well as cleared.",
 		],
 		"3 Weeks",
-		new Date("2021-12-16")
+		new Date("2021-12-16"),
 	),
 	new TimelineProject(
 		"Maze",
@@ -434,7 +434,7 @@ export const TimelineProjectEvents = [
 			"Maze game came to be from a Game Engines midterm in October 2020. I worked on all the assets and programming myself. We were given creative freedom, so I used that to my advantage. I had a lot of fun working on this project. The programming side really challenged me, while the art side a nice break. I'm proud of what I have accomplished and how I have improved since working on this game.​",
 		],
 		"1 Week",
-		new Date("2020-10-16")
+		new Date("2020-10-16"),
 	),
 	new TimelineProject(
 		"Cat Collecter",
@@ -449,7 +449,7 @@ export const TimelineProjectEvents = [
 			"I found the coding part of the project quite easy, which allowed me to focus more on the visuals. To make it more interesting, I decided to use a cat sprite that I had created a few years ago and made it the main feature of the game, where the objective was to collect cats. I created all the game assets, including the audio, from scratch.​",
 		],
 		"1 Week",
-		new Date("2023-04-16")
+		new Date("2023-04-16"),
 	),
 	new TimelineProject(
 		"Mindful Ink",
@@ -477,7 +477,7 @@ export const TimelineProjectEvents = [
 			"Developed the site using Wordpress and PHP. Implemented WooCommerce for the store.",
 		],
 		"3 Months",
-		new Date("2024-01-16")
+		new Date("2024-01-16"),
 	),
 	new TimelineProject(
 		"Founder's Drive",
@@ -490,7 +490,7 @@ export const TimelineProjectEvents = [
 		"Create a Wordpress site for a start-up entrepreneurship podcast.",
 		[""],
 		"8 Months",
-		new Date("2023-01-16")
+		new Date("2023-01-16"),
 	),
 
 	new TimelineProject(
@@ -525,6 +525,6 @@ export const TimelineProjectEvents = [
 			"Add more environments. Make the models myself. Add a share to social media feature. Add a gallary showcase. Undo function",
 		],
 		"2 Weeks",
-		new Date("2024-02-16")
+		new Date("2024-02-16"),
 	),
 ];

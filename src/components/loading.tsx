@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const draw = {
 	hidden: { pathLength: 0, opacity: 0, scale: 1.05 },
@@ -37,7 +38,7 @@ export default function SplashScreen() {
 			className='splashScreen'
 		>
 			{/* <video autoPlay muted src='/loader.mp4' className='m-auto' /> */}
-			<img
+			<Image
 				src='/loader.gif'
 				alt='Logo'
 				width={400}

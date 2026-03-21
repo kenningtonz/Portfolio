@@ -20,10 +20,16 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en' className='font-sans scroll-p-16'>
-			<link rel='icon' href='/favicon.ico' />
+		<html
+			lang='en'
+			className='font-sans scroll-p-16'
+		>
+			<link
+				rel='icon'
+				href='/favicon.ico'
+			/>
 
-			<Body children={children} />
+			<Body>{children}</Body>
 		</html>
 	);
 }

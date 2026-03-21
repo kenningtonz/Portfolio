@@ -40,7 +40,10 @@ export default function Home() {
 	return (
 		<>
 			<SplashScreen />
-			<Header isScrolled={isScrolled} isAnimated={true} />
+			<Header
+				isScrolled={isScrolled}
+				isAnimated={true}
+			/>
 
 			<main className='flex-col flex min-h-screen '>
 				<section className=' flex flex-wrap content-center sm:text-left text-center items-center justify-center gap-2 p-12 bg-brown h'>
@@ -57,8 +60,10 @@ export default function Home() {
 						}}
 					/>
 					{/* <Image src='/logo.png' alt='Logo' width={100} height={100} /> */}
-					<div className='	'>
-						<h1 className='res-text-4xl font-display text-white '>Kennedy Adams</h1>
+					<div className=''>
+						<h1 className='res-text-4xl font-display text-white '>
+							Kennedy Adams
+						</h1>
 						<h2 className=' res-text-2xl font-display text-white '>
 							Front End Developer
 						</h2>
@@ -110,15 +115,22 @@ export default function Home() {
 					className='  dark:text-white text-brown-dark flex flex-col items-center w-full justify-center gap-2 p-10 dark:bg-brown bg-white'
 				>
 					{/* <h2>About</h2> */}
-					<FontAwesomeIcon className=' p-4 res-text-4xl' icon={faUser} />
-					<h2 className='res-text-3xl text-center'> Who is Kennedy Adams?</h2>
+					<FontAwesomeIcon
+						className=' p-4 res-text-4xl'
+						icon={faUser}
+					/>
+					<h2 className='res-text-3xl text-center'>
+						{" "}
+						Who is Kennedy Adams?
+					</h2>
 					<article className='flex flex-col  gap-4 mb-4 items-center p-4 '>
 						<p className='res-text-xl  text-center'>
-							I’m just a <strong>human</strong>, with probably the most interesting
-							past you’ll hear.
+							I'm just a <strong>human</strong>, with probably the
+							most interesting past you'll hear.
 						</p>
 						<p className=' res-text-xl text-center'>
-							Years ago, my therapist told me <strong>"your life is</strong>{" "}
+							Years ago, my therapist told me{" "}
+							<strong>"your life is</strong>{" "}
 							<motion.span
 								initial={{ backgroundColor: "#FFFFFF" }}
 								whileHover={{ backgroundColor: "#FFFFFF00" }}
@@ -126,17 +138,21 @@ export default function Home() {
 							>
 								{" "}
 								fucked{" "}
-							</motion.span>{" "}
-							but it's <strong>about to get better"</strong>. I didn't know or believe
-							it at the time, but he was right.{" "}
+							</motion.span>
+							but it's <strong>about to get better"</strong>. I
+							didn't know or believe it at the time, but he was
+							right.
 						</p>
 						<p className=' res-text-xl text-center'>
 							After years of helping myself, I'm ready to{" "}
-							<strong className='res-text-2xl'>help others</strong>.
+							<strong className='res-text-2xl'>
+								help others
+							</strong>
+							.
 						</p>
 						<p className=' res-text-xl text-center'>
-							I want use to my experience to make it easier for others to work on
-							themselves.
+							I want use to my experience to make it easier for
+							others to work on themselves.
 						</p>
 						<Image
 							src={"/kennedy.jpg"}
@@ -151,7 +167,9 @@ export default function Home() {
 						My Journey
 					</h2>
 					<TimelineHighlight
-						events={timelineEvents.filter((event) => event.highlight == true)}
+						events={timelineEvents.filter(
+							(event) => event.highlight == true,
+						)}
 					/>
 
 					<motion.button
@@ -170,15 +188,22 @@ export default function Home() {
 					id='contact'
 					className='h-[80dvh] flex flex-col items-center w-full  gap-2 px-24 dark:bg-brown py-48 bg-white dark:text-white text-brown-dark'
 				>
-					<FontAwesomeIcon className='   res-text-3xl' icon={faEnvelope} />
-					<h2 className='res-text-3xl  text-center'> Want to work with me?</h2>
+					<FontAwesomeIcon
+						className='   res-text-3xl'
+						icon={faEnvelope}
+					/>
+					<h2 className='res-text-3xl  text-center'>
+						{" "}
+						Want to work with me?
+					</h2>
 					<div className='flex gap-4 mt-4'>
 						<motion.button
 							className=' py-2 px-4 res-sq-12  button bg-yellow-500 '
 							role='link'
 							aria-label='email'
 							onClick={() => {
-								window.location.href = "mailto:kennedymmadams@gmail.com";
+								window.location.href =
+									"mailto:kennedymmadams@gmail.com";
 							}}
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.9 }}
@@ -194,7 +219,8 @@ export default function Home() {
 							role='link'
 							aria-label='linkedin'
 							onClick={() => {
-								window.location.href = "https://www.linkedin.com/in/kennedy-mm-adams/";
+								window.location.href =
+									"https://www.linkedin.com/in/kennedy-mm-adams/";
 							}}
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.9 }}

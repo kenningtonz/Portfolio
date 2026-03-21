@@ -1,4 +1,5 @@
 import { TimelineEvent } from "@/lib/classes/timelineEvents";
+import Image from "next/image";
 
 export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 	events,
@@ -22,17 +23,25 @@ export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 						<div className='hidden items-start w-48 xl:w-[18rem] pt-0.5 relative sm:flex'>
 							<p className='w-4/5 text-gray-500 pt-1 text-white text-pretty res-text-lg'>
 								{event.dateStart
-									? `${event.dateStart.toLocaleDateString("en-CA", {
-											year: "numeric",
-											month: "long",
-									  })}`
+									? `${event.dateStart.toLocaleDateString(
+											"en-CA",
+											{
+												year: "numeric",
+												month: "long",
+											},
+										)}`
 									: null}
-								{event.dateEnd && event.dateStart ? " - " : null}
+								{event.dateEnd && event.dateStart
+									? " - "
+									: null}
 								{event.dateEnd
-									? `${event.dateEnd.toLocaleDateString("en-CA", {
-											year: "numeric",
-											month: "long",
-									  })}`
+									? `${event.dateEnd.toLocaleDateString(
+											"en-CA",
+											{
+												year: "numeric",
+												month: "long",
+											},
+										)}`
 									: null}
 							</p>
 							{event === lastEvent ? null : (
@@ -41,7 +50,7 @@ export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 									className={`bg-${color}-500 w-0.5 2xl:w-1 h-full translate-x-5 2xl:translate-x-[30px] translate-y-10 opacity-80`}
 								></div>
 							)}
-							<img
+							<Image
 								src={event.getTypeIcon()}
 								alt='icon'
 								className={`bg-${color}-500 res-sq-10 p-1 rounded z-20`}
@@ -54,24 +63,36 @@ export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 						<div
 							className={`border-${color}-500  border-2 xl:border-[3px] rounded px-8 py-4 w-full text-center z-10 xl:w-[32rem] sm:w-96 bg-${color} text-brown-dark `}
 						>
-							<h3 className='res-text-xl font-medium'>{event.title}</h3>
-							<p className='   res-text-sm text-pretty	'>{event.location}</p>
+							<h3 className='res-text-xl font-medium'>
+								{event.title}
+							</h3>
+							<p className='   res-text-sm text-pretty	'>
+								{event.location}
+							</p>
 							<p className='sm:hidden res-text-xs'>
 								{event.dateStart
-									? `${event.dateStart.toLocaleDateString("en-CA", {
-											year: "numeric",
-											month: "long",
-									  })}`
+									? `${event.dateStart.toLocaleDateString(
+											"en-CA",
+											{
+												year: "numeric",
+												month: "long",
+											},
+										)}`
 									: null}
-								{event.dateEnd && event.dateStart ? " - " : null}
+								{event.dateEnd && event.dateStart
+									? " - "
+									: null}
 								{event.dateEnd
-									? `${event.dateEnd.toLocaleDateString("en-CA", {
-											year: "numeric",
-											month: "long",
-									  })}`
+									? `${event.dateEnd.toLocaleDateString(
+											"en-CA",
+											{
+												year: "numeric",
+												month: "long",
+											},
+										)}`
 									: null}
 							</p>
-							<img
+							<Image
 								src={event.getTypeIcon()}
 								alt='icon'
 								className={`bg-${color}  w-6 absolute left-2 top-2 sm:hidden p-1 rounded z-20`}
@@ -82,8 +103,12 @@ export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 								aria-hidden='true'
 								className='flex justify-around sm:hidden opacity-60 '
 							>
-								<div className={` bg-${color} w-0.5 h-6 `}></div>
-								<div className={` bg-${color} w-0.5 h-6 `}></div>
+								<div
+									className={` bg-${color} w-0.5 h-6 `}
+								></div>
+								<div
+									className={` bg-${color} w-0.5 h-6 `}
+								></div>
 							</span>
 						)}
 					</li>

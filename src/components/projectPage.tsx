@@ -26,7 +26,12 @@ export default function Page({ project }: { project: Project }) {
 			>
 				<span className='flex items-center p-1 gap-2'>
 					<h1 className='text-4xl  '>{project!.name}</h1>
-					<Image src={project!.logo} alt='Logo' width={50} height={50} />
+					<Image
+						src={project!.logo}
+						alt='Logo'
+						width={50}
+						height={50}
+					/>
 				</span>
 
 				<span className='flex justify-center items-center gap-2'>
@@ -39,7 +44,7 @@ export default function Page({ project }: { project: Project }) {
 			</header>
 
 			{projectInfo.image != "" ? (
-				<img
+				<Image
 					className={`rounded object-cover col-span-1  max-h-[200px] w-full object-top shadow-drop-${
 						category!.color.name
 					} `}
@@ -97,10 +102,15 @@ export default function Page({ project }: { project: Project }) {
 				) : null}
 			</span>
 
-			<Chips chips={projectInfo.tools} className='sm:col-span-3 col-span-1  ' />
+			<Chips
+				chips={projectInfo.tools}
+				className='sm:col-span-3 col-span-1  '
+			/>
 
 			<div className=' sm:col-span-3 col-span-1'>
-				<h2 className='text-center res-text-xl font-semibold'>Process</h2>
+				<h2 className='text-center res-text-xl font-semibold'>
+					Process
+				</h2>
 				<ProcessTimeline
 					processes={projectInfo.process}
 					color={category!.color.name}

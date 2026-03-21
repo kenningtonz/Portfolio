@@ -11,6 +11,7 @@ import {
 	DialogTitle,
 	DialogTrigger,
 } from "@/components/dialog";
+import Image from "next/image";
 
 import Page from "../components/projectPage";
 
@@ -24,7 +25,9 @@ export const Content: React.FC<{ wellnessE: WellnessE; direction: number }> = ({
 
 	return (
 		<section className='2xl:pl-10 flex flex-col p-4  w-full   justify-stretch gap-2'>
-			<h2 className={`res-text-4xl  font-semibold text-center  ${textAlignment}`}>
+			<h2
+				className={`res-text-4xl  font-semibold text-center  ${textAlignment}`}
+			>
 				{wellnessCategory!.name}
 			</h2>
 			<p className={`res-text-lg text-center ${textAlignment} `}>
@@ -40,15 +43,19 @@ export const Content: React.FC<{ wellnessE: WellnessE; direction: number }> = ({
 								whileTap={{ scale: 0.95 }}
 								className={`grow basis-1/4 hover:scale-110 flex  bg-white rounded p-2 flex-col items-center gap-1 	shadow-drop-${wellnessCategory?.color.name}`}
 							>
-								<img
+								<Image
 									src={project.logo}
 									alt='Logo'
 									width={80}
 									height={80}
 									className='2xl:w-32'
 								/>
-								<h3 className='res-text-xl font-medium '>{project.name}</h3>
-								<p className='res-text-base text-center'>{project.oneLiner}</p>
+								<h3 className='res-text-xl font-medium '>
+									{project.name}
+								</h3>
+								<p className='res-text-base text-center'>
+									{project.oneLiner}
+								</p>
 							</motion.div>
 						</DialogTrigger>
 						<DialogContent>
