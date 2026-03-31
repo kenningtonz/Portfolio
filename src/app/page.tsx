@@ -125,26 +125,26 @@ export default function Home() {
 					<article className='flex flex-col  gap-4 mb-4 items-center p-4 '>
 						<p className='res-text-xl  text-center'>
 							I&apos;m just a <strong>human</strong>, with
-							probably the most interesting past you'll hear.
+							probably the most interesting past you&apos;ll hear.
 						</p>
 						<p className=' res-text-xl text-center'>
-							Years ago, my therapist told me
-							<strong>&quotyour life is</strong>
+							Years ago, my therapist told me&nbsp;
+							<strong>&quot;your life is</strong>
 							<motion.span
 								initial={{ backgroundColor: "#FFFFFF" }}
 								whileHover={{ backgroundColor: "#FFFFFF00" }}
 								className='mx-1'
 							>
-								{" "}
-								fucked{" "}
+								&nbsp;fucked&nbsp;
 							</motion.span>
-							but it&apos;s{" "}
-							<strong>about to get better&quot </strong>. I
+							but it&apos;s&nbsp;
+							<strong>about to get better&quot; </strong>. I
 							didn&apos;t know or believe it at the time, but he
 							was right.
 						</p>
 						<p className=' res-text-xl text-center'>
-							After years of helping myself, I&apos;m ready to{" "}
+							After years of helping myself, I&apos;m ready
+							to&nbsp;
 							<strong className='res-text-2xl'>
 								help others
 							</strong>
