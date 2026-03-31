@@ -9,8 +9,9 @@ import Image from "next/image";
 
 const TimelineItem: React.FC<{
 	event: TimelineEvent;
+	key: string;
 	isLastEvent: boolean;
-}> = ({ event, isLastEvent }) => {
+}> = ({ key, event, isLastEvent }) => {
 	const [detailsOpen, setDetailsOpen] = useState(false);
 	const color = event.getTypeColor();
 	const colorBG = `bg-${event.getTypeColor()}`;
@@ -19,7 +20,7 @@ const TimelineItem: React.FC<{
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
-			key={event.title}
+			key={key}
 			className='flex mx-4 sm:m-4  sm:flex-row flex-col'
 		>
 			<div className='hidden items-start w-48 2xl:w-[22rem] pt-0.5 sm:flex text-white text-right'>
@@ -167,6 +168,7 @@ export const Timeline: React.FC<{ events: Array<TimelineEvent> }> = ({
 			{events.map((event) => {
 				return (
 					<TimelineItem
+						key={event.title}
 						event={event}
 						isLastEvent={event === lastEvent}
 					/>

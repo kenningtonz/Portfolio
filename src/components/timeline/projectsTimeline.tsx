@@ -11,8 +11,10 @@ import { openInNewTab } from "@/lib/utils";
 
 const TimelineProjectItem = ({
 	event,
+	key,
 	isLastEvent,
 }: {
+	key: string;
 	event: TimelineProject;
 	isLastEvent: boolean;
 }) => {
@@ -20,7 +22,7 @@ const TimelineProjectItem = ({
 	const color = "green";
 	return (
 		<li
-			key={event.title}
+			key={key}
 			className='flex mx-4 sm:m-4  sm:flex-row flex-col w-full sm:w-auto'
 		>
 			<div className='hidden items-start w-48 pt-0.5 sm:flex text-brown'>
@@ -110,16 +112,23 @@ const TimelineProjectItem = ({
 								open: { opacity: 1, height: "auto" },
 								collapsed: { opacity: 0, height: 0 },
 							}}
-							transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+							transition={{
+								duration: 0.8,
+								ease: [0.04, 0.62, 0.23, 0.98],
+							}}
 						>
 							<div className={` rounded-b bg-${color} p-4 `}>
-<Chips chips={event.tools} />
+								<Chips chips={event.tools} />
 								<p className='text-base'>{event.excerpt}</p>
 								<p> Duration: {event.duration}</p>
 								<h3>Objective</h3>
-								<p className='text-sm text-left'>{event.process[1]}</p>
+								<p className='text-sm text-left'>
+									{event.process[1]}
+								</p>
 								<h3>Approach</h3>
-								<p className='text-sm text-left'>{event.process[3]}</p>
+								<p className='text-sm text-left'>
+									{event.process[3]}
+								</p>
 							</div>
 						</motion.section>
 					)}
@@ -153,7 +162,11 @@ export const TimelineProjects: React.FC<{ events: Array<TimelineProject> }> = ({
 		<ul className='flex flex-col justify-stretch  items-center  text-brown text-base  sm:text-lg p-8'>
 			{events.map((event) => {
 				return (
-					<TimelineProjectItem event={event} isLastEvent={event === lastEvent} />
+					<TimelineProjectItem
+						key={event.title}
+						event={event}
+						isLastEvent={event === lastEvent}
+					/>
 				);
 			})}
 		</ul>

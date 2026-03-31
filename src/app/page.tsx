@@ -120,17 +120,16 @@ export default function Home() {
 						icon={faUser}
 					/>
 					<h2 className='res-text-3xl text-center'>
-						{" "}
 						Who is Kennedy Adams?
 					</h2>
 					<article className='flex flex-col  gap-4 mb-4 items-center p-4 '>
 						<p className='res-text-xl  text-center'>
-							I'm just a <strong>human</strong>, with probably the
-							most interesting past you'll hear.
+							I&apos;m just a <strong>human</strong>, with
+							probably the most interesting past you'll hear.
 						</p>
 						<p className=' res-text-xl text-center'>
-							Years ago, my therapist told me{" "}
-							<strong>"your life is</strong>{" "}
+							Years ago, my therapist told me
+							<strong>&quotyour life is</strong>
 							<motion.span
 								initial={{ backgroundColor: "#FFFFFF" }}
 								whileHover={{ backgroundColor: "#FFFFFF00" }}
@@ -139,12 +138,13 @@ export default function Home() {
 								{" "}
 								fucked{" "}
 							</motion.span>
-							but it's <strong>about to get better"</strong>. I
-							didn't know or believe it at the time, but he was
-							right.
+							but it&apos;s{" "}
+							<strong>about to get better&quot </strong>. I
+							didn&apos;t know or believe it at the time, but he
+							was right.
 						</p>
 						<p className=' res-text-xl text-center'>
-							After years of helping myself, I'm ready to{" "}
+							After years of helping myself, I&apos;m ready to{" "}
 							<strong className='res-text-2xl'>
 								help others
 							</strong>
