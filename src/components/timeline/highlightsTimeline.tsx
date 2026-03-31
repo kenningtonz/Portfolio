@@ -47,13 +47,15 @@ export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 							{event === lastEvent ? null : (
 								<div
 									aria-hidden='true'
-									className={`bg-${color}-500 w-0.5 2xl:w-1 h-full translate-x-5 2xl:translate-x-[30px] translate-y-10 opacity-80`}
+									className={`bg-${color}-500 w-0.5 2xl:w-1 h-full translate-x-5 2xl:translate-x-7.5 translate-y-10 opacity-80`}
 								></div>
 							)}
 							<Image
 								src={event.getTypeIcon()}
 								alt='icon'
-								className={`bg-${color}-500 res-sq-10 p-1 rounded z-20`}
+								className={`bg-${color}-500 p-1 rounded z-20`}
+								width={40}
+								height={40}
 							/>
 							<div
 								aria-hidden='true'
@@ -61,7 +63,7 @@ export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 							></div>
 						</div>
 						<div
-							className={`border-${color}-500  border-2 xl:border-[3px] rounded px-8 py-4 w-full text-center z-10 xl:w-[32rem] sm:w-96 bg-${color} text-brown-dark `}
+							className={`border-${color}-500  border-2 xl:border-[3px] rounded px-8 py-4 w-full text-center z-10 xl:w-lg sm:w-96 bg-${color} text-brown-dark `}
 						>
 							<h3 className='res-text-xl font-medium'>
 								{event.title}
@@ -95,7 +97,9 @@ export const TimelineHighlight: React.FC<{ events: Array<TimelineEvent> }> = ({
 							<Image
 								src={event.getTypeIcon()}
 								alt='icon'
-								className={`bg-${color}  w-6 absolute left-2 top-2 sm:hidden p-1 rounded z-20`}
+								className={`bg-${color} absolute left-2 top-2 sm:hidden p-1 rounded z-20`}
+								width={24}
+								height={24}
 							/>
 						</div>
 						{event === lastEvent ? null : (

@@ -159,7 +159,7 @@ export default function Home() {
 							alt='kennedy'
 							width={200}
 							height={200}
-							className='rounded xl:w-[250px] xl:h-[250px] '
+							className='rounded xl:w-62.5 xl:h-62.5 '
 						/>
 					</article>
 

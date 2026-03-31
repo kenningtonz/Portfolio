@@ -22,7 +22,7 @@ const TimelineItem: React.FC<{
 			key={event.title}
 			className='flex mx-4 sm:m-4  sm:flex-row flex-col'
 		>
-			<div className='hidden items-start w-48 2xl:w-[22rem] pt-0.5 sm:flex text-white text-right'>
+			<div className='hidden items-start w-48 2xl:w-88 pt-0.5 sm:flex text-white text-right'>
 				<div className='w-4/5 pr-4 pt-1'>
 					<p>
 						{event.dateStart
@@ -47,7 +47,7 @@ const TimelineItem: React.FC<{
 				{isLastEvent ? null : (
 					<div
 						aria-hidden='true'
-						className={`bg-${color}-500 w-0.5 2xl:w-1 h-full translate-x-5 2xl:translate-x-[30px] translate-y-10 opacity-80`}
+						className={`bg-${color}-500 w-0.5 2xl:w-1 h-full translate-x-5 2xl:translate-x-7.5 translate-y-10 opacity-80`}
 					></div>
 				)}
 				<Image
@@ -62,7 +62,7 @@ const TimelineItem: React.FC<{
 			</div>
 
 			<div
-				className={`w-full text-center z-10 xl:border-[3px] xl:w-[32rem] 2xl:w-[38rem] sm:w-96 rounded overflow-hidden border-2  border-${color}-600 bg-${color} `}
+				className={`w-full text-center z-10 xl:border-[3px] xl:w-lg 2xl:w-152 sm:w-96 rounded overflow-hidden border-2  border-${color}-600 bg-${color} `}
 			>
 				<div
 					className={` ${
@@ -73,6 +73,8 @@ const TimelineItem: React.FC<{
 						src={event.getTypeIcon()}
 						alt='icon'
 						className={`bg-${color}  w-6 absolute left-2 top-2 sm:hidden p-1 rounded z-20`}
+						width={24}
+						height={24}
 					/>
 					<h3 className='res-text-xl font-medium'>{event.title}</h3>
 					<p className=' italic'> {event.location}</p>

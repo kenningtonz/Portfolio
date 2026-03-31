@@ -45,11 +45,13 @@ export default function Page({ project }: { project: Project }) {
 
 			{projectInfo.image != "" ? (
 				<Image
-					className={`rounded object-cover col-span-1  max-h-[200px] w-full object-top shadow-drop-${
+					className={`rounded object-cover col-span-1  max-h-50 w-full object-top shadow-drop-${
 						category!.color.name
 					} `}
 					src={projectInfo.image}
 					alt='Logo'
+					width={400}
+					height={400}
 				/>
 			) : null}
 			<section

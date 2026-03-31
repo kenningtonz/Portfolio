@@ -31,7 +31,9 @@ export const ProcessTimeline: React.FC<{
 								<Image
 									src={process.img}
 									alt='icon'
-									className={`bg-${color}-dark h-10 w-10 p-1 rounded z-20`}
+									className={`bg-${color}-dark p-1 rounded z-20`}
+									width={40}
+									height={40}
 								/>
 								<div
 									aria-hidden='true'
@@ -46,6 +48,8 @@ export const ProcessTimeline: React.FC<{
 									src={process.img}
 									alt='icon'
 									className={`self-center bg-${color}-dark w-8 h-8 p-1 rounded z-20 sm:hidden`}
+									width={32}
+									height={32}
 								/>
 								<h3 className='sm:hidden text-xl font-medium text-center'>
 									{process.name}
